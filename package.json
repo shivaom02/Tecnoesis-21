@@ -1,0 +1,23 @@
+{
+  "name": "tecnoesis-21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon src/app.js",
+    "start" :"node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knight-18/Tecnoesis-21.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knight-18/Tecnoesis-21/issues"
+  },
+  "homepage": "https://github.com/knight-18/Tecnoesis-21#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
