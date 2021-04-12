@@ -5,16 +5,6 @@
           box-sizing: border-box;
 }
 
-.black-main {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 35%;
-  height: 100vh;
-  background-color: #1c1c1e;
-  z-index: 2;
-}
-
 html,
 body {
   overflow-x: hidden;

@@ -1,25 +1,11 @@
 // Change colors in colors.scss
 // file in the same directory
-@import 'colors';
-
-$dashboardSplit: 35%;
-$fontSizeHeading: 48px;
-$fontSizeSecondary: 24px;
+@import '../globals/variables';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-.black-main {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: $dashboardSplit;
-    height: 100vh;
-    background-color: $offBlack;
-    z-index: 2;
 }
 html,
 body {
