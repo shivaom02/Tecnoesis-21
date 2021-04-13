@@ -11,7 +11,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  z-index: 3;
+  z-index: 3000;
 }
 
 .menu:focus {
