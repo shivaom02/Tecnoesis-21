@@ -16,7 +16,7 @@ body .solar_systm .planet, body input[type=radio][name=planet]::after, body .ove
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  margin: auto;
+  margin-left: 10%;
 }
 
 body .solar_systm .planet.neptune .trajectory.ner, body .solar_systm .planet.neptune .trajectory.pro, body .solar_systm .planet.neptune .trajectory.tri, body .solar_systm .planet.uranus .trajectory.umb, body .solar_systm .planet.uranus .trajectory.ari, body .solar_systm .planet.uranus .trajectory.mir, body .solar_systm .planet.saturn .trajectory.enc, body .solar_systm .planet.saturn .trajectory.di, body .solar_systm .planet.saturn .trajectory.ti, body .solar_systm .planet.jupiter .trajectory.ga, body .solar_systm .planet.jupiter .trajectory.eu, body .solar_systm .planet.jupiter .trajectory.lop, body .solar_systm .planet.mars .trajectory.p, body .solar_systm .planet.mars .trajectory.d, body .solar_systm .planet.earth .trajectory.m {
@@ -29,7 +29,9 @@ body .solar_systm .planet.neptune .trajectory.ner, body .solar_systm .planet.nep
 
 body .solar_systm .planet {
   height: 600px;
-  width: 1200px;
+  /* width: 1200px; */
+    width: 60%;
+
   /* border-radius: 600px; */
   /* background: red; */
   transition: transform 2.8s 0.23s cubic-bezier(0.33, 0, 0, 1), opacity 2s 0.8s, box-shadow 0s 0s;
@@ -175,7 +177,7 @@ body label.menu:after {
   display: block;
   width: 12px;
   height: 12px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 60px;
   content: "";
   z-index: 2;
@@ -214,7 +216,7 @@ body label.menu.pluto h2 .pip {
   background: #FF8732;
 }
 body label.menu .preview {
-  width: 30px;
+  /* width: 30px; */
   height: 30px;
   background: yellow;
   float: left;
@@ -225,7 +227,7 @@ body label.menu .preview {
 }
 body label.menu .info {
   position: relative;
-  left: 50px;
+  /* left: 50px; */
   top: 1px;
 }
 body label.menu h2,
@@ -463,7 +465,7 @@ body input[type=radio][name=planet].planet1:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -596,7 +598,7 @@ body input[type=radio][name=planet].planet2:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -732,7 +734,7 @@ body input[type=radio][name=planet].planet3:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -871,7 +873,7 @@ body input[type=radio][name=planet].planet4:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -1013,7 +1015,7 @@ body input[type=radio][name=planet].planet5:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -1158,7 +1160,7 @@ body input[type=radio][name=planet].planet6:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -1306,7 +1308,7 @@ body input[type=radio][name=planet].planet7:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -1457,7 +1459,7 @@ body input[type=radio][name=planet].planet8:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -1611,7 +1613,7 @@ body input[type=radio][name=planet].planet9:checked + label:before {
   left: 2px;
   top: 2px;
   z-index: 2;
-  background: white;
+  /* background: white; */
   border-radius: 4px;
   content: "";
 }
@@ -2066,8 +2068,8 @@ body .solar_systm .planet_description {
   text-align: center;
   position: absolute;
   top: 50px;
-  margin: auto;
-  left: 0;
+  /* margin: auto; */
+  left: 80%;
   z-index: 2;
   right: 0;
   color: white;
