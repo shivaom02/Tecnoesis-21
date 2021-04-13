@@ -119,4 +119,8 @@ section:not(.first) {
   position: fixed;
   z-index: 90;
 }
+
+.images{
+  display: flex;
+}
 /*# sourceMappingURL=landing.css.map */
