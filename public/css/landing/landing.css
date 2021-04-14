@@ -96,6 +96,11 @@ section:not(.first) {
   background-color: #28a92b;
 }
 
+#head{
+  display: flex;
+  margin-right: 80%;
+}
+
 .panel {
   width: 65%;
   height: 100%;
@@ -122,6 +127,7 @@ section:not(.first) {
 
 .images{
   display: flex;
+  padding-right: 25%;
 }
 
 #bodymovin {

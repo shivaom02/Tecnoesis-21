@@ -1,7 +1,7 @@
 var cursorX;
 var cursorY;
-var w = document.body.clientWidth;
-var h = document.body.clientHeight;
+var w = document.getElementById("physics_div").offsetWidth;
+var h = document.getElementById("physics_div").offsetHeight;
 var stage = document.querySelector('[data-el="stage"]');
 var head = document.querySelector('[data-el="head"]');
 var letters = head.querySelectorAll('[data-el="letter"]');
@@ -18,8 +18,8 @@ var categories = {
 
 
 initDim = {
-  w: document.body.clientWidth,
-  h: document.body.clientHeight
+  w: w,
+  h: h
 };
 
 // ______________________________ Matter.js module aliases
@@ -37,8 +37,8 @@ var Engine = Matter.Engine,
 // ______________________________ canvas element to draw into
 var canvas = document.createElement('canvas'),
     context = canvas.getContext('2d');
-    canvas.width = 800;
-    canvas.height = 600;
+    canvas.width = w;
+    canvas.height = h;
 
 
 // ______________________________ Matter engine
@@ -116,10 +116,10 @@ Matter.Events.on(engine, 'collisionStart', function(event) {
     for (var i = 0; i < pairs.length; i++) {
         var pair = pairs[i];
         if( pair.bodyA.isStatic || pair.bodyB.isStatic ) return;
-        animateBubble(
-          pair.bodyA.position.x + (pair.bodyA.position.x - pair.bodyB.position.x) * -0.5,
-          pair.bodyA.position.y + (pair.bodyA.position.y - pair.bodyB.position.y) * -0.5
-        );
+        // animateBubble(
+        //   pair.bodyA.position.x + (pair.bodyA.position.x - pair.bodyB.position.x) * -0.5,
+        //   pair.bodyA.position.y + (pair.bodyA.position.y - pair.bodyB.position.y) * -0.5
+        // );
     }
 })
 
@@ -259,11 +259,11 @@ var initLetterClones = function(){
           head.offsetLeft + letters[i].offsetLeft + letters[i].clientWidth*0.5,
           head.offsetTop + letters[i].offsetTop + letters[i].clientHeight*0.5,
           letters[i].clientWidth,
-          letters[i].clientHeight, {
+          letters[i].clientHeight*0.6, {
             isSleeping: false,
             density: 1,
             restitution: 0.5,
-            frictionAir: 0,
+            frictionAir: 1,
             collisionFilter: {
               category: categories.catMouse
             },
@@ -272,8 +272,11 @@ var initLetterClones = function(){
             }
           })
         );
-    Body.scale(blocks[i],1,2.5);
-    Body.setCentre(blocks[i],{x:blocks[i].position.x + 18,y:blocks[i].position.y + letters[i].clientHeight/2 +18},false);
+    var new_x = blocks[i].position.x ;
+    var new_y = (blocks[i].position.y - 29)
+
+    // Body.scale(blocks[i],1,1.5);
+    Body.setCentre(blocks[i],{x:new_x,y:new_y},false);
 
     World.add(engine.world, blocks[i]);
 
@@ -356,7 +359,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-console.log(letters[1]);
 
 // ______________________________ F I R E
-init();
+init(); 
+
