@@ -259,11 +259,11 @@ var initLetterClones = function(){
           head.offsetLeft + letters[i].offsetLeft + letters[i].clientWidth*0.5,
           head.offsetTop + letters[i].offsetTop + letters[i].clientHeight*0.5,
           letters[i].clientWidth,
-          letters[i].clientHeight*0.7, {
+          letters[i].clientHeight*0.6, {
             isSleeping: false,
             density: 1,
             restitution: 0.5,
-            frictionAir: 0.001,
+            frictionAir: 1,
             collisionFilter: {
               category: categories.catMouse
             },
@@ -273,7 +273,7 @@ var initLetterClones = function(){
           })
         );
     var new_x = blocks[i].position.x ;
-    var new_y = (blocks[i].position.y - 22)
+    var new_y = (blocks[i].position.y - 29)
 
     // Body.scale(blocks[i],1,1.5);
     Body.setCentre(blocks[i],{x:new_x,y:new_y},false);
