@@ -27,6 +27,10 @@ main {
     left: 0;
 }
 
+.first{
+    transform: translate(0px, 0px);
+}
+
 section:not(.first) {
     opacity: 0;
     visibility: hidden;
@@ -41,9 +45,24 @@ section:not(.first) {
     color: white;
     font-weight: 600;
     margin: 0 auto;
+    position: relative;
+    left: -200px;
 }
 .panel.description {
     padding-bottom: 60px;
+}
+
+.panel .gif img{
+    width: 400px;
+    display: block;
+}
+  
+.panel .gif {
+    border: black solid;
+    border-radius: 100%;
+    position: fixed;
+    right: -25%;
+    z-index: 100;
 }
 
 // Sections
@@ -71,7 +90,7 @@ section:not(.first) {
 }
 
 .panel {
-    width: 100%;
+    width: 65%;
     height: 100%;
     display: flex;
     justify-content: center;
