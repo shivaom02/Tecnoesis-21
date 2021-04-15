@@ -164,11 +164,11 @@ var updateCanvas = function(){
 
 var initMouse = function (array){
   var mouse = Matter.Mouse.create(canvas);
-  var mouseConstraint = MouseConstraint.create(engine, { mouse: mouse });
+  var mouseConstraint = MouseConstraint.create(engine, { mouse: mouse, constraint:{angularStiffness: 0, render:{visible:false}} });
   mouseConstraint.constraint.stiffness = 1;
   World.add(engine.world, mouseConstraint);
   Matter.Events.on(mouseConstraint, 'startdrag', removeInfo);
-  mouseConstraint.collisionFilter.mask = 0x0002 | categories.catMouse;
+  // mouseConstraint.collisionFilter.mask = 0x0002 | categories.catMouse;
 
   // catBody category objects should not be draggable with the mouse
 }
@@ -263,7 +263,7 @@ var initLetterClones = function(){
             isSleeping: false,
             density: 1,
             restitution: 0.5,
-            frictionAir: 1,
+            frictionAir: 0.01,
             collisionFilter: {
               category: categories.catMouse
             },
@@ -273,7 +273,7 @@ var initLetterClones = function(){
           })
         );
     var new_x = blocks[i].position.x ;
-    var new_y = (blocks[i].position.y - 29)
+    var new_y = (blocks[i].position.y - 26)
 
     // Body.scale(blocks[i],1,1.5);
     Body.setCentre(blocks[i],{x:new_x,y:new_y},false);
