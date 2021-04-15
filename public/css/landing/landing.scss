@@ -103,3 +103,27 @@ section:not(.first) {
     box-sizing: border-box;
     padding: 10px;
 }
+
+#head{
+    color: black;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Guardians';
+    font-size: 5rem;
+    line-height: 2.4rem;
+    color: rgba(white, 1);
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+    letter-spacing: 20px;
+  
+    span {
+      position: relative;
+      display: block;
+      width: 1.8rem;
+      height: 2rem;
+    }
+  }
