@@ -210,7 +210,8 @@ body {
 
 .footer {
   min-height: 30vh;
-  background: mediumblue;
+  background: #1c1c2e;
+  margin-top: 10vh;
 }
 
 .reach {
@@ -219,6 +220,7 @@ body {
   position: relative;
   overflow: hidden;
   color: #031b69;
+  background-color: white;
 }
 
 .reach:before {
@@ -341,11 +343,11 @@ body {
 }
 
 .reach .box .containerSpon .card9 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #1b0564;
   margin-top: 8vh;
   text-align: left;
-  line-height: 2rem;
+  line-height: 1.8rem;
   padding: 1rem;
 }
 
@@ -356,10 +358,33 @@ body {
   padding-right: 1rem;
 }
 
-.contact .contactCard {
-  width: 25vw;
-  height: 25vh;
-  margin-right: 3vw;
+.contact {
+  background-color: white;
+}
+
+.contactBox {
+  width: 40vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -17vw;
+  height: 60vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactCard {
+  width: 100%;
+  height: 22vh;
   color: white;
   background-color: #13234e;
   display: -webkit-box;
@@ -370,13 +395,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: absolute;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   border: 2px black solid;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.contact .contactCard:before {
+.contactCard:before {
   content: "";
   position: absolute;
   width: 21vw;
@@ -397,13 +421,13 @@ body {
   transition: 0.5s ease;
 }
 
-.contact .contactCard:before {
+.contactCard:before {
   opacity: 0.2;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.contact .contactCard:after {
+.contactCard:after {
   content: "";
   position: absolute;
   width: 21vw;
@@ -430,50 +454,58 @@ body {
           transform: scaleY(1);
 }
 
-.contact .contactCard:before, .contact .contactCard:after {
+.contactCard:before, .contactCard:after {
   opacity: 0.2;
 }
 
-.contact .contactCard h3 {
+.contactCard h3 {
   position: absolute;
   text-align: center;
-  top: 2vh;
+  top: 5vh;
 }
 
-.contact .contactCard p {
+.contactCard .symbol {
+  position: absolute;
+  text-align: center;
+  top: 1vh;
+  font-size: 24px;
+}
+
+.contactCard p {
   position: absolute;
   top: 10vh;
   text-align: center;
   margin-top: 1rem;
 }
 
-.contact .contactCard h3 {
+.contactCard h3 {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   font-weight: bolder;
   font-size: 2rem;
 }
 
-.contact .contactCard:hover h3 {
+.contactCard:hover h3 {
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
 
-.contact .contactCard .content {
+.contactCard .content {
   -webkit-transform: translateY(10vh);
           transform: translateY(10vh);
 }
 
-.contact .contactCard:hover .content {
-  -webkit-transform: translateY(0vh);
-          transform: translateY(0vh);
+.contactCard:hover .content {
+  -webkit-transform: translateY(3vh);
+          transform: translateY(3vh);
   -webkit-transition: 1s ease;
   transition: 1s ease;
+  top: 10vh;
 }
 
-.contact .contactCard .content {
+.contactCard .content {
   opacity: 0;
   -webkit-transition: 1s ease;
   transition: 1s ease;
@@ -481,9 +513,62 @@ body {
   color: white;
 }
 
-.contact .contactCard:hover .content {
+.contactCard:hover .content {
   opacity: 1;
   z-index: 10;
+}
+
+.phoneEmail {
+  margin-left: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 115%;
+  height: 25vh;
+}
+
+.hideCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  margin-top: 5vh;
+  background-color: #13234e;
+  color: white;
+  padding: 1rem;
+  width: 45%;
+}
+
+.hideCard .hide {
+  position: absolute;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  bottom: -0.5rem;
+  padding: 1rem;
+}
+
+.hideCard:hover .hide {
+  background-color: #1d2949;
+}
+
+.maps {
+  position: absolute;
+  margin-top: -50vh;
 }
 
 @media (max-width: 700px) {
