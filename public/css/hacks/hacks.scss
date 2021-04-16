@@ -78,6 +78,7 @@ body {
     }
 }
 
+
 .home,
 .section {
     min-height: 100vh;
@@ -85,6 +86,7 @@ body {
     background: orangered;
     border-bottom: 2px dotted $black;
     font-size: 5vw;
+
     text-align: center;
 }
 
@@ -216,6 +218,114 @@ body {
     background: mediumblue;
 }
 
+.reach{
+    height:100vh;
+    width:100vw;
+    position: relative;
+    overflow: hidden;
+    color:#031b69;
+}
+.reach:before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50vw;
+    height:100vh;
+    width:50vw;
+    background:#c6e4fd;
+    border-radius:50%;
+    transform-origin: bottom;
+    transform: translate(-50%,-50%) scale(3);
+    opacity:0.3;
+}
+.reach:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50vw;
+    height:100vh;
+    width:50vw;
+    background:#96c0e2;
+    border-radius:50%;
+    transform-origin: top;
+    transform: translate(-50%,50%) scale(3);
+    opacity:0.2;
+}
+.reach  .box{
+  width:80vw;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 10vw;
+}
+.reach  .box .containerSpon{
+    width:80vw;
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding:1rem;
+}
+.reach  .box .containerSpon .card9{
+    position: relative;
+    height:68vh;
+    width:25vw;
+    margin-right:3vw;
+    font-size: small;
+    top:-3vh;
+    padding-top:1rem;
+    border-radius:20px; 
+    background-color:transparent;
+    padding-left:0.25rem;
+    padding-right:0.25rem;
+    transition:0s linear ;
+    z-index:3;
+}
+.reach  .box .containerSpon .card9:after{
+    content:"";
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    padding-top:1rem;
+    border-radius:20px; 
+    background-color:rgb(144, 193, 226);
+    padding-left:0.25rem;
+    padding-right:0.25rem;
+    z-index:-2;
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+}
+.reach  .box .containerSpon .card9:hover:after{
+  opacity:0.08;
+  transform: scale(1);
+}
+.reach  .box .containerSpon .card9 h2{
+   font-size:3rem;
+   padding:0.25rem;
+   position: relative;
+   top:5vh;
+   border-radius:1rem;
+   color:rgb(61, 16, 2);
+}
+.reach  .box .containerSpon .card9 p{
+  font-size:1.5rem;
+  color:rgb(27, 5, 100);
+  margin-top:8vh;
+  text-align:left;
+  line-height:2rem;
+  padding: 1rem;
+}
+.spanStyle{
+  background-color: rgb(83, 83, 83);
+  color: white;
+  padding-left: 1rem;
+  padding-right:1rem;
+}
 @media (max-width: 700px) {
     @import 'mobile-view';   
     .navigation {

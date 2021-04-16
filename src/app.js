@@ -7,6 +7,7 @@ app.use(express.json())
 const PORT = process.env.PORT || 3000
 
 const publicDirectory = path.join(__dirname, '../public')
+
 app.use(express.static(publicDirectory))
 
 const routes = require('./routes')
