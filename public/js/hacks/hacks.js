@@ -1,5 +1,22 @@
 const navLinks = document.querySelectorAll('.nav-links')
 
+// scroll
+const hacksScroll = (sectionID) => {
+    if(sectionID === '#') {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    } else {
+    let offSet = document.getElementById(sectionID).offsetTop;
+    window.scrollTo({
+        top: offSet,
+        left: 0,
+        behavior: 'smooth',
+    });
+    }
+}
 
 // navigation
 for (let index = 0; index < navLinks.length; index++) {
