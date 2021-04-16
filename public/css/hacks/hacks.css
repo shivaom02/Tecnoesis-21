@@ -11,7 +11,7 @@ html {
 
 .navigation {
   position: fixed;
-  right: 5vw;
+  right: 2vw;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -80,7 +80,6 @@ html {
   max-width: 100vw;
   background: white;
   border-bottom: 2px dotted #000;
-  font-size: 5vw;
   text-align: center;
 }
 
@@ -183,7 +182,7 @@ html {
 .reach .box .containerSpon .card9 {
   position: relative;
   height: 68vh;
-  width: 30vw;
+  width: 25vw;
   margin-right: 3vw;
   font-size: small;
   top: -3vh;
