@@ -43,3 +43,54 @@ for (let index = 0; index < navLinks.length; index++) {
         }
     })
 }
+
+// events
+   const dayOneEvent = document.getElementById('day-one')
+   const dayTwoEvent = document.getElementById('day-two')
+
+   const eventMoreDetails = document.getElementsByClassName(
+       'event-more-details'
+   )
+   const eventPopup = document.getElementsByClassName('event-popup')
+   const closePopupBtn = document.querySelectorAll('.close')
+   const overlay = document.querySelectorAll('.popup-overlay')
+
+   dayOneEvent.addEventListener('click', () => {
+       dayOneEvent.classList.add('active')
+       dayTwoEvent.classList.remove('active')
+
+       document.querySelector('.day-one-schedule').style.display = 'block'
+       document.querySelector('.day-two-schedule').style.display = 'none'
+   })
+   dayTwoEvent.addEventListener('click', () => {
+       dayOneEvent.classList.remove('active')
+       dayTwoEvent.classList.add('active')
+
+       document.querySelector('.day-one-schedule').style.display = 'none'
+       document.querySelector('.day-two-schedule').style.display = 'block'
+   })
+
+   for (let i = 0; i < eventMoreDetails.length; i++) {
+       eventMoreDetails[i].addEventListener('click', () => {
+           for (let j = 0; j < eventPopup.length; j++) {
+               if (j == i) {
+                   eventPopup[j].style.display = 'block'
+               } else {
+                   eventPopup[j].style.display = 'none'
+               }
+           }
+       })
+   }
+
+   const closePopup = () => {
+       for (let j = 0; j < eventPopup.length; j++) {
+           eventPopup[j].style.display = 'none'
+       }
+   }
+
+   closePopupBtn.forEach((el) => {
+       el.addEventListener('click', closePopup)
+   });
+   overlay.forEach((el) => {
+       el.addEventListener('click', closePopup)
+   });
