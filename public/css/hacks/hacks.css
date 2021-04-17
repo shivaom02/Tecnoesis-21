@@ -570,6 +570,606 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.team {
+  width: 100vw;
+  min-height: 480vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+}
+
+.team .team_heading {
+  position: absolute;
+  top: 0;
+  padding-top: 2vh;
+}
+
+.team .team_heading div {
+  width: 50%;
+  height: 5px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  background-color: #ff0000;
+}
+
+.team .team_gallery {
+  width: 80vw;
+  height: 380vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team .team_gallery-1, .team .team_gallery-2, .team .team_gallery-3 {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team .team_gallery-1 {
+  height: 60vh;
+  margin-top: -20vh;
+}
+
+.team .team_gallery-2 {
+  height: 170vh;
+  background-color: #f3f2f2;
+  padding: 1rem 2rem;
+  margin-top: -10vh;
+}
+
+.team .team_gallery-3 {
+  height: 60vh;
+}
+
+.team .team_gallery-1-1, .team .team_gallery-2-2, .team .team_gallery-3-3 {
+  width: 80vw;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .team_gallery-1-1 .card, .team .team_gallery-2-2 .card, .team .team_gallery-3-3 .card {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team .team_gallery-1-1 .card img, .team .team_gallery-2-2 .card img, .team .team_gallery-3-3 .card img {
+  height: 100%;
+  width: 100%;
+}
+
+.team .team_gallery-1-1 .card div, .team .team_gallery-2-2 .card div, .team .team_gallery-3-3 .card div {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  top: 260px;
+  height: 100%;
+  width: 100%;
+  background: rgba(6, 12, 34, 0.438);
+}
+
+.team .team_gallery-1-1 .card div p:first-child, .team .team_gallery-2-2 .card div p:first-child, .team .team_gallery-3-3 .card div p:first-child {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team .team_gallery-1-1 .card div p:first-child span:first-child, .team .team_gallery-1-1 .card div p:first-child span:last-child, .team .team_gallery-2-2 .card div p:first-child span:first-child, .team .team_gallery-2-2 .card div p:first-child span:last-child, .team .team_gallery-3-3 .card div p:first-child span:first-child, .team .team_gallery-3-3 .card div p:first-child span:last-child {
+  padding: 0.5rem;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.team .team_gallery-1-1 .card div p:first-child span:first-child, .team .team_gallery-2-2 .card div p:first-child span:first-child, .team .team_gallery-3-3 .card div p:first-child span:first-child {
+  color: yellow;
+  letter-spacing: 1px;
+}
+
+.team .team_gallery-1-1 .card div p:first-child span:first-child:hover, .team .team_gallery-2-2 .card div p:first-child span:first-child:hover, .team .team_gallery-3-3 .card div p:first-child span:first-child:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.team .team_gallery-1-1 .card div p:last-child, .team .team_gallery-2-2 .card div p:last-child, .team .team_gallery-3-3 .card div p:last-child {
+  height: 3vh;
+  width: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.team .team_gallery-1-1 .card:hover div p:last-child, .team .team_gallery-2-2 .card:hover div p:last-child, .team .team_gallery-3-3 .card:hover div p:last-child {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.team .team_gallery-1-1 .card:hover div, .team .team_gallery-2-2 .card:hover div, .team .team_gallery-3-3 .card:hover div {
+  -webkit-transform: translateY(-3vh);
+          transform: translateY(-3vh);
+}
+
+.team .team_gallery-1-1 .card1, .team .team_gallery-2-2 .card1, .team .team_gallery-3-3 .card1 {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  margin-left: 2vw;
+}
+
+.team .team_gallery-1-1 .card1 .card1_img, .team .team_gallery-2-2 .card1 .card1_img, .team .team_gallery-3-3 .card1 .card1_img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.team .team_gallery-1-1 .card1 .card1_img img, .team .team_gallery-2-2 .card1 .card1_img img, .team .team_gallery-3-3 .card1 .card1_img img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.team .team_gallery-1-1 .card1:hover .card1_img img, .team .team_gallery-2-2 .card1:hover .card1_img img, .team .team_gallery-3-3 .card1:hover .card1_img img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.team .team_gallery-1-1 .card1 div, .team .team_gallery-2-2 .card1 div, .team .team_gallery-3-3 .card1 div {
+  position: absolute;
+  margin-top: 100%;
+  width: 100%;
+  background: white;
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.team .team_gallery-1-1 .card1 div p:first-child, .team .team_gallery-2-2 .card1 div p:first-child, .team .team_gallery-3-3 .card1 div p:first-child {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 1rem;
+}
+
+.team .team_gallery-1-1 .card1 div p:first-child span:first-child, .team .team_gallery-2-2 .card1 div p:first-child span:first-child, .team .team_gallery-3-3 .card1 div p:first-child span:first-child {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.team .team_gallery-1-1 .card1 div p:last-child, .team .team_gallery-2-2 .card1 div p:last-child, .team .team_gallery-3-3 .card1 div p:last-child {
+  height: 3vh;
+  width: 100%;
+}
+
+.team .team_gallery-1-1 .card1 div p:last-child div, .team .team_gallery-2-2 .card1 div p:last-child div, .team .team_gallery-3-3 .card1 div p:last-child div {
+  z-index: 1000;
+  opacity: 1;
+}
+
+.team .slider {
+  width: 100vw;
+  height: 50vh;
+  border: 1px solid black;
+  margin-top: -30vh;
+}
+
+.reach {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+}
+
+.reach .reach_heading {
+  margin-top: 0vh;
+}
+
+.reach .reach_heading div {
+  width: 50%;
+  height: 5px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  background-color: #ff0000;
+}
+
+.reach .gallery {
+  width: 100vw;
+  height: 80vh;
+  margin-left: 0vw;
+  margin-top: 0vh;
+}
+
+.reach .gallery .row-1, .reach .gallery .row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 2px;
+}
+
+.reach .gallery .row-1 {
+  height: 45vh;
+}
+
+.reach .gallery .row-1 div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.reach .gallery .row-1 div div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.reach .gallery .row-1 div div ::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: -2;
+  opacity: 0.2;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.reach .gallery .row-1 div div:hover ::before {
+  opacity: 0.5;
+}
+
+.reach .gallery .row-1 div div p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 100;
+  background-color: transparent;
+}
+
+.reach .gallery .row-1 div div p span:first-child {
+  font-size: 2vw;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.reach .gallery .row-1 div div p span:last-child {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #fffd7d;
+  padding: 10%;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.reach .gallery .row-1 div div p span::before {
+  background-color: transparent;
+}
+
+.reach .gallery .row-1 div div p:hover span:last-child {
+  opacity: 1;
+}
+
+.reach .gallery .row-1 div div p:hover span:first-child {
+  margin-top: 0%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reach .gallery .row-1 div div img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.reach .gallery .row-2 {
+  height: 35vh;
+}
+
+.reach .gallery .row-2 div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 2px;
+}
+
+.reach .gallery .row-2 div img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.reach .gallery .row-2 div:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.reach .gallery .row-1 div {
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.reach .gallery .row-2 div {
+  height: 100%;
+  width: 25%;
+  border: 1px solid black;
+}
+
+.contact {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+}
+
+.contact .contact_heading div {
+  width: 50%;
+  height: 5px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  background-color: #ff0000;
+}
+
+.contact .contact_body {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35vh;
+}
+
+.contact .contact_body div {
+  width: 25vw;
+  height: 60%;
+  text-align: center;
+}
+
+.contact .contact_body div svg {
+  color: red;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  top: -15%;
+  left: 0%;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.contact .contact_body div div {
+  margin-top: 5%;
+}
+
+.contact .contact_body div div p {
+  color: #002fff;
+}
+
+.contact .contact_body div div p:hover {
+  color: #fd06d4;
+  cursor: pointer;
+}
+
+.contact .contact_body .middle {
+  border-left: 1px solid rgba(201, 197, 197, 0.74);
+  border-right: 1px solid rgba(201, 197, 197, 0.74);
+}
+
+.contact .contact_form {
+  width: 80vw;
+}
+
+.contact .contact_form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45vh;
+}
+
+.contact .contact_form form input, .contact .contact_form form textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #99999b;
+}
+
+.contact .contact_form form input:focus, .contact .contact_form form textarea:focus {
+  outline: none;
+}
+
+.contact .contact_form form .same_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.contact .contact_form form .same_row input {
+  width: 49%;
+  border: 1px solid #99999b;
+  font-weight: 200;
+  padding: 0.5rem 1rem;
+}
+
+.contact .contact_form form .same_row input:focus {
+  outline: none;
+}
+
+.contact .contact_form form textarea {
+  height: 15vh;
+  font-weight: 100;
+  padding: 0.5rem 1rem;
+}
+
+.contact .contact_form form button {
+  padding: 0.3rem 1rem;
+  text-align: center;
+  background-color: #cf0909;
+  color: white;
+  border: whitesmoke;
+  border: 10px;
+  border-radius: 2rem;
+  outline: none;
+  border: 2px solid #b9babb;
+  font-size: large;
+  width: 130px;
+}
+
+.contact .contact_form form button:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  background-color: #c53e1c;
+}
+
 .menu-container {
   position: fixed;
   left: 50%;
