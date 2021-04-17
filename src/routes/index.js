@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/hacks', (req, res) =>{
-    res.sendFile(path.join(__dirname,'../views/hacks.html'));
+    res.sendFile(path.join(__dirname,'../../views/hacks.html'));
 })
 
 module.exports = router;
