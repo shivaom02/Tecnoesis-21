@@ -45,9 +45,7 @@ var canvas = document.createElement('canvas'),
 var engine = Engine.create(  {  enableSleeping: false  });
     engine.world.wireframes = false;
     engine.world.gravity.x = 0;
-    engine.world.gravity.y = 0.25;
-
-
+    engine.world.gravity.y = 0;
 
 var renderer = Render.create({
   element: stage,
@@ -56,7 +54,7 @@ var renderer = Render.create({
   engine: engine,
   options: {
     bounds: true,
-    showBounds: false,
+    showBounds: true,
     background: "transparent",
     width: w,
     height: h,
@@ -165,15 +163,12 @@ var updateCanvas = function(){
 var initMouse = function (array){
   var mouse = Matter.Mouse.create(canvas);
   var mouseConstraint = MouseConstraint.create(engine, { mouse: mouse });
-  mouseConstraint.constraint.stiffness = 1;
+  mouseConstraint.constraint.stiffness = 2;
   World.add(engine.world, mouseConstraint);
   Matter.Events.on(mouseConstraint, 'startdrag', removeInfo);
-  
-  // var mouseConstraint = MouseConstraint.create(engine, { mouse: mouse, constraint:{angularStiffness: 0, render:{visible:false}} });
-  // mouseConstraint.constraint.stiffness = 1;
-  mouseConstraint.collisionFilter.mask = 0x0002 | categories.catMouse;
 
   // catBody category objects should not be draggable with the mouse
+  mouseConstraint.collisionFilter.mask = 0x0002 | categories.catMouse;
 }
 
 // helpful function
@@ -211,9 +206,9 @@ var initEscapedBodiesRetrieval = function(allBodies, startCoordinates) {
 // ______________________________ create centered block
 var fixBouncer = function(){
   bouncer.style.position = 'absolute';
-  bouncer.style.top = '0';
-  bouncer.style.left = '0';
-  bouncer.style.marginTop = '0';
+  // bouncer.style.top = '0';
+  // bouncer.style.left = '0';
+  // bouncer.style.marginTop = '0';
 
   updatePosition();
 };
@@ -244,7 +239,7 @@ var initBouncer = function(){
 
   World.add(engine.world, bouncerClone );
   Matter.Events.on(engine.world, "afterAdd", fixBouncer);
-  Body.setVelocity( bouncerClone, {x: -3, y: 15});
+  Body.setVelocity( bouncerClone, {x: 3, y: 15});
 }
 
 
@@ -287,40 +282,6 @@ var initLetterClones = function(){
     letters[i].style.height = letters[i].clientHeight + 'px';
   }
 }
-
-
-// var initLetterClones = function(){
-//   for(var i = 0; i < letters.length; i++) {
-//     blocks.push(
-//       Bodies.rectangle(
-//           head.offsetLeft + letters[i].offsetLeft + letters[i].clientWidth*0.5,
-//           head.offsetTop + letters[i].offsetTop + letters[i].clientHeight*0.5,
-//           letters[i].clientWidth,
-//           letters[i].clientHeight*0.6, {
-//             isSleeping: false,
-//             density: 1,
-//             restitution: 0.5,
-//             frictionAir: 0.01,
-//             collisionFilter: {
-//               category: categories.catMouse
-//             },
-//             render: {
-//               opacity: 0
-//             }
-//           })
-//         );
-//     var new_x = blocks[i].position.x + 18;
-//     var new_y = (blocks[i].position.y + 34)
-
-//     Body.scale(blocks[i],1,3.8);
-//     Body.setCentre(blocks[i],{x:new_x,y:new_y},false);
-
-//     World.add(engine.world, blocks[i]);
-
-//     letters[i].style.width = letters[i].clientWidth + 'px';
-//     letters[i].style.height = letters[i].clientHeight + 'px';
-//   }
-// }
 
 
 
@@ -396,7 +357,5 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
 // ______________________________ F I R E
-init(); 
-
+init();
