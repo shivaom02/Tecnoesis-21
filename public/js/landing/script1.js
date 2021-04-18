@@ -54,7 +54,7 @@ var renderer = Render.create({
   engine: engine,
   options: {
     bounds: true,
-    showBounds: true,
+    showBounds: false,
     background: "transparent",
     width: w,
     height: h,
@@ -232,6 +232,9 @@ var initBouncer = function(){
     },
     isSleeping: false,
     density: 0.08,
+    restitution: 0.9,
+    frictionAir:0.005,
+    friction:0,
     collisionFilter: {
         category: categories.catMouse
     },
@@ -239,7 +242,7 @@ var initBouncer = function(){
 
   World.add(engine.world, bouncerClone );
   Matter.Events.on(engine.world, "afterAdd", fixBouncer);
-  Body.setVelocity( bouncerClone, {x: Math.floor(Math.random()*15)-25, y: Math.floor(Math.random()*15)-15});
+  Body.setVelocity( bouncerClone, {x: Math.floor(Math.random()*10)-20, y: Math.floor(Math.random()*10)-15});
 }
 
 
@@ -264,7 +267,7 @@ var initLetterClones = function(){
           letters[i].clientWidth,
           letters[i].clientHeight, {
             isSleeping: false,
-            density: 1,
+            density: 0.6,
             restitution: 0.9,
             frictionAir: 0.0001,
             collisionFilter: {
