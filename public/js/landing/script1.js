@@ -226,14 +226,14 @@ var initBouncer = function(){
      render: {
       sprite: {
         texture: "https://upload.wikimedia.org/wikipedia/commons/4/45/Stup_Virus.png",
-        xScale: 0.2,
-        yScale: 0.2
+        xScale: 0.5,
+        yScale: 0.5
      }
     },
     isSleeping: false,
-    density: 0.08,
+    density: 04,
     restitution: 0.9,
-    frictionAir:0.005,
+    frictionAir:0.008,
     friction:0,
     collisionFilter: {
         category: categories.catMouse
@@ -267,9 +267,9 @@ var initLetterClones = function(){
           letters[i].clientWidth,
           letters[i].clientHeight, {
             isSleeping: false,
-            density: 0.6,
-            restitution: 0.9,
-            frictionAir: 0.0001,
+            density: 0.8,
+            restitution: 0.8,
+            frictionAir: 0.001,
             collisionFilter: {
               category: categories.catBody
             },
