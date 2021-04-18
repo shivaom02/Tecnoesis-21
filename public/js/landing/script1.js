@@ -163,7 +163,7 @@ var updateCanvas = function(){
 var initMouse = function (array){
   var mouse = Matter.Mouse.create(canvas);
   var mouseConstraint = MouseConstraint.create(engine, { mouse: mouse });
-  mouseConstraint.constraint.stiffness = 2;
+  mouseConstraint.constraint.stiffness = 1;
   World.add(engine.world, mouseConstraint);
   Matter.Events.on(mouseConstraint, 'startdrag', removeInfo);
 
@@ -206,9 +206,9 @@ var initEscapedBodiesRetrieval = function(allBodies, startCoordinates) {
 // ______________________________ create centered block
 var fixBouncer = function(){
   bouncer.style.position = 'absolute';
-  // bouncer.style.top = '0';
-  // bouncer.style.left = '0';
-  // bouncer.style.marginTop = '0';
+  bouncer.style.top = '0';
+  bouncer.style.left = '0';
+  bouncer.style.marginTop = '0';
 
   updatePosition();
 };
@@ -239,7 +239,7 @@ var initBouncer = function(){
 
   World.add(engine.world, bouncerClone );
   Matter.Events.on(engine.world, "afterAdd", fixBouncer);
-  Body.setVelocity( bouncerClone, {x: 3, y: 15});
+  Body.setVelocity( bouncerClone, {x: Math.floor(Math.random()*15)-25, y: Math.floor(Math.random()*15)-15});
 }
 
 
@@ -265,7 +265,7 @@ var initLetterClones = function(){
           letters[i].clientHeight, {
             isSleeping: false,
             density: 1,
-            restitution: 0.7,
+            restitution: 0.9,
             frictionAir: 0.0001,
             collisionFilter: {
               category: categories.catBody
@@ -288,10 +288,10 @@ var initLetterClones = function(){
 // walls/borders
 var initBorders = function(){
   var borderOptions = { isStatic: true, render: { opacity: 0 }};
-  var offset = 30;
-  borders.push(Bodies.rectangle( w*0.5, offset, w, 2, borderOptions )); // top
+  var offset = 5;
+  borders.push(Bodies.rectangle( w*0.5, offset, w, 10, borderOptions )); // top
   borders.push(Bodies.rectangle( w - offset, h*0.5, 2, h, borderOptions ));
-  borders.push(Bodies.rectangle( w*0.5, h - offset, w, 2, borderOptions )); // bottom
+  borders.push(Bodies.rectangle( w*0.5, h - offset, w, 8, borderOptions )); // bottom
   borders.push(Bodies.rectangle( 0 + offset, h*0.5, 2, h, borderOptions ));
 
   for(var i = 0; i < borders.length; i++){

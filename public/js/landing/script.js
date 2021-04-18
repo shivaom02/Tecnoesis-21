@@ -45,7 +45,7 @@ var canvas = document.createElement('canvas'),
 var engine = Engine.create(  {  enableSleeping: false  });
     engine.world.wireframes = false;
     engine.world.gravity.x = 0;
-    engine.world.gravity.y = 0.25;
+    engine.world.gravity.y = 0.0;
 
 
 
