@@ -163,12 +163,16 @@ var updateCanvas = function(){
 var initMouse = function (array){
   var mouse = Matter.Mouse.create(canvas);
   var mouseConstraint = MouseConstraint.create(engine, { mouse: mouse });
+  
+  var Muse = mouseConstraint.mouse;
+  Muse.element.removeEventListener("mousewheel", mouse.mousewheel);
+  Muse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
   mouseConstraint.constraint.stiffness = 1;
   World.add(engine.world, mouseConstraint);
   Matter.Events.on(mouseConstraint, 'startdrag', removeInfo);
 
   // catBody category objects should not be draggable with the mouse
-  mouseConstraint.collisionFilter.mask = 0x0002 | categories.catMouse;
+  // mouseConstraint.collisionFilter.mask = 0x0002 | categories.catMouse;
 }
 
 // helpful function
@@ -293,7 +297,7 @@ var initBorders = function(){
   var borderOptions = { isStatic: true, render: { opacity: 0 }};
   var offset = 5;
   borders.push(Bodies.rectangle( w*0.5, offset, w, 10, borderOptions )); // top
-  borders.push(Bodies.rectangle( w - offset, h*0.5, 2, h, borderOptions ));
+  borders.push(Bodies.rectangle( w - offset, h, 2, h, borderOptions ));
   borders.push(Bodies.rectangle( w*0.5, h - offset, w, 8, borderOptions )); // bottom
   borders.push(Bodies.rectangle( 0 + offset, h*0.5, 2, h, borderOptions ));
 
@@ -360,5 +364,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// ______________________________ F I R E
-init();
+
+setTimeout(function(){
+  init();
+}, 2000)
