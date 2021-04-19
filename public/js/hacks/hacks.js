@@ -2,8 +2,6 @@ const navLinks = document.querySelectorAll('.nav-links')
 
 // scroll
 const hacksScroll = (sectionID) => {
-    hideMenu()
-
     if (sectionID === '#') {
         window.scrollTo({
             top: 0,
@@ -23,27 +21,25 @@ const hacksScroll = (sectionID) => {
 // navigation
 for (let index = 0; index < navLinks.length; index++) {
     navLinks[index].addEventListener('click', function () {
-        {
             for (let i = 0; i < index; i++) {
                 document
                     .getElementById(`dot--${i}`)
-                    .classList.remove('active', 'go-down')
-                document.getElementById(`dot--${i}`).classList.add('go-up')
+                    .classList.remove('active', 'go-down');
+                document.getElementById(`dot--${i}`).classList.add('go-up');
             }
 
             document
                 .getElementById(`dot--${index}`)
-                .classList.remove('go-down', 'go-up')
-            document.getElementById(`dot--${index}`).classList.add('active')
+                .classList.remove('go-down', 'go-up');
+            document.getElementById(`dot--${index}`).classList.add('active');
 
             for (let i = navLinks.length - 1; i > index; i--) {
                 document
                     .getElementById(`dot--${i}`)
-                    .classList.remove('active', 'go-up')
-                document.getElementById(`dot--${i}`).classList.add('go-down')
+                    .classList.remove('active', 'go-up');
+                document.getElementById(`dot--${i}`).classList.add('go-down');
             }
-        }
-    })
+    });
 }
 
 // events
@@ -94,42 +90,6 @@ closePopupBtn.forEach((el) => {
 overlay.forEach((el) => {
     el.addEventListener('click', closePopup)
 })
-
-// event menu
-const closeMenuBtn = document.querySelector('.menu-close-btn')
-const menuList = document.querySelector('.menu-list')
-let menuFlag = 0
-
-function showMenu() {
-    closeMenuBtn.textContent = 'Close';
-    menuFlag = 1
-    menuList.style.transform = 'translate(-50%, -105%) scale(1)'
-    menuList.style.opacity = '1'
-    menuList.style.display = 'flex'
-    menuList.style.zIndex = '1000'
-}
-function hideMenu() {
-    closeMenuBtn.textContent = 'Menu';
-    menuFlag = 0
-    menuList.style.opacity = '0'
-    menuList.style.transform = 'translate(-50%, -40%) scale(0)'
-    menuList.style.zIndex = '-10'
-}
-
-    closeMenuBtn.addEventListener('click', () => {
-      menuFlag ? hideMenu() : showMenu();
-    });
-
-    closeMenuBtn.addEventListener('mouseover', () => {
-      closeMenuBtn.style.transform = 'scale(1.1)';
-      closeMenuBtn.style.boxShadow = '0px 10px 10px rgba(0, 0, 0, .4)';
-    });
-    closeMenuBtn.addEventListener('mouseout', () => {
-      closeMenuBtn.style.transform = 'scale(1)';
-      closeMenuBtn.style.boxShadow = 'none';
-    });
-
-    hideMenu();
 
 //gallery
 (function() {

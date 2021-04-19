@@ -396,48 +396,6 @@
   margin-top:-50vh;
 }
 
-//reach
-.reach{
-
-  .gallery{
-
-      .row{
-          &-1{
-             flex-direction: column;
-             height:80vh;
-             margin-top:-5vh;
-             
-             div{
-               width:100%;
-             }
-
-             div:last-child{
-                div{
-                    p{
-                      span:first-child{
-                         font-size: medium;
-                         margin-top:75%;
-                      }
-                      span:last-child{
-                         font-size: small;
-                      }
-                      &:hover span:first-child {
-                        margin-top:0%;
-                        transform:translateY(0%);
-                      }
-                    }
-                }
-             }
-          }
-          &-2{
-             height:0vh;
-             transform:scaleY(0);  
-          }     
-      }
-  }
-}
-
-
   //contact us
 .contact{
 
@@ -558,34 +516,3 @@
       }
   }
  }
-
-// menu
-.menu-list {
-    width: 12rem;
-    height: 44vh;        
-    
-    .menu-items {
-        color: #fff;
-        list-style: none;
-        font-family: 'Righteous', cursive;
-        margin: 5px auto;
-        
-        &:last-child {
-            margin-bottom: 2.5rem;
-        }
-    }
-    
-    .menu-close {
-        position: relative;
-        height: 3rem;
-        width: 3rem;
-        margin: 0 auto;
-        
-        .menu-close-btn {
-            letter-spacing: 1px;
-            font-size: .5rem;
-            line-height: 3rem;
-        }
-    }
-}
-    // menu ends
