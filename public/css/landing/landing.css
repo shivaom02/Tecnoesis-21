@@ -32,6 +32,95 @@ section:not(.first) {
   visibility: hidden;
 }
 
+.section_header {
+  font-family: 'Greenth', sans-serif;
+  font-size: 6rem;
+}
+
+.section_desc{
+  font-family: 'Roboto', sans-serif;
+      color: black;
+
+    margin-left: -63%;
+    word-break: break-word;
+    margin-top: 14%;
+}
+/* buttons */
+.btnfos {
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  margin: 0 auto 2em;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .btnfos {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  .btnfos:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .btnfos:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  .btnfos:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+
+.btnfos-1 {
+  background: transparent;
+  font-weight: 100;
+  margin-right: 50%;
+    position: absolute;
+    margin-bottom: -26%;
+  z-index: inherit;
+
+}
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+.btnfos-1 rect {
+  fill: none;
+  stroke: black;
+  stroke-width: 0;
+  stroke-dasharray: 422, 0;
+}
+
+.btnfos-1:hover {
+  background: rgba(225, 51, 45, 0);
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.btnfos-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.description{
+  width: 25%;
+  margin-top: 10%;
+  margin-left: -46%;
+}
+
 .first{
   transform: translate(0px, 0px);
 }
@@ -43,12 +132,13 @@ section:not(.first) {
 }
 
 .panel h1 {
-  font-size: 5em;
-  color: white;
-  font-weight: 600;
-  margin: 0 auto;
-  position: relative;
-  left: -200px;
+      font-size: 4.5em;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 4%;
+    margin-left: 8%;
+    position: relative;
+    left: -200px;
 }
 
 .panel .gif img{
@@ -113,13 +203,8 @@ section:not(.first) {
   user-select: none;
   letter-spacing: 20px;
 
-  span {
-    position: relative;
-    display: block;
-    width: 1.8rem;
-    height: 2rem;
-  }
 }
+
 
 .panel {
   width: 65%;
