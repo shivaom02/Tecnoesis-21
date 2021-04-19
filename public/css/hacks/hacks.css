@@ -1419,8 +1419,8 @@ body {
   height: 44vh;
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -105%);
-          transform: translate(-50%, -105%);
+  -webkit-transform: translate(-50%, -105%) scale(0);
+          transform: translate(-50%, -105%) scale(0);
   background: radial-gradient(50% 50% at 50% 50%, #0E3057 0%, #081B31 100%);
   border: 1px solid #000000;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1490,7 +1490,131 @@ body {
 
 .footer {
   min-height: 30vh;
-  background: mediumblue;
+  background-color: #080124;
+}
+
+.footer .footer-c {
+  max-width: 80vw;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 3vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-c .the-event {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 3rem;
+  color: #fff;
+}
+
+.footer .footer-c .the-event p:first-child {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer .footer-c .the-event p:last-child {
+  font-style: italic;
+}
+
+.footer .footer-c .useful-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2rem 3rem;
+  margin-left: 4rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .footer-c .useful-links li {
+  font-family: 'Raleway', sans-serif;
+  width: 50%;
+  border-bottom: 1px solid #fff;
+  list-style: none;
+  margin: 3px 0;
+  padding-left: 5px;
+}
+
+.footer .footer-c .useful-links li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer .footer-c .useful-links li:hover a {
+  -webkit-transform: translateY(-1px) scale(1.05);
+          transform: translateY(-1px) scale(1.05);
+}
+
+.footer .footer-c .connect-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 3rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-c .connect-links p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer .footer-c .connect-links ul {
+  margin: 0 auto;
+}
+
+.footer .footer-c .connect-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 1rem .5rem;
+}
+
+.footer .footer-c .connect-links ul li .fa {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer .footer-c .connect-links ul li .fa:hover {
+  color: red;
 }
 
 @media (max-width: 1000px) {
@@ -1812,33 +1936,6 @@ body {
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
   }
-  .menu-list {
-    width: 12rem;
-    height: 44vh;
-  }
-  .menu-list .menu-items {
-    color: #fff;
-    list-style: none;
-    font-family: 'Righteous', cursive;
-    margin: 5px auto;
-  }
-  .menu-list .menu-items:last-child {
-    margin-bottom: 2.5rem;
-  }
-  .menu-list .menu-close {
-    position: relative;
-    height: 3rem;
-    width: 3rem;
-    margin: 0 auto;
-  }
-  .menu-list .menu-close .menu-close-btn {
-    letter-spacing: 1px;
-    font-size: .5rem;
-    line-height: 3rem;
-  }
-  .navigation {
-    display: none;
-  }
   .team {
     width: 100vw;
     min-height: 650vh;
@@ -2033,6 +2130,101 @@ body {
     -webkit-transform: scale(1.01);
             transform: scale(1.01);
     background-color: #c53e1c;
+  }
+  .menu-list {
+    width: 12rem;
+    height: 44vh;
+  }
+  .menu-list .menu-items {
+    color: #fff;
+    list-style: none;
+    font-family: 'Righteous', cursive;
+    margin: 5px auto;
+  }
+  .menu-list .menu-items:last-child {
+    margin-bottom: 2.5rem;
+  }
+  .menu-list .menu-close {
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 auto;
+  }
+  .menu-list .menu-close .menu-close-btn {
+    letter-spacing: 1px;
+    font-size: .5rem;
+    line-height: 3rem;
+  }
+  .navigation {
+    display: none;
+  }
+  .footer {
+    min-height: 40vh;
+    background-color: #080124;
+  }
+  .footer .footer-c {
+    max-width: 80vw;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 3vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footer-c .the-event {
+    display: none;
+  }
+  .footer .footer-c .useful-links {
+    display: none;
+  }
+  .footer .footer-c .connect-links {
+    margin-top: 1rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 3rem;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footer-c .connect-links p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .footer .footer-c .connect-links ul {
+    margin: 0 auto;
+  }
+  .footer .footer-c .connect-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 1rem .5rem;
+  }
+  .footer .footer-c .connect-links ul li .fa {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .footer .footer-c .connect-links ul li .fa:hover {
+    color: red;
   }
 }
 /*# sourceMappingURL=hacks.css.map */

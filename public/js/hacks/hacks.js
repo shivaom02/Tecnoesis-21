@@ -101,7 +101,7 @@ const menuList = document.querySelector('.menu-list')
 let menuFlag = 0
 
 function showMenu() {
-    closeMenuBtn.textContent = 'CLOSE';
+    closeMenuBtn.textContent = 'Close';
     menuFlag = 1
     menuList.style.transform = 'translate(-50%, -105%) scale(1)'
     menuList.style.opacity = '1'
@@ -109,26 +109,13 @@ function showMenu() {
     menuList.style.zIndex = '1000'
 }
 function hideMenu() {
-    closeMenuBtn.textContent = 'MENU';
+    closeMenuBtn.textContent = 'Menu';
     menuFlag = 0
     menuList.style.opacity = '0'
     menuList.style.transform = 'translate(-50%, -40%) scale(0)'
     menuList.style.zIndex = '-10'
 }
-closeMenuBtn.addEventListener('click', () => {
-    menuFlag ? hideMenu() : showMenu()
-})
 
-closeMenuBtn.addEventListener('mouseover', () => {
-    closeMenuBtn.style.transform = 'scale(1.1)'
-    closeMenuBtn.style.boxShadow = '0px 10px 10px rgba(0, 0, 0, .4)'
-})
-closeMenuBtn.addEventListener('mouseout', () => {
-    closeMenuBtn.style.transform = 'scale(1)'
-    closeMenuBtn.style.boxShadow = 'none'
-})
-
-hideMenu()
     closeMenuBtn.addEventListener('click', () => {
       menuFlag ? hideMenu() : showMenu();
     });
