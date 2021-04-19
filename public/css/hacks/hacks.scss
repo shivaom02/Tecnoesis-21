@@ -556,7 +556,7 @@ body {
 //teams
 .team{
   width:100vw;
-  min-height:480vh;
+  min-height:520vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -600,18 +600,19 @@ body {
 
       &-1{
           height:60vh;
-          margin-top:-20vh;;
+          margin-top:-80vh;;
       }
 
       &-2{
-          height:170vh;
+          height:180vh;
           background-color:rgb(243, 242, 242);
-          padding:1rem 2rem;
-          margin-top: -10vh;
+          padding-bottom:2rem;
+          margin-top: -30vh;
       }
 
       &-3{
           height:60vh;
+          margin-top:-30vh;
       }
 
       &-1-1,&-2-2,&-3-3{
@@ -676,6 +677,7 @@ body {
                      align-items: center;
                      margin-left:20%;
                      margin-top:3%;
+                     padding-bottom: 1rem;
 
                      //social links
                      a{
@@ -807,14 +809,129 @@ body {
         }
       }
   }
-  
-  .slider{
-      width:100vw;
-      height:50vh;
-      border:1px solid black;
-      margin-top:-30vh;
-  }
 }
+
+//gallery
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery-slider{
+  height:500px;
+  margin-top:-60vh;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top:-10vh;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #f82249;
+}
+
+ .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f82249;
+}
+  
+.gallery-lightbox_card{
+
+   position:absolute;
+   transition:0.5s;
+
+   *{
+     text-decoration: none;
+     text-align: center;
+     color:white;
+   }
+
+    .para{
+
+      .first_para{
+    
+        height:10vh;
+        padding:0.5rem;
+        width:100%;
+        color:white;
+        transition:0.3s;
+        background-color: #000;
+
+        span:first-child,span:last-child{
+            padding:0.5rem;
+            z-index: 1000;
+            opacity:1;
+        } 
+        span:first-child{
+            color:yellow;
+            letter-spacing:1px;
+        }
+        span:first-child:hover{
+            color:rgb(255, 0, 0);
+            cursor: pointer;
+        }
+      }
+      .second_para{
+       
+        padding-bottom:1rem;
+        width:100%;
+        height:5vh;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background-color: #000;
+        margin-top:-1.1rem;
+        opacity:0;
+        transform: scaleY(0);
+        transition:0.5s;
+        transform-origin: top;
+
+        //social links
+        a.links{
+          text-decoration: none;
+          background-color: white;
+          color:black;
+          font-size:medium;
+          padding:0.3rem 0.5rem;
+          border-radius:20%;
+        }
+
+        a.fb{
+          color:blue;
+        }
+        a.ln{
+          color:rgb(0, 0, 128);
+        }
+        a.git{
+          color:black;
+        }
+
+        a.links:hover{
+         color: white;
+         
+         &.fb{
+           background-color:blue;
+         }
+         &.ln{
+           background-color:rgb(0, 0, 128);
+         }
+         &.git{
+           background-color:black;
+         }
+       }
+      }
+    }
+    &:hover{
+      transform: translateY(-5vh);
+    }
+    &:hover .para .second_para{
+      transform: scaleY(1);
+      opacity:1;
+    }
+ }
 
 //reach
 .reach{
@@ -1238,7 +1355,7 @@ body {
 .team{
 
       width:100vw;
-      min-height:660vh;
+      min-height:650vh;
 
   .team_gallery{
     
@@ -1247,19 +1364,19 @@ body {
 
       &-1{
           height:60vh;
-          margin-top:0vh;
+          margin-top:-80vh;
           margin-left:10vw;
       }
 
       &-2{
           height:420vh;
           padding:1rem 2rem;
-          margin-top: -40vh;
+          margin-top: -170vh;
       }
 
       &-3{
           height:240vh;
-          margin-top:-50vh;
+          margin-top:-200vh;
       }
 
       &-1-1,&-2-2,&-3-3{
@@ -1304,13 +1421,10 @@ body {
         }
       }
   }
-  
-  .slider{
-      width:100vw;
-      height:50vh;
-      border:1px solid black;
-      margin-top:-30vh;
-  }
+}
+
+.gallery-slider{
+  margin-top:-50vh;
 }
 
 //reach
