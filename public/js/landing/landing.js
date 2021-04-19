@@ -33,3 +33,36 @@ function setSection(newSection) {
 //     onLeaveBack: (self) => self.scroll(ScrollTrigger.maxScroll(window) - 2),
 //     onLeave: (self) => self.scroll(2),
 // }).scroll(2)
+
+gsap.to(".virus1", {
+    yPercent: -15,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#virusHolder",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true
+    }, 
+  });
+
+gsap.to(".virus2", {
+    yPercent: -75,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#virusHolder",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true
+    }, 
+  });
+
+gsap.to(".virus3", {
+    yPercent: -20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#virusHolder",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true
+    }, 
+  });
