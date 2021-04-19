@@ -572,7 +572,7 @@ body {
 
 .team {
   width: 100vw;
-  min-height: 480vh;
+  min-height: 520vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,18 +642,19 @@ body {
 
 .team .team_gallery-1 {
   height: 60vh;
-  margin-top: -20vh;
+  margin-top: -80vh;
 }
 
 .team .team_gallery-2 {
-  height: 170vh;
+  height: 180vh;
   background-color: #f3f2f2;
-  padding: 1rem 2rem;
-  margin-top: -10vh;
+  padding-bottom: 2rem;
+  margin-top: -30vh;
 }
 
 .team .team_gallery-3 {
   height: 60vh;
+  margin-top: -30vh;
 }
 
 .team .team_gallery-1-1, .team .team_gallery-2-2, .team .team_gallery-3-3 {
@@ -743,6 +744,7 @@ body {
           align-items: center;
   margin-left: 20%;
   margin-top: 3%;
+  padding-bottom: 1rem;
 }
 
 .team .team_gallery-1-1 .card div p:last-child a, .team .team_gallery-2-2 .card div p:last-child a, .team .team_gallery-3-3 .card div p:last-child a {
@@ -895,11 +897,138 @@ body {
   color: black;
 }
 
-.team .slider {
-  width: 100vw;
-  height: 50vh;
-  border: 1px solid black;
-  margin-top: -30vh;
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery-slider {
+  height: 500px;
+  margin-top: -60vh;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: -10vh;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #f82249;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f82249;
+}
+
+.gallery-lightbox_card {
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery-lightbox_card * {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.gallery-lightbox_card .para .first_para {
+  height: 10vh;
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #000;
+}
+
+.gallery-lightbox_card .para .first_para span:first-child, .gallery-lightbox_card .para .first_para span:last-child {
+  padding: 0.5rem;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.gallery-lightbox_card .para .first_para span:first-child {
+  color: yellow;
+  letter-spacing: 1px;
+}
+
+.gallery-lightbox_card .para .first_para span:first-child:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.gallery-lightbox_card .para .second_para {
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  margin-top: -1.1rem;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.gallery-lightbox_card .para .second_para a.links {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-size: medium;
+  padding: 0.3rem 0.5rem;
+  border-radius: 20%;
+}
+
+.gallery-lightbox_card .para .second_para a.fb {
+  color: blue;
+}
+
+.gallery-lightbox_card .para .second_para a.ln {
+  color: navy;
+}
+
+.gallery-lightbox_card .para .second_para a.git {
+  color: black;
+}
+
+.gallery-lightbox_card .para .second_para a.links:hover {
+  color: white;
+}
+
+.gallery-lightbox_card .para .second_para a.links:hover.fb {
+  background-color: blue;
+}
+
+.gallery-lightbox_card .para .second_para a.links:hover.ln {
+  background-color: navy;
+}
+
+.gallery-lightbox_card .para .second_para a.links:hover.git {
+  background-color: black;
+}
+
+.gallery-lightbox_card:hover {
+  -webkit-transform: translateY(-5vh);
+          transform: translateY(-5vh);
+}
+
+.gallery-lightbox_card:hover .para .second_para {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  opacity: 1;
 }
 
 .reach {
@@ -1714,7 +1843,7 @@ body {
   }
   .team {
     width: 100vw;
-    min-height: 660vh;
+    min-height: 650vh;
   }
   .team .team_gallery {
     width: 80vw;
@@ -1722,17 +1851,17 @@ body {
   }
   .team .team_gallery-1 {
     height: 60vh;
-    margin-top: 0vh;
+    margin-top: -80vh;
     margin-left: 10vw;
   }
   .team .team_gallery-2 {
     height: 420vh;
     padding: 1rem 2rem;
-    margin-top: -40vh;
+    margin-top: -170vh;
   }
   .team .team_gallery-3 {
     height: 240vh;
-    margin-top: -50vh;
+    margin-top: -200vh;
   }
   .team .team_gallery-1-1 .card, .team .team_gallery-2-2 .card, .team .team_gallery-3-3 .card {
     width: 350px;
@@ -1760,11 +1889,8 @@ body {
   .team .team_gallery-1-1 .card1 div p:first-child span:first-child, .team .team_gallery-2-2 .card1 div p:first-child span:first-child, .team .team_gallery-3-3 .card1 div p:first-child span:first-child {
     white-space: nowrap;
   }
-  .team .slider {
-    width: 100vw;
-    height: 50vh;
-    border: 1px solid black;
-    margin-top: -30vh;
+  .gallery-slider {
+    margin-top: -50vh;
   }
   .reach .gallery .row-1 {
     -webkit-box-orient: vertical;
