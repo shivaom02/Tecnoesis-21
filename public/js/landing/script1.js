@@ -235,9 +235,9 @@ var initBouncer = function(){
      }
     },
     isSleeping: false,
-    density: 04,
-    restitution: 0.9,
-    frictionAir:0.008,
+    density: 0.8,
+    restitution: 1,
+    frictionAir:0.0008,
     friction:0,
     collisionFilter: {
         category: categories.catMouse
