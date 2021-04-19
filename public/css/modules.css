@@ -14,7 +14,7 @@ body .solar_systm .planet, body input[type=radio][name=planet]::after, body .ove
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   margin-left: 10%;
 }
@@ -28,7 +28,7 @@ body .solar_systm .planet.neptune .trajectory.ner, body .solar_systm .planet.nep
 }
 
 body .solar_systm .planet {
-  height: 600px;
+  height: 60%;
   /* width: 1200px; */
     width: 60%;
 
@@ -38,8 +38,8 @@ body .solar_systm .planet {
   /* background-size: 1140px 910px !important; */
   background-size: contain !important;
   background-position: center !important;
-  backdrop-filter: blur(100px) !important;
-  top: auto;
+  /* backdrop-filter: blur(100px) !important; */
+  /* top: auto; */
   bottom: -920px;
 }
 body .solar_systm .planet .moon {
@@ -365,7 +365,7 @@ body input[type=radio][name=planet].planet1:checked + label + input::after {
   display: none;
 }
 body input[type=radio][name=planet].planet1:checked + label + div .solar_systm:nth-of-type(1) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -502,7 +502,7 @@ body input[type=radio][name=planet].planet2:checked + label + input + label + di
   opacity: 3;
 }
 body input[type=radio][name=planet].planet2:checked + label + input + label + div .solar_systm:nth-of-type(2) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -642,7 +642,7 @@ body input[type=radio][name=planet].planet3:checked + label + input + label + in
   opacity: 3;
 }
 body input[type=radio][name=planet].planet3:checked + label + input + label + input + label + div .solar_systm:nth-of-type(3) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -785,7 +785,7 @@ body input[type=radio][name=planet].planet4:checked + label + input + label + in
   opacity: 3;
 }
 body input[type=radio][name=planet].planet4:checked + label + input + label + input + label + input + label + div .solar_systm:nth-of-type(4) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -931,7 +931,7 @@ body input[type=radio][name=planet].planet5:checked + label + input + label + in
   opacity: 3;
 }
 body input[type=radio][name=planet].planet5:checked + label + input + label + input + label + input + label + input + label + div .solar_systm:nth-of-type(5) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -1080,7 +1080,7 @@ body input[type=radio][name=planet].planet6:checked + label + input + label + in
   opacity: 3;
 }
 body input[type=radio][name=planet].planet6:checked + label + input + label + input + label + input + label + input + label + input + label + div .solar_systm:nth-of-type(6) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -1232,7 +1232,7 @@ body input[type=radio][name=planet].planet7:checked + label + input + label + in
   opacity: 3;
 }
 body input[type=radio][name=planet].planet7:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + div .solar_systm:nth-of-type(7) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -1387,7 +1387,7 @@ body input[type=radio][name=planet].planet8:checked + label + input + label + in
   opacity: 3;
 }
 body input[type=radio][name=planet].planet8:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .solar_systm:nth-of-type(8) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -1545,7 +1545,7 @@ body input[type=radio][name=planet].planet9:checked + label + input + label + in
   opacity: 3;
 }
 body input[type=radio][name=planet].planet9:checked + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + input + label + div .solar_systm:nth-of-type(9) .planet {
-  transform: translateZ(0px) translateY(-900px) rotatex(4deg) scaleX(0.89);
+  transform: translateZ(0px) translateY(0%) rotatex(4deg) scaleX(0.89);
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
           animation: planet 60s 3.9s infinite linear;
@@ -1639,8 +1639,8 @@ body .solar_systm:nth-of-type(1) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(1) .planet_description h1, body .solar_systm:nth-of-type(1) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative;
+  top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(2) .planet {
@@ -1654,8 +1654,8 @@ body .solar_systm:nth-of-type(2) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(2) .planet_description h1, body .solar_systm:nth-of-type(2) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative; */
+  /* top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(3) .planet {
@@ -1684,8 +1684,8 @@ body .solar_systm:nth-of-type(4) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(4) .planet_description h1, body .solar_systm:nth-of-type(4) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative;
+  top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(5) .planet {
@@ -1699,8 +1699,8 @@ body .solar_systm:nth-of-type(5) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(5) .planet_description h1, body .solar_systm:nth-of-type(5) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative;
+  top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(6) .planet {
@@ -1714,8 +1714,8 @@ body .solar_systm:nth-of-type(6) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(6) .planet_description h1, body .solar_systm:nth-of-type(6) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative;
+  top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(7) .planet {
@@ -1729,8 +1729,8 @@ body .solar_systm:nth-of-type(7) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(7) .planet_description h1, body .solar_systm:nth-of-type(7) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative;
+  top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(8) .planet {
@@ -1744,8 +1744,8 @@ body .solar_systm:nth-of-type(8) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(8) .planet_description h1, body .solar_systm:nth-of-type(8) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative;
+  top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(9) .planet {
@@ -1759,8 +1759,8 @@ body .solar_systm:nth-of-type(9) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(9) .planet_description h1, body .solar_systm:nth-of-type(9) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative;
+  top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(10) .planet {
@@ -1774,8 +1774,8 @@ body .solar_systm:nth-of-type(10) .planet_description p, body .solar_systm:nth-o
   opacity: 0;
 }
 body .solar_systm:nth-of-type(10) .planet_description h1, body .solar_systm:nth-of-type(10) .planet_description h2 {
-  position: relative;
-  top: -330px;
+  /* position: relative;
+  top: -330px; */
   transition: all 0.5s 0s;
 }
 body .solar_systm .planet .trajectory {
