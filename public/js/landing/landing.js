@@ -33,14 +33,3 @@ function setSection(newSection) {
 //     onLeaveBack: (self) => self.scroll(ScrollTrigger.maxScroll(window) - 2),
 //     onLeave: (self) => self.scroll(2),
 // }).scroll(2)
-
-gsap.to(".images", {
-    yPercent: 200,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".pSection",
-      // start: "top bottom", // the default values
-      // end: "bottom top",
-      scrub: true
-    }, 
-  });

@@ -163,6 +163,10 @@ var updateCanvas = function(){
 var initMouse = function (array){
   var mouse = Matter.Mouse.create(canvas);
   var mouseConstraint = MouseConstraint.create(engine, { mouse: mouse });
+  
+  var Muse = mouseConstraint.mouse;
+  Muse.element.removeEventListener("mousewheel", mouse.mousewheel);
+  Muse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
   mouseConstraint.constraint.stiffness = 1;
   World.add(engine.world, mouseConstraint);
   Matter.Events.on(mouseConstraint, 'startdrag', removeInfo);

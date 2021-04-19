@@ -145,11 +145,14 @@ section:not(.first) {
   z-index: 90;
 }
 
-.images{
-  display: flex;
-  padding-right: 25%;
+.virus1{
+  height: 100%;
+  width: auto;
 }
-
+.virus2{
+  height: 100%;
+  width: auto;
+}
 #bodymovin {
   width: 100%;
   height: 100%;
