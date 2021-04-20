@@ -35,7 +35,8 @@ body {
 
     ul {
         list-style: none;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
 
     }
 }
@@ -50,7 +51,6 @@ body {
             text-decoration: none;
             color: $white;
             text-align: center;
-            background: #000;
             width: auto;
             height: auto;
 
@@ -117,7 +117,7 @@ body {
     max-width: 100vw;
     width: 100vw;
     height: 125vh;
-    background: #eee;
+    background: rgba($white, 0.8);
     border-bottom: none;
 
     .heading-c {
@@ -155,7 +155,7 @@ body {
             display: inline-block;
             width: 50vw;
             height: 80vh;
-            background: #464755;
+            background: rgba($black, 0.2);
 
             position: absolute;
             top: 10vh;
@@ -226,7 +226,7 @@ body {
 .events {
   min-height: 135vh;
   padding: 10vh 0;
-  background: #f6f7fd;
+  background: rgba($white, 0.8);
 
   .heading-c {
     text-align: center;
@@ -257,7 +257,7 @@ body {
       outline: none;
       background: $secondary-blue;
       border-radius: 10rem;
-      color: white;
+      color: $white;
       font-size: 1rem;
       letter-spacing: 2px;
       cursor: pointer;
@@ -300,12 +300,12 @@ body {
   height: 6.5rem;
   padding: 0.5rem 1rem;
   text-align: left;
-  border-bottom: 1px solid #cad4f6;
+  border-bottom: 1px solid rgba($primary-blue, .2);
 
   display: flex;
 
   &:hover {
-    background: #fff;
+    background: $white;
   }
 
   .date-c {
@@ -367,11 +367,11 @@ body {
 
       &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 10px 10px rgba($black, 0.2);
       }
       &:active {
         transform: translateY(-1px);
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 5px rgba($black, 0.2);
       }
     }
   }
@@ -393,7 +393,7 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1001;
-      background: #fff;
+      background: $white;
 
       .close {
         font-size: 1.8rem;
@@ -426,7 +426,7 @@ body {
         margin: 1rem auto;
         padding-bottom: 1rem;
         text-align: center;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $black;
 
         p:first-child {
           font-size: 1.3rem;
@@ -485,7 +485,7 @@ body {
         padding: 1rem 0;
         width: 60vw;
         margin: 0 auto;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $black;
 
         display: flex;
         justify-content: space-around;
@@ -523,11 +523,11 @@ body {
 
             &:hover {
               transform: translateY(-2px);
-              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 10px 10px rgba($black, 0.2);
             }
             &:active {
               transform: translateY(-1px);
-              box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 5px 5px rgba($black, 0.2);
             }
           }
         }
@@ -547,7 +547,7 @@ body {
       width: 100vw;
       height: 100vh;
       color: $white;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba($black, 0.5);
     }
   }
 }
@@ -648,7 +648,7 @@ body {
               top:260px;
               height:100%;
               width:100%;
-              background: rgba(6, 12, 34, 0.438);
+              background: rgba($secondary-blue, .45);
 
               p:first-child{
              
@@ -756,7 +756,7 @@ body {
            position: absolute;
            margin-top:100%;
            width:100%;
-           background:white;
+           background:$white;
            padding-bottom:1.5rem;
            color:$black;
 
@@ -1029,7 +1029,7 @@ body {
           input,textarea{
               width: 100%;
               padding:0.5rem 1rem;
-              border:1px solid #99999b ;
+              border:1px solid rgba($black, 0.2) ;
 
               &:focus{
                   outline: none;
@@ -1045,7 +1045,7 @@ body {
 
               input{
                   width:49%;
-                  border:1px solid #99999b ;
+                  border:1px solid rgba($black, 0.2) ;
                   font-weight: 200;
                   padding:0.5rem 1rem;
 
@@ -1071,18 +1071,18 @@ body {
               border: 2px solid rgba($black, 0.1);
               font-size: large;
               width: 130px;
+              transition: all .3s;
           }
           button:hover{
-          
-              transform: scale(1.01);
-              background-color: rgba($black, 0.1);
+              transform: scale(1.01) translateY(-1px);
+              background-color: $secondary-blue;
           }
       }
   }
  }
 
 .footer {
-    min-height: 30vh;
+    min-height: 35vh;
     background-color: $secondary-blue;
 
 
@@ -1091,43 +1091,40 @@ body {
       width: 80vw;
       margin: 0 auto;
       padding: 3vw 0;
+      text-align: center;
 
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
+      .lhand {
+        width: 40vw;
+      }
     
       .the-event {
         flex: 1;
-        padding: 0 3rem;
         color: $white;
+        text-align: center;
 
         p:first-child {
-          text-align: center;
           font-size: 2rem;
           font-weight: 600;
           letter-spacing: 1px;
         }
-        p:last-child {
-          font-style: italic;
-        }
       }
       .useful-links {
-        flex: 1;
-        padding: 2rem 3rem;
-        margin-left: 4rem;
         color: $white;
         
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
         
         li {
           font-family: 'Raleway', sans-serif;
-          width: 50%;
-          border-bottom: 1px solid $white;
           list-style: none;
-          margin: 3px 0;
-          padding-left: 5px;
+          margin: 10px 10px;
+
+          
           
           
           a {
@@ -1135,20 +1132,26 @@ body {
             color: $white;
             display: inline-block;
             transition: all .3s;
-            }
-
-            &:hover {
-
-              a {
+          }
+          
+          &:hover {
+            
+            a {
+                color: $primary-blue;
                 transform: translateY(-1px) scale(1.05);
               }
             }
           }
       }
+
+      .copyright {
+        color: rgba($white, 0.8);
+        margin-top: .5rem;
+      }
       .connect-links {
         flex: 1;
-        padding: 0 3rem;
         color: $white;
+        text-align: center;
 
         display: flex;
         flex-direction: column;
@@ -1157,26 +1160,39 @@ body {
         p {
           font-family: 'Raleway', sans-serif;
           font-size: 1.2rem;
+          letter-spacing: 1px;
           font-weight: 600;
-          text-align: center;
+          margin-left: 1.9rem;
         }
 
         ul {
+          width: 50%;
           margin: 0 auto;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
 
           li {
             list-style: none;
             display: inline-block;
-            margin: 1rem .5rem;
   
             .fa {
               text-decoration: none;
               color: $white;
-              font-size: 1.4rem;
-              width: 2rem;
-              height: 2rem;
+              text-align: center;
+              line-height: 2.1rem;
+              font-size: 1.5rem;
+              padding: .5rem .5rem;
+              width: 3rem;
+              height: 3rem;
+              background: $black;
+              border-radius: 50%;
+              transition: all .2s;
   
               &:hover {
+                background: $white;
                 color: $primary-blue;
               }
             }
