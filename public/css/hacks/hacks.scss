@@ -108,7 +108,9 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
 
-        font-size: 5vw;
+        width: 100vw;
+        font-size: 7vw;
+        letter-spacing: 3px;
         font-weight: 700;
     }
 }
@@ -611,6 +613,10 @@ body {
           background-color: rgba($white, 0.8);
           padding-bottom:2rem;
           margin-top: -30vh;
+
+          h2 {
+            padding-top: 15rem;
+          }
 
           h2 {
             transform: translateY(8rem);

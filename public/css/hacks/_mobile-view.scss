@@ -7,7 +7,6 @@
     max-width: 100vw;
     width: 100vw;
     height: 95vh;
-    background: #eee;
 
     .about-c {
         max-width: 95vw;
@@ -249,7 +248,7 @@
 
                 p:first-child {
                     font-size: 1rem;
-                    color: #0e1b4d;
+                    color: $secondary-blue;
                     font-weight: 700;
                     letter-spacing: 1px;
                 }
@@ -313,7 +312,6 @@
 
             width: 100vw;
             height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
         }
     }
 }
@@ -498,20 +496,15 @@
           button{
               padding: 0.3rem 1rem;
               text-align: center;
-              background-color: #cf0909;
-              color: rgb(255, 255, 255);
-              border: whitesmoke;
               border: 10px;
               border-radius:2rem;
               outline: none;
-              border: 2px solid #b9babb;
               font-size: large;
               width: 130px;
           }
           button:hover{
           
               transform: scale(1.01);
-              background-color: #c53e1c;
           }
       }
   }

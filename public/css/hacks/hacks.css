@@ -101,7 +101,9 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 5vw;
+  width: 100vw;
+  font-size: 7vw;
+  letter-spacing: 3px;
   font-weight: 700;
 }
 
@@ -655,6 +657,10 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   padding-bottom: 2rem;
   margin-top: -30vh;
+}
+
+.team .team_gallery-2 h2 {
+  padding-top: 15rem;
 }
 
 .team .team_gallery-2 h2 {
@@ -1393,7 +1399,6 @@ body {
     max-width: 100vw;
     width: 100vw;
     height: 95vh;
-    background: #eee;
   }
   .about .about-c {
     max-width: 95vw;
@@ -1619,7 +1624,7 @@ body {
   }
   .schedule .event-popup .popup-detail .info p:first-child {
     font-size: 1rem;
-    color: #0e1b4d;
+    color: #080124;
     font-weight: 700;
     letter-spacing: 1px;
   }
@@ -1682,7 +1687,6 @@ body {
     z-index: 1000;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
   }
   .team {
     width: 100vw;
@@ -1836,20 +1840,15 @@ body {
   .contact .contact_form form button {
     padding: 0.3rem 1rem;
     text-align: center;
-    background-color: #cf0909;
-    color: white;
-    border: whitesmoke;
     border: 10px;
     border-radius: 2rem;
     outline: none;
-    border: 2px solid #b9babb;
     font-size: large;
     width: 130px;
   }
   .contact .contact_form form button:hover {
     -webkit-transform: scale(1.01);
             transform: scale(1.01);
-    background-color: #c53e1c;
   }
   .navigation {
     display: none;
