@@ -257,6 +257,7 @@ body {
 }
 
 .events {
+  position: relative;
   min-height: 150vh;
   padding: 10vh 0;
   background: rgba(0, 0, 0, 0.1);
@@ -303,6 +304,21 @@ body {
 
 .events .btn-c .active {
   background: #133ea1;
+}
+
+.events .other-heading {
+  position: absolute;
+  top: 153vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.events .other-heading p {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #080124;
+  font-family: 'Raleway', sans-serif;
 }
 
 .event-schedule {

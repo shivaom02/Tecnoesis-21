@@ -245,6 +245,7 @@ body {
 
 // event section > heading and button designs
 .events {
+  position: relative;
   min-height: 150vh;
   padding: 10vh 0;
   background: rgba($black, 0.1);
@@ -266,12 +267,13 @@ body {
       margin-top: .8rem;
       font-weight: 500;
     }
-  }
 
+  }
+  
   .btn-c {
     font-family: 'Noto Sans JP', sans-serif;
     margin-top: -2rem;
-
+    
     button {
       margin: 0 1rem;
       padding: 0.6rem 4rem;
@@ -288,6 +290,19 @@ body {
     .active {
       background: $primary-blue;
     }
+  }
+  .other-heading {
+    position: absolute;
+    top: 153vh;
+    left: 50%;
+    transform: translateX(-50%);
+  
+     p {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $secondary-blue;
+    font-family: 'Raleway', sans-serif;
+     }
   }
 }
 
