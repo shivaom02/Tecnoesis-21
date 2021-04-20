@@ -1,3 +1,5 @@
+@import 'colors';
+
 .home,
 .section {
     min-height: 60vh;
@@ -322,28 +324,33 @@
 .team{
 
       width:100vw;
-      min-height:650vh;
+      min-height:850vh;
+
+      .team_heading{
+        position: absolute;
+        top:0;
+    }
 
   .team_gallery{
     
       width:80vw;
-      height:850vh;
+      height:650vh;
 
       &-1{
           height:60vh;
-          margin-top:-80vh;
+          margin-top:-70vh;
           margin-left:10vw;
       }
 
       &-2{
           height:420vh;
           padding:1rem 2rem;
-          margin-top: -170vh;
+          margin-top: 0vh;
       }
 
       &-3{
           height:240vh;
-          margin-top:-200vh;
+          margin-top:0vh;
       }
 
       &-1-1,&-2-2,&-3-3{
@@ -391,14 +398,14 @@
 }
 
 .gallery-slider{
-  margin-top:-50vh;
+  margin-top:-90vh;
 }
 
   //contact us
 .contact{
 
   width:100vw;
-  height:170vh;
+  height:200vh;
   position: relative;
 
   .contact_heading{

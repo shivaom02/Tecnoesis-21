@@ -43,27 +43,28 @@ for (let index = 0; index < navLinks.length; index++) {
 }
 
 // events
-const dayOneEvent = document.getElementById('day-one')
-const dayTwoEvent = document.getElementById('day-two')
+const dayOneEvent = document.getElementById('day-one');
+const dayTwoEvent = document.getElementById('day-two');
 
-const eventMoreDetails = document.getElementsByClassName('event-more-details')
-const eventPopup = document.getElementsByClassName('event-popup')
-const closePopupBtn = document.querySelectorAll('.close')
-const overlay = document.querySelectorAll('.popup-overlay')
+const eventMoreDetails = document.getElementsByClassName('event-more-details');
+const eventPopup = document.getElementsByClassName('event-popup');
+const closePopupBtn = document.querySelectorAll('.close');
+const overlay = document.querySelectorAll('.popup-overlay');
 
 dayOneEvent.addEventListener('click', () => {
-    dayOneEvent.classList.add('active')
-    dayTwoEvent.classList.remove('active')
+    dayOneEvent.classList.add('active');
+    dayTwoEvent.classList.remove('active');
 
-    document.querySelector('.day-one-schedule').style.display = 'block'
-    document.querySelector('.day-two-schedule').style.display = 'none'
+    document.querySelector('.day-one-schedule').style.display = 'block';
+    document.querySelector('.day-two-schedule').style.display = 'none';
 })
-dayTwoEvent.addEventListener('click', () => {
-    dayOneEvent.classList.remove('active')
-    dayTwoEvent.classList.add('active')
 
-    document.querySelector('.day-one-schedule').style.display = 'none'
-    document.querySelector('.day-two-schedule').style.display = 'block'
+dayTwoEvent.addEventListener('click', () => {
+    dayOneEvent.classList.remove('active');
+    dayTwoEvent.classList.add('active');
+
+    document.querySelector('.day-one-schedule').style.display = 'none';
+    document.querySelector('.day-two-schedule').style.display = 'block';
 })
 
 for (let i = 0; i < eventMoreDetails.length; i++) {
@@ -90,73 +91,3 @@ closePopupBtn.forEach((el) => {
 overlay.forEach((el) => {
     el.addEventListener('click', closePopup)
 })
-
-//gallery
-(function() {
-    "use strict";
-  
-    /**
-     * Gallery Slider
-     */
-  
-    new Swiper('.gallery-slider', {
-      speed: 400,
-      loop: true,
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20
-        },
-        575: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20
-        },
-        992: {
-          slidesPerView: 5,
-          spaceBetween: 20
-        }
-      }
-    });
-  
-    /**
-     * Initiate gallery lightbox 
-     */
-    const galleryLightbox = GLightbox({
-      selector: '.gallery-lightbox'
-    });
-  
-    /**
-     * Buy tickets select the ticket type on click
-     */
-    on('show.bs.modal', '#buy-ticket-modal', function(event) {
-      select('#buy-ticket-modal #ticket-type').value = event.relatedTarget.getAttribute('data-ticket-type')
-    })
-  
-    /**
-     * Animation on scroll
-     */
-    window.addEventListener('load', () => {
-      AOS.init({
-        duration: 1000,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      })
-    });
-  
-  })()
