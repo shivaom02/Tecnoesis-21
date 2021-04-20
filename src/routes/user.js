@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const { User } = require('../models')
+const { userAuth } = require('../middlewares')
 
 router.post('/register', async (req, res) => {
     try {
@@ -25,20 +26,33 @@ router.post('/register', async (req, res) => {
 })
 
 router.post('/login', async (req, res) => {
-    let { email, password } = req.body
-    let user = await User.findByCredentials(email, password)
+    try {
+        let { email, password } = req.body
+        let user = await User.findByCredentials(email, password)
 
-    if (!user) {
-        return res.send('No such user found')
+        if (!user) {
+            return res.send('No such user found')
+        }
+
+        let token = await user.generateAuthToken(email)
+        res.cookie('authorization', token, {
+            maxAge: 24 * 60 * 60 * 1000,
+            httpOnly: false,
+        })
+        res.send('Logged in successfully')
+    } catch (error) {
+        console.log(eror)
+        res.send('error')
     }
-
-    let token = await user.generateAuthToken()
-
-    res.send('Logged in successfully')
 })
 
 router.post('/logout', async (req, res) => {
-    //remove token
+    res.clearCookie('authorization')
     res.send('Logged out')
 })
+
+router.get('/profile', userAuth, async (req, res) => {
+    res.send('User Data: ', req.user)
+})
+
 module.exports = router

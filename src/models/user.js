@@ -14,26 +14,38 @@ const userSchema = new Schema(
         phone: {
             type: String,
         },
+        password: {
+            type: String,
+        },
+        registeredEvents: {
+            type: Array,
+        },
     },
     {
         timestamps: true,
     }
 )
 
-userSchema.methods.generateAuthToken = async function () {
+userSchema.methods.generateAuthToken = async function (email) {
     const user = this
-    const token = jwt.sign({ _id: user._id.toString() }, process.env.JWT_SECRET)
+    const token = jwt.sign(
+        { userId: user._id, email },
+        process.env.JWT_SECRET,
+        {
+            expiresIn: '1d',
+        }
+    )
     return token
 }
 
 userSchema.statics.findByCredentials = async (email, password) => {
-    const user = await User.findOne({ email })
+    let user = await User.findOne({ email })
 
     if (!user) {
         return null
     }
 
-    const isMatch = await bcrypt.compare(password, user.password)
+    let isMatch = await bcrypt.compare(password, user.password)
 
     if (!isMatch) {
         return null
