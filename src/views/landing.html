@@ -51,11 +51,19 @@
             src="../../public/js/globals/navbar.js"
             defer
         ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init()
+        </script>
         <script src="p"></script>
         <!-- JS -->
         <!-- Stylings -->
         <link rel="stylesheet" href="../../public/css/navbar/navbar.css" />
         <link rel="stylesheet" href="../../public/css/landing/landing.css" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <!-- Stylings -->
     </head>
 
@@ -89,18 +97,26 @@
             </svg>
         </button>
         <main class="main">
-            <section class="first panel white" id="physics_div" style="background-image: url('../../public/images/landing/bg1.png'); background-repeat: no-repeat; background-size: cover;">
+            <section
+                class="first panel white"
+                id="physics_div"
+                style="
+                    background-image: url('../../public/images/landing/bg1.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                "
+            >
                 <div class="stage" data-el="stage"></div>
                 <h1 id="head" data-el="head">
-                    <span style="--i:1" data-el="letter">T</span>
-                    <span style="--i:2" data-el="letter">E</span>
-                    <span style="--i:3" data-el="letter">C</span>
-                    <span style="--i:4" data-el="letter">N</span>
-                    <span style="--i:5" data-el="letter">O</span>
-                    <span style="--i:6" data-el="letter">E</span>
-                    <span style="--i:7" data-el="letter">S</span>
-                    <span style="--i:8" data-el="letter">I</span>
-                    <span style="--i:9" data-el="letter">S</span>
+                    <span style="--i: 1" data-el="letter">T</span>
+                    <span style="--i: 2" data-el="letter">E</span>
+                    <span style="--i: 3" data-el="letter">C</span>
+                    <span style="--i: 4" data-el="letter">N</span>
+                    <span style="--i: 5" data-el="letter">O</span>
+                    <span style="--i: 6" data-el="letter">E</span>
+                    <span style="--i: 7" data-el="letter">S</span>
+                    <span style="--i: 8" data-el="letter">I</span>
+                    <span style="--i: 9" data-el="letter">S</span>
                 </h1>
                 <div class="bouncer" data-el="bouncer"></div>
                 <div class="bubbles" data-el="bubbles"></div>
@@ -121,25 +137,37 @@
                     background-repeat: no-repeat;
                 "
             >
-                <h1 class="section_header" style="z-index: 3;">About Us</h1>
-                <p class="section_desc" style="z-index: 3;">
+                <h1 class="section_header" id="about-header" style="z-index: 3">About Us</h1>
+                <p class="section_desc" style="z-index: 3">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Beatae, laborum!
                 </p>
                 <div class="images">
-                    <div class="image-wrapper" id="first" style="margin-top: 20%; margin-left: 5%; z-index: 1;">
+                    <div
+                        class="image-wrapper"
+                        id="first"
+                        style="margin-top: 20%; margin-left: 5%; z-index: 1"
+                    >
                         <img
                             class="virus"
                             src="../../public/images/landing/virus1.png"
                         />
                     </div>
-                    <div class="image-wrapper" id="second" style="margin-top: 50%; margin-left: 25%; z-index: 1;">
+                    <div
+                        class="image-wrapper"
+                        id="second"
+                        style="margin-top: 50%; margin-left: 25%; z-index: 1"
+                    >
                         <img
                             class="virus"
                             src="../../public/images/landing/virus1.png"
                         />
                     </div>
-                    <div class="image-wrapper" id="third" style="margin-top: 40%; margin-left: 30%; z-index: 1;">
+                    <div
+                        class="image-wrapper"
+                        id="third"
+                        style="margin-top: 40%; margin-left: 30%; z-index: 1"
+                    >
                         <img
                             class="virus"
                             src="../../public/images/landing/virus1.png"
@@ -169,7 +197,7 @@
                         Necessitatibus odio voluptatibus quod ullam.
                     </p>
                 </div>
-                <a class="btnfos btnfos-1 " id="module-btn">
+                <a class="btnfos btnfos-1" id="module-btn">
                     <svg>
                         <rect
                             x="0"
@@ -182,19 +210,49 @@
                     Learn More
                 </a>
                 <div class="images">
-                    <div class="image-wrapper" id="first" style="height: 1vh;width: auto;margin-top: 20%; margin-left: 5%; z-index: 1;">
+                    <div
+                        class="image-wrapper"
+                        id="first"
+                        style="
+                            height: 1vh;
+                            width: auto;
+                            margin-top: 20%;
+                            margin-left: 5%;
+                            z-index: 1;
+                        "
+                    >
                         <img
                             class="vaccine"
                             src="../../public/images/landing/vaccine.png"
                         />
                     </div>
-                    <div class="image-wrapper" id="second" style="height: 1vh;width: auto;margin-top: 50%; margin-left: 25%; z-index: 1;">
+                    <div
+                        class="image-wrapper"
+                        id="second"
+                        style="
+                            height: 1vh;
+                            width: auto;
+                            margin-top: 50%;
+                            margin-left: 25%;
+                            z-index: 1;
+                        "
+                    >
                         <img
                             class="vaccine"
                             src="../../public/images/landing/vaccine.png"
                         />
                     </div>
-                    <div class="image-wrapper" id="third" style="height: 1vh;width: auto;margin-top: 40%; margin-left: 30%; z-index: 1;">
+                    <div
+                        class="image-wrapper"
+                        id="third"
+                        style="
+                            height: 1vh;
+                            width: auto;
+                            margin-top: 40%;
+                            margin-left: 30%;
+                            z-index: 1;
+                        "
+                    >
                         <img
                             class="vaccine"
                             src="../../public/images/landing/vaccine.png"
@@ -208,7 +266,14 @@
                     />
                 </div>
             </section>
-            <section class="panel white"  style="background-image: url(../../public/images/landing/bg4.png); background-repeat: no-repeat; background-size: cover;">
+            <section
+                class="panel white"
+                style="
+                    background-image: url(../../public/images/landing/bg4.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                "
+            >
                 <h1 class="section_header" id="hacks-header">NITS Hacks</h1>
                 <div class="description" id="hacks-description">
                     <p class="section_desc">
@@ -236,7 +301,14 @@
                     />
                 </div>
             </section>
-            <section class="panel white" style="background-image: url(../../public/images/landing/bg5.png); background-repeat: no-repeat; background-size: cover;">
+            <section
+                class="panel white"
+                style="
+                    background-image: url(../../public/images/landing/bg5.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                "
+            >
                 <h1 class="section_header" id="contact-header">Contact Us</h1>
                 <p class="section_desc">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
