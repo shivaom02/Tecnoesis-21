@@ -27,16 +27,22 @@
         />
 
         <link href="./vendor/bootstrap.min.css" rel="stylesheet" />
+        
         <link
             href="./vendor/glightbox/css/glightbox.min.css"
             rel="stylesheet"
         />
         <link href="./vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- fade in cdn -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <title>NITS HACKS</title>
 
         <link rel="stylesheet" href="./css/hacks/hacks.css" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     </head>
     <body>
         <nav class="navigation">
@@ -72,18 +78,9 @@
                     </li>
                     <li class="nav-items">
                         <a
-                            href="javascript:hacksScroll('reach')"
-                            class="nav-links"
-                            ><span class="dot go-up" id="dot--4"
-                                >Reach Us</span
-                            ></a
-                        >
-                    </li>
-                    <li class="nav-items">
-                        <a
                             href="javascript:hacksScroll('contact')"
                             class="nav-links"
-                            ><span class="dot go-up" id="dot--5"
+                            ><span class="dot go-up" id="dot--4"
                                 >Contact</span
                             ></a
                         >
@@ -97,585 +94,123 @@
         </header>
         <main>
             <section class="section about" id="about">
+                <div class="heading-c" data-aos="fade-down">
+                    <p >ABOUT</p>
+                    <p>April 26 & 27</p>
+                </div>
                 <div class="about-c">
-                    <div class="img-c">
-                        <img src="./images/hacks/img-1.jpg" alt="" />
+                    <div class="img-c" data-aos="fade-right">
+                        <img src="./images/hacks/about-img-1.jpeg" alt="" />
                     </div>
-                    <div class="heading-c">
-                        <p>ABOUT</p>
-                        <p>MAY 5&6</p>
-                    </div>
-                    <div class="text-c">
+                    <div class="text-c" data-aos="fade-up">
                         <p>
-                            Here comes one of the grandest module of Tecnoesis,
-                            back again to cater the technical hunger of the
-                            masses. NITS HACKS 4.0 is all about providing the
-                            enthusiasts with a taste of the emerging technical
-                            aspects of real life applications. The idea is to
-                            bring together as many celebrated minds in the field
-                            of tech on the same stage where they can compete and
-                            build together.
+                            Presenting before you, one of the most excellent module of Tecnoesis, to bring the innovative minds together and giving them a taste of Working with technology. 
+                            NITS HACKS 4.0 brings before you a software hackathon and an inter college coding competition which is tied in with furnishing the aficionados with a sample of the arising specialized parts of genuine applications in real life problems.
+                            The thought is to unite as many commended minds in the field of tech on a similar stage where they can contend and construct together. The primary focus of NITS HACKS 4.0 is to cling the thoughts of different inventive personalities and mould it into an outcome which could be serve as a basis for the development of the society in the most efficient manner and the students could passionately participate in the event to gain an insight about the real world coding problems in the highly competitive environment.
                         </p>
                         <a href="#about">Download Schedule</a>
                     </div>
                 </div>
             </section>
             <section class="section events" id="events">
-                <div class="heading-c">
-                    <p>EVENTS</p>
+                <div class="heading-c" data-aos="zoom-in-up">
+                    <p>SCHEDULE</p>
                     <p>
-                        Check out the events being organized under NITS Hacks
-                        4.0
+                       Check out the Schedule of different stages of NITS Hacks 4.0
                     </p>
                 </div>
                 <div class="btn-c">
-                    <button class="day-one active" id="day-one">MAY 4</button>
-                    <button class="day-two" id="day-two">MAY 5</button>
+                    <button class="day-one active" id="day-one" data-aos="fade-right">Pre Event</button>
+                    <button class="day-two" id="day-two" data-aos="fade-left">EVENT</button>
                 </div>
-                <div class="event-schedule">
+                <div class="event-schedule" data-aos="zoom-in-up">
                     <div class="day-one-schedule">
                         <div class="schedule">
                             <div class="date-c">
-                                <p>9:30 AM</p>
+                                <p>11:59 PM</p>
+                                <p>23rd April</p>
                             </div>
                             <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
+                                <h4>Idea Submission</h4>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
+                                   All the teams must submit their idea by 11:59pm of 23rd April 2021.
                                 </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup2">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition-1</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
                             </div>
                         </div>
                         <div class="schedule">
                             <div class="date-c">
-                                <p>9:30 AM</p>
+                                <p>11:59 PM</p>
+                                <p>24 April</p>
                             </div>
                             <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
+                                <h4>Qualified Teams Declaration</h4>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
+                                    Results of the qualified teams for the final round will be uploaded on the website.
                                 </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup1">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition 2</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
-                            </div>
-                        </div>
-                        <div class="schedule">
-                            <div class="date-c">
-                                <p>9:30 AM</p>
-                            </div>
-                            <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup1">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
-                            </div>
-                        </div>
-                        <div class="schedule">
-                            <div class="date-c">
-                                <p>9:30 AM</p>
-                            </div>
-                            <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup1">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
-                            </div>
-                        </div>
-                        <div class="schedule">
-                            <div class="date-c">
-                                <p>9:30 AM</p>
-                            </div>
-                            <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup1">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
                             </div>
                         </div>
                     </div>
                     <div class="day-two-schedule">
                         <div class="schedule">
                             <div class="date-c">
-                                <p>10:30 AM</p>
+                                <p>10:00 AM</p>
+                                <p>26th April</p>
                             </div>
                             <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
+                                <h4>The Final Round </h4>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
+                                   The final round starts at 10:00 am on 26th April 2021
                                 </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup1">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition 6</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
                             </div>
                         </div>
                         <div class="schedule">
                             <div class="date-c">
-                                <p>10:30 AM</p>
+                                <p>3:00 PM</p>
+                                <p>26th April</p>
                             </div>
                             <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
+                                <h4>Mid Judging Round 1</h4>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
+                                    This round will be judging of your ideation.
                                 </p>
                             </div>
-                            <div class="btn-c">
+                        </div>
+                        <div class="schedule">
+                            <div class="date-c">
+                                <p>9:00 PM</p>
+                                <p>26th April</p>
+                            </div>
+                            <div class="detail-c">
+                                <h4>Mid Judging Round 2</h4>
+                                <p>
+                                    Mid Judging Round 2 will start at 9:00 pm of 26th April 2021
+                                </p>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <div class="date-c">
+                                <p>10:00 AM</p>
+                                <p>27th April </p>
+                            </div>
+                            <div class="detail-c">
+                                <h4>Mid Judging Round 3</h4>
+                                <p>
+                                    Mid Judging Round 3 will start at 10:00 am of 27th April 2021
+                                </p>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <div class="date-c">
+                                <p>4:00 PM</p>
+                                <p>27th April</p>
+                            </div>
+                            <div class="detail-c">
+                                <h4>Final Code Submission</h4>
+                                <p>
+                                    Development time finishes and final code needs to be submitted at 4:00 pm on 27th April 2021.
+                                </p>
+                            </div>
+                            <!-- <div class="btn-c">
                                 <button class="event-more-details">
                                     More Details
                                 </button>
@@ -750,275 +285,397 @@
                                     </div>
                                 </div>
                                 <div class="popup-overlay"></div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="schedule">
                             <div class="date-c">
-                                <p>10:30 AM</p>
+                                <p>5:00 PM</p>
+                                <p>27th April</p>
                             </div>
                             <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
+                                <h4>Final Demo Presentation <span> Before the Judges Begins</span></h4>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
+                                    You are strongly encouraged to present a demo of what you have built. Pitches or ppt presentations are discouraged. You are judged on what you built.
                                 </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup1">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
-                            </div>
-                        </div>
-                        <div class="schedule">
-                            <div class="date-c">
-                                <p>10:30 AM</p>
-                            </div>
-                            <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup1">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
-                            </div>
-                        </div>
-                        <div class="schedule">
-                            <div class="date-c">
-                                <p>10:30 AM</p>
-                            </div>
-                            <div class="detail-c">
-                                <h4>Coding Event <span>Coding</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div class="btn-c">
-                                <button class="event-more-details">
-                                    More Details
-                                </button>
-                            </div>
-                            <div class="event-popup" id="event-popup1">
-                                <div class="popup-detail">
-                                    <p id="close" class="close">x</p>
-                                    <div class="heading">
-                                        <h4>Coding Competition</h4>
-                                    </div>
-                                    <div class="info">
-                                        <p class="dark-blue">info</p>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Voluptatum omnis placeat aut maiores
-                                            ipsa ullam sunt eveniet deserunt
-                                            tempore repellendus autem porro rem
-                                            nulla temporibus, voluptatem
-                                            asperiores sint ducimus! Dolor?
-                                        </p>
-                                    </div>
-                                    <div class="faq">
-                                        <p class="head dark-blue">FAQ</p>
-                                        <div class="que-ans">
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                            <p class="q-a">
-                                                Why is FAQ necessary?<span
-                                                    >--Because I freaking said
-                                                    so.</span
-                                                >
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="prizes">
-                                        <div class="prizes-c">
-                                            <p class="dark-blue">Prizes</p>
-                                            <p>Prizes worth 52Cr</p>
-                                        </div>
-                                        <div class="link-c">
-                                            <a href="">Download Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="popup-overlay"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="other-heading">
+                    <p>EVENTS</p>
+                </div>
             </section>
+
+            <div class="event">
+                <div class=event-1>
+                    <div class="card3">
+                        <img src="./images/gallery/3.jpg" />
+                        <div class='details_card'>
+                             <div class="show">
+                                <h2 style="font-size:larger;font-weight: 500;">Coding Challenge</h2>
+                                <p style="font-size: large;font-weight:500;">Software</p>
+                             </div>
+                             <div class='hide'>
+                                 <p style="font-size: larger;font-weight:400;">Description Of the Event</p>
+                                 <p style="font-size: large;font-weight:400;padding-bottom:0.5rem;">Time : 5pm</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="btn-c">
+                        <button class="event-more-details_c">
+                            More Details
+                        </button>
+                    </div>
+                    <div class="event-popup_c" id="event-popup2_c">
+                        <div class="popup-detail_c">
+                            <p id="close_c" class="close_c">x</p>
+                            <div class="heading">
+                                <h4>Coding Competition-1</h4>
+                            </div>
+                            <div class="info">
+                                <p class="dark-blue">info</p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                    Voluptatum omnis placeat aut maiores
+                                    ipsa ullam sunt eveniet deserunt
+                                    tempore repellendus autem porro rem
+                                    nulla temporibus, voluptatem
+                                    asperiores sint ducimus! Dolor?
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <p class="head dark-blue">FAQ</p>
+                                <div class="que-ans">
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="prizes">
+                                <div class="prizes-c">
+                                    <p class="dark-blue">Prizes</p>
+                                    <p>Prizes worth 52Cr</p>
+                                </div>
+                                <div class="link-c">
+                                    <a href="">Download Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-overlay_c"></div>
+                    </div>
+                    
+                </div>
+                <div class=event-2>
+                    <div class="card3">
+                        <img src="./images/gallery/3.jpg" />
+                        <div class='details_card'>
+                             <div class="show">
+                                <h2 style="font-size: larger;font-weight: 500;">Coding Challenge</h2>
+                                <p style="font-size: large;font-weight:500;">Software</p>
+                             </div>
+                             <div class='hide'>
+                                 <p style="font-size: larger;font-weight:400;">Description Of the Event</p>
+                                 <p style="font-size: large;font-weight:400;padding-bottom:0.5rem;">Time : 5pm</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="btn-c">
+                        <button class="event-more-details_c">
+                            More Details
+                        </button>
+                    </div>
+                    <div class="event-popup_c" id="event-popup2_c">
+                        <div class="popup-detail_c">
+                            <p id="close_c" class="close_c">x</p>
+                            <div class="heading">
+                                <h4>Coding Competition-1</h4>
+                            </div>
+                            <div class="info">
+                                <p class="dark-blue">info</p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                    Voluptatum omnis placeat aut maiores
+                                    ipsa ullam sunt eveniet deserunt
+                                    tempore repellendus autem porro rem
+                                    nulla temporibus, voluptatem
+                                    asperiores sint ducimus! Dolor?
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <p class="head dark-blue">FAQ</p>
+                                <div class="que-ans">
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="prizes">
+                                <div class="prizes-c">
+                                    <p class="dark-blue">Prizes</p>
+                                    <p>Prizes worth 52Cr</p>
+                                </div>
+                                <div class="link-c">
+                                    <a href="">Download Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-overlay_c"></div>
+                    </div>
+                    
+                </div>
+                <div class=event-3>
+                    <div class="card3">
+                        <img src="./images/gallery/3.jpg" />
+                        <div class='details_card'>
+                             <div class="show">
+                                <h2 style="font-size: larger;font-weight: 500;">Coding Challenge</h2>
+                                <p style="font-size: large;font-weight:500;">Software</p>
+                             </div>
+                             <div class='hide'>
+                                 <p style="font-size: larger;font-weight:400;">Description Of the Event</p>
+                                 <p style="font-size: large;font-weight:400;padding-bottom:0.5rem;">Time : 5pm</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="btn-c">
+                        <button class="event-more-details_c">
+                            More Details
+                        </button>
+                    </div>
+                    <div class="event-popup_c" id="event-popup2_c">
+                        <div class="popup-detail_c">
+                            <p id="close_c" class="close_c">x</p>
+                            <div class="heading">
+                                <h4>Coding Competition-1</h4>
+                            </div>
+                            <div class="info">
+                                <p class="dark-blue">info</p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                    Voluptatum omnis placeat aut maiores
+                                    ipsa ullam sunt eveniet deserunt
+                                    tempore repellendus autem porro rem
+                                    nulla temporibus, voluptatem
+                                    asperiores sint ducimus! Dolor?
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <p class="head dark-blue">FAQ</p>
+                                <div class="que-ans">
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="prizes">
+                                <div class="prizes-c">
+                                    <p class="dark-blue">Prizes</p>
+                                    <p>Prizes worth 52Cr</p>
+                                </div>
+                                <div class="link-c">
+                                    <a href="">Download Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-overlay_c"></div>
+                    </div>
+                    
+                </div>
+                <div class=event-4>
+                    <div class="card3">
+                        <img src="./images/gallery/3.jpg" />
+                        <div class='details_card'>
+                             <div class="show">
+                                <h2 style="font-size: larger;font-weight: 500;">Coding Challenge</h2>
+                                <p style="font-size: large;font-weight:500;">Software</p>
+                             </div>
+                             <div class='hide'>
+                                 <p style="font-size: larger;font-weight:400;">Description Of the Event</p>
+                                 <p style="font-size: large;font-weight:400;padding-bottom:0.5rem;">Time : 5pm</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="btn-c">
+                        <button class="event-more-details_c">
+                            More Details
+                        </button>
+                    </div>
+                    <div class="event-popup_c" id="event-popup2_c">
+                        <div class="popup-detail_c">
+                            <p id="close_c" class="close_c">x</p>
+                            <div class="heading">
+                                <h4>Coding Competition-1</h4>
+                            </div>
+                            <div class="info">
+                                <p class="dark-blue">info</p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                    Voluptatum omnis placeat aut maiores
+                                    ipsa ullam sunt eveniet deserunt
+                                    tempore repellendus autem porro rem
+                                    nulla temporibus, voluptatem
+                                    asperiores sint ducimus! Dolor?
+                                </p>
+                            </div>
+                            <div class="faq">
+                                <p class="head dark-blue">FAQ</p>
+                                <div class="que-ans">
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                    <p class="q-a">
+                                        Why is FAQ necessary?<span
+                                            >--Because I freaking said
+                                            so.</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="prizes">
+                                <div class="prizes-c">
+                                    <p class="dark-blue">Prizes</p>
+                                    <p>Prizes worth 52Cr</p>
+                                </div>
+                                <div class="link-c">
+                                    <a href="">Download Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-overlay_c"></div>
+                    </div>
+                    
+                </div>
+            </div>
 
             <section class="section team" id="team">
                 <div class="team_heading">
@@ -1028,10 +685,10 @@
 
                 <div class="team_gallery">
                     <div class="team_gallery-1">
-                        <h2 style="padding-bottom: 1rem">CHIEF PATRON</h2>
+                        <h2 style="padding-bottom: 1rem; margin-top: 1rem;">CHIEF PATRON</h2>
 
                         <div class="team_gallery-1-1">
-                            <div class="card">
+                            <div class="card" data-aos="flip-up">
                                 <img src="./images/hacks/shiva.jpg" />
                                 <div>
                                     <p>
@@ -1064,10 +721,6 @@
                                             href="#"
                                             class="fa fa-linkedin ln"
                                         ></a>
-                                        <a
-                                            href="#"
-                                            class="fa fa-github git"
-                                        ></a>
                                     </p>
                                 </div>
                             </div>
@@ -1078,7 +731,7 @@
                         <h2>FACULTY MEMBERS</h2>
 
                         <div class="team_gallery-2-2">
-                            <div class="card1">
+                            <div class="card1" data-aos="flip-up">
                                 <div class="card1_img">
                                     <img src="./images/hacks/img-2.jpg" />
                                 </div>
@@ -1089,7 +742,7 @@
                                             style="
                                                 font-weight: 800;
                                                 font-size: larger;
-                                                color: rgb(55, 91, 192);
+                                                color: #133ea1;
                                                 letter-spacing: 2px;
                                                 padding-bottom: 10%;
                                             "
@@ -1102,7 +755,7 @@
                                         <span
                                             style="
                                                 font-style: italic;
-                                                color: rgb(255, 94, 0);
+                                                color: #133ea1;
                                                 font-weight: 700;
                                             "
                                         >
@@ -1118,14 +771,10 @@
                                             href="#"
                                             class="fa fa-linkedin ln"
                                         ></a>
-                                        <a
-                                            href="#"
-                                            class="fa fa-github git"
-                                        ></a>
                                     </p>
                                 </div>
                             </div>
-                            <div class="card1">
+                            <div class="card1" data-aos="flip-up">
                                 <div class="card1_img">
                                     <img src="./images/hacks/img-3.jpg" />
                                 </div>
@@ -1135,7 +784,7 @@
                                             style="
                                                 font-weight: 800;
                                                 font-size: larger;
-                                                color: rgb(55, 91, 192);
+                                                color: #133ea1;
                                                 letter-spacing: 2px;
                                                 padding-bottom: 10%;
                                             "
@@ -1148,7 +797,7 @@
                                         <span
                                             style="
                                                 font-style: italic;
-                                                color: rgb(255, 94, 0);
+                                                color: #133ea1;
                                                 font-weight: 700;
                                             "
                                         >
@@ -1164,14 +813,10 @@
                                             href="#"
                                             class="fa fa-linkedin ln"
                                         ></a>
-                                        <a
-                                            href="#"
-                                            class="fa fa-github git"
-                                        ></a>
                                     </p>
                                 </div>
                             </div>
-                            <div class="card1">
+                            <div class="card1" data-aos="flip-up">
                                 <div class="card1_img">
                                     <img src="./images/hacks/img-4.jpg" />
                                 </div>
@@ -1181,7 +826,7 @@
                                             style="
                                                 font-weight: 800;
                                                 font-size: larger;
-                                                color: rgb(55, 91, 192);
+                                                color: #133ea1;
                                                 letter-spacing: 2px;
                                                 padding-bottom: 10%;
                                             "
@@ -1194,7 +839,7 @@
                                         <span
                                             style="
                                                 font-style: italic;
-                                                color: rgb(255, 94, 0);
+                                                color: #133ea1;
                                                 font-weight: 700;
                                             "
                                         >
@@ -1210,14 +855,10 @@
                                             href="#"
                                             class="fa fa-linkedin ln"
                                         ></a>
-                                        <a
-                                            href="#"
-                                            class="fa fa-github git"
-                                        ></a>
                                     </p>
                                 </div>
                             </div>
-                            <div class="card1">
+                            <div class="card1" style="margin-top: 8vh;" data-aos="flip-up">
                                 <div class="card1_img">
                                     <img src="./images/hacks/img-5.jpg" />
                                 </div>
@@ -1227,7 +868,7 @@
                                             style="
                                                 font-weight: 800;
                                                 font-size: larger;
-                                                color: rgb(55, 91, 192);
+                                                color: #133ea1;
                                                 padding-bottom: 10%;
                                             "
                                         >
@@ -1239,7 +880,7 @@
                                         <span
                                             style="
                                                 font-style: italic;
-                                                color: rgb(255, 94, 0);
+                                                color: #133ea1;
                                                 font-weight: 700;
                                             "
                                         >
@@ -1255,14 +896,10 @@
                                             href="#"
                                             class="fa fa-linkedin ln"
                                         ></a>
-                                        <a
-                                            href="#"
-                                            class="fa fa-github git"
-                                        ></a>
                                     </p>
                                 </div>
                             </div>
-                            <div class="card1">
+                            <div class="card1" style="margin-top: 8vh;" data-aos="flip-up">
                                 <div class="card1_img">
                                     <img src="./images/hacks/img-6.jpg" />
                                 </div>
@@ -1272,7 +909,7 @@
                                             style="
                                                 font-weight: 800;
                                                 font-size: larger;
-                                                color: rgb(55, 91, 192);
+                                                color: #133ea1;
                                                 letter-spacing: 2px;
                                                 padding-bottom: 10%;
                                             "
@@ -1285,7 +922,7 @@
                                         <span
                                             style="
                                                 font-style: italic;
-                                                color: rgb(255, 94, 0);
+                                                color: #133ea1;
                                                 font-weight: 700;
                                             "
                                         >
@@ -1301,10 +938,6 @@
                                             href="#"
                                             class="fa fa-linkedin ln"
                                         ></a>
-                                        <a
-                                            href="#"
-                                            class="fa fa-github git"
-                                        ></a>
                                     </p>
                                 </div>
                             </div>
@@ -1315,7 +948,7 @@
                         <h2>STUDENT MEMBERS</h2>
 
                         <div class="team_gallery-3-3">
-                            <div class="card">
+                            <div class="card" data-aos="flip-up">
                                 <img src="./images/hacks/img-7.jpg" />
                                 <div>
                                     <p>
@@ -1356,7 +989,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-aos="flip-up">
                                 <img src="./images/hacks/img-8.jpg" />
                                 <div>
                                     <p>
@@ -1397,7 +1030,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-aos="flip-up">
                                 <img src="./images/hacks/img-9.jpg" />
                                 <div>
                                     <p>
@@ -1466,9 +1099,9 @@
                                         >
                                             Prof. Sivaji Bandyopadhyay
                                         </span>
-
+        
                                         <br />
-
+        
                                         <span
                                             style="
                                                 font-style: italic;
@@ -1496,7 +1129,7 @@
                             </div>
                         </a>
                     </div>
-
+        
                     <div class="swiper-slide">
                         <a
                             href="./images/gallery/2.jpg"
@@ -1518,9 +1151,9 @@
                                         >
                                             Prof. Sivaji Bandyopadhyay
                                         </span>
-
+        
                                         <br />
-
+        
                                         <span
                                             style="
                                                 font-style: italic;
@@ -1548,7 +1181,7 @@
                             </div>
                         </a>
                     </div>
-
+        
                     <div class="swiper-slide">
                         <a
                             href="./images/gallery/3.jpg"
@@ -1570,9 +1203,9 @@
                                         >
                                             Prof. Sivaji Bandyopadhyay
                                         </span>
-
+        
                                         <br />
-
+        
                                         <span
                                             style="
                                                 font-style: italic;
@@ -1600,7 +1233,7 @@
                             </div>
                         </a>
                     </div>
-
+        
                     <div class="swiper-slide">
                         <a
                             href="./images/gallery/4.jpg"
@@ -1622,9 +1255,9 @@
                                         >
                                             Prof. Sivaji Bandyopadhyay
                                         </span>
-
+        
                                         <br />
-
+        
                                         <span
                                             style="
                                                 font-style: italic;
@@ -1652,7 +1285,7 @@
                             </div>
                         </a>
                     </div>
-
+        
                     <div class="swiper-slide">
                         <a
                             href="./images/gallery/5.jpg"
@@ -1674,9 +1307,9 @@
                                         >
                                             Prof. Sivaji Bandyopadhyay
                                         </span>
-
+        
                                         <br />
-
+        
                                         <span
                                             style="
                                                 font-style: italic;
@@ -1704,7 +1337,7 @@
                             </div>
                         </a>
                     </div>
-
+        
                     <div class="swiper-slide">
                         <a
                             href="./images/gallery/6.jpg"
@@ -1726,9 +1359,9 @@
                                         >
                                             Prof. Sivaji Bandyopadhyay
                                         </span>
-
+        
                                         <br />
-
+        
                                         <span
                                             style="
                                                 font-style: italic;
@@ -1756,7 +1389,7 @@
                             </div>
                         </a>
                     </div>
-
+        
                     <div class="swiper-slide">
                         <a
                             href="./images/gallery/7.jpg"
@@ -1778,9 +1411,9 @@
                                         >
                                             Prof. Sivaji Bandyopadhyay
                                         </span>
-
+        
                                         <br />
-
+        
                                         <span
                                             style="
                                                 font-style: italic;
@@ -1808,7 +1441,7 @@
                             </div>
                         </a>
                     </div>
-
+        
                     <div class="swiper-slide">
                         <a
                             href="./images/gallery/8.jpg"
@@ -1830,9 +1463,9 @@
                                         >
                                             Prof. Sivaji Bandyopadhyay
                                         </span>
-
+        
                                         <br />
-
+        
                                         <span
                                             style="
                                                 font-style: italic;
@@ -1864,68 +1497,13 @@
                 <div class="swiper-pagination"></div>
             </div>
 
-            <section class="section reach" id="reach">
-                <div class="reach_heading">
-                    <h1>How to reach</h1>
-                    <div></div>
-                </div>
-                <div class="gallery">
-                    <div class="row-1">
-                        <div>
-                            <iframe
-                                class="maps"
-                                width="100%"
-                                height="100%"
-                                src="https://maps.google.com/maps?q=NIT%20Silchar&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0"
-                                scrolling="no"
-                            >
-                            </iframe>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="./images/hacks/top.jpg" />
-                                <p>
-                                    <span
-                                        >Downtown Conference Center, New
-                                        York</span
-                                    >
-                                    <span>
-                                        Iste nobis eum sapiente sunt enim
-                                        dolores labore accusantium autem. Cumque
-                                        beatae ipsam. Est quae sit qui
-                                        voluptatem corporis velit. Qui maxime
-                                        accusamus possimus. Consequatur sequi et
-                                        ea suscipit enim nesciunt quia velit.
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-2">
-                        <div>
-                            <img src="./images/hacks/one.jpg" />
-                        </div>
-                        <div>
-                            <img src="./images/hacks/two.jpg" />
-                        </div>
-                        <div>
-                            <img src="./images/hacks/three.jpg" />
-                        </div>
-                        <div>
-                            <img src="./images/hacks/four.jpg" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section class="section contact" id="contact">
-                <div class="contact_heading">
+                <div class="contact_heading" data-aos="fade-down">
                     <h1>Contact Us</h1>
                     <div></div>
                 </div>
                 <div class="contact_body">
-                    <div class="left">
+                    <div class="left" data-aos="fade-right">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -1946,7 +1524,7 @@
                             <address>A108 Adam Street, NY 535022, USA</address>
                         </div>
                     </div>
-                    <div class="middle">
+                    <div class="middle" data-aos="fade-up">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -1976,7 +1554,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="right">
+                    <div class="right" data-aos="fade-left">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -2000,7 +1578,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact_form">
+                <div class="contact_form" data-aos="zoom-in-up">
                     <form>
                         <div class="same_row">
                             <input type="text" placeholder="Your Name" />
@@ -2016,72 +1594,38 @@
                     </form>
                 </div>
             </section>
-
-            <!-- menu button -->
-            <div class="menu-container">
-                <div class="menu-list">
-                    <li class="menu-items">
-                        <a href="javascript:hacksScroll('#')">Home</a>
-                    </li>
-                    <li class="menu-items">
-                        <a href="javascript:hacksScroll('about')">About</a>
-                    </li>
-                    <li class="menu-items">
-                        <a href="javascript:hacksScroll('events')">Events</a>
-                    </li>
-                    <li class="menu-items">
-                        <a href="javascript:hacksScroll('team')">Team</a>
-                    </li>
-                    <li class="menu-items">
-                        <a href="javascript:hacksScroll('reach')">Reach Us</a>
-                    </li>
-                    <li class="menu-items">
-                        <a href="javascript:hacksScroll('contact')"
-                            >Contact Us</a
-                        >
-                    </li>
-                </div>
-                <div class="menu-close">
-                    <p class="menu-close-btn">Menu</p>
-                </div>
-            </div>
         </main>
         <footer class="footer">
             <div class="footer-c">
-                <div class="the-event">
-                    <p>NITS HACKS 4.0</p>
-                    <p>
-                        Here comes one of the grandest module of Tecnoesis, back
-                        again to cater the technical hunger of the masses. NITS
-                        HACKS 4.0 is all about providing the enthusiasts with a
-                        taste of the emerging technical aspects of real life
-                        applications.
-                    </p>
-                </div>
-                <div class="useful-links">
-                    <li class="u-links">
-                        <a href="javascript:hacksScroll('#')">Home</a>
-                    </li>
-                    <li class="u-links">
-                        <a href="javascript:hacksScroll('about')">About</a>
-                    </li>
-                    <li class="u-links">
-                        <a href="javascript:hacksScroll('events')">Events</a>
-                    </li>
-                    <li class="u-links">
-                        <a href="javascript:hacksScroll('team')">Team</a>
-                    </li>
-                    <li class="u-links">
-                        <a href="javascript:hacksScroll('reach')">Reach Us</a>
-                    </li>
-                    <li class="u-links">
-                        <a href="javascript:hacksScroll('contact')"
-                            >Contact Us</a
-                        >
-                    </li>
+                <div class="lhand">
+                    <div class="the-event">
+                        <p>NITS HACKS 4.0</p>
+                    </div>
+                    <div class="useful-links">
+                        <li class="u-links">
+                            <a href="javascript:hacksScroll('#')">Home</a>
+                        </li>
+                        <li class="u-links">
+                            <a href="javascript:hacksScroll('about')">About</a>
+                        </li>
+                        <li class="u-links">
+                            <a href="javascript:hacksScroll('events')">Events</a>
+                        </li>
+                        <li class="u-links">
+                            <a href="javascript:hacksScroll('team')">Team</a>
+                        </li>
+                        <li class="u-links">
+                            <a href="javascript:hacksScroll('contact')"
+                                >Contact Us</a
+                            >
+                        </li>
+                    </div>
+                    <div class="copyright">
+                        <p>©2020 National Institute Of Technology, Silchar</p>
+                    </div>
                 </div>
                 <div class="connect-links">
-                  <p>Stay Connected At:</p>
+                  <p>Stay Connected At :</p>
                   <ul>
                     <li><a target="_blank" href="https://www.facebook.com/NITSHacks/" class="fa fa-facebook"></a></li>
                     <li><a target="_blank" href="#" class="fa fa-github"></a></li>
@@ -2091,9 +1635,19 @@
                 </div>
             </div>
         </footer>
+        
+
     </body>
     <script src="./vendor/glightbox/js/glightbox.min.js"></script>
     <script src="./vendor/swiper/swiper-bundle.min.js"></script>
 
-    <script src="./js/hacks/hacks.js"></script>
+   <script src="./js/hacks/hacks.js"></script>
+   <script src="./js/hacks/scroll.js"></script>
+   <script src='./js/hacks/events.js'></script>
+
+   <script>
+        AOS.init({
+            duration: 1000
+        });
+   </script>
 </html>
