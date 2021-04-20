@@ -34,8 +34,8 @@ function setSection(newSection) {
 //     onLeave: (self) => self.scroll(2),
 // }).scroll(2)
 
-gsap.to(".virus1", {
-    yPercent: -15,
+gsap.to("#third", {
+    yPercent: -125,
     ease: "none",
     scrollTrigger: {
       trigger: "#virusHolder",
@@ -45,8 +45,8 @@ gsap.to(".virus1", {
     }, 
   });
 
-gsap.to(".virus2", {
-    yPercent: -75,
+gsap.to("#first", {
+    yPercent: -165,
     ease: "none",
     scrollTrigger: {
       trigger: "#virusHolder",
@@ -56,8 +56,8 @@ gsap.to(".virus2", {
     }, 
   });
 
-gsap.to(".virus3", {
-    yPercent: -20,
+gsap.to("#second", {
+    yPercent: -80,
     ease: "none",
     scrollTrigger: {
       trigger: "#virusHolder",
