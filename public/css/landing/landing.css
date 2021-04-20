@@ -286,7 +286,6 @@ animation: spin1 20s infinite linear;
   -webkit-user-select: none;
   user-select: none;
   letter-spacing: 20px;
-
 }
 
 .panel {
@@ -446,11 +445,6 @@ animation: spin1 20s infinite linear;
     }
 }
 
-.images {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
 
 .image-wrapper {
     position: absolute;
