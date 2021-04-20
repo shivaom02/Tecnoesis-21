@@ -194,15 +194,15 @@ section:not(.first) {
 }
 
 .panel .gif img {
-    width: 400px;
+    width: 510px;
     display: block;
 }
 
 .panel .gif {
-    border: 2px black solid;
+    border: 2px rgba(0, 0, 0, 0.5) solid;
     border-radius: 100%;
     position: fixed;
-    right: -22%;
+    right: -35%;
     z-index: 100;
 }
 
@@ -264,7 +264,7 @@ animation: spin1 20s infinite linear;
 0% { -ms-transform: rotate(0deg);}
 100% { -ms-transform: rotate(360deg);}
 }
-@-keyframes spin1 {
+@keyframes spin1 {
 0% { transform: rotate(0deg);}
 100% { transform: rotate(360deg);}
 } 
@@ -494,7 +494,7 @@ animation: move1 20s infinite linear;
         display: block;
     }
     .panel .gif {
-        border: 2px black solid;
+        border: 2px rgba(0, 0, 0, 0.3) solid;
         border-radius: 100%;
         position: fixed;
         right: 50%;
@@ -505,8 +505,8 @@ animation: move1 20s infinite linear;
     .panel {
         width: 100%;
     }
-    button {
-        background-color: #1c1c1e !important;
+    .line{
+      stroke: black;
     }
 }
 @media screen and (max-width: 768px) {
