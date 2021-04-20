@@ -110,7 +110,7 @@ body {
 .about {
   max-width: 100vw;
   width: 100vw;
-  height: 125vh;
+  height: 135vh;
   background: rgba(255, 255, 255, 0.8);
   border-bottom: none;
 }
@@ -141,7 +141,7 @@ body {
 .about .about-c {
   max-width: 85vw;
   width: 85vw;
-  height: 100vh;
+  height: 110vh;
   margin: 0 auto;
   padding: 10vh 0;
   position: relative;
@@ -149,8 +149,8 @@ body {
 
 .about .about-c .img-c {
   display: inline-block;
-  width: 50vw;
-  height: 80vh;
+  width: 45vw;
+  height: 90vh;
   background: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 10vh;
@@ -218,7 +218,7 @@ body {
 }
 
 .events {
-  min-height: 135vh;
+  min-height: 140vh;
   padding: 10vh 0;
   background: rgba(0, 0, 0, 0.1);
 }
@@ -397,7 +397,7 @@ body {
 .schedule .event-popup .popup-detail {
   position: fixed;
   width: 80vw;
-  height: 80vh;
+  height: 90vh;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -499,7 +499,6 @@ body {
   padding: 1rem 0;
   width: 60vw;
   margin: 0 auto;
-  border-bottom: 1px solid #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

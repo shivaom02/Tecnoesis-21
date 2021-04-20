@@ -118,7 +118,7 @@ body {
 .about {
     max-width: 100vw;
     width: 100vw;
-    height: 125vh;
+    height: 135vh;
     background: rgba($white, 0.8);
     border-bottom: none;
 
@@ -147,7 +147,7 @@ body {
     .about-c {
         max-width: 85vw;
         width: 85vw;
-        height: 100vh;
+        height: 110vh;
         margin: 0 auto;
         padding: 10vh 0;
 
@@ -155,8 +155,8 @@ body {
 
         .img-c {
             display: inline-block;
-            width: 50vw;
-            height: 80vh;
+            width: 45vw;
+            height: 90vh;
             background: rgba($black, 0.2);
 
             position: absolute;
@@ -226,7 +226,7 @@ body {
 
 // event section > heading and button designs
 .events {
-  min-height: 135vh;
+  min-height: 140vh;
   padding: 10vh 0;
   background: rgba($black, 0.1);
 
@@ -390,7 +390,7 @@ body {
     .popup-detail {
       position: fixed;
       width: 80vw;
-      height: 80vh;
+      height: 90vh;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -487,7 +487,6 @@ body {
         padding: 1rem 0;
         width: 60vw;
         margin: 0 auto;
-        border-bottom: 1px solid $black;
 
         display: flex;
         justify-content: space-around;
