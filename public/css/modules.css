@@ -98,7 +98,7 @@ body .solar {
 }
 
 body input[type=radio][name=planet]::after {
-  width: 220px;
+  width: 40%;
   height: 220px;
   border-radius: 550px;
   -webkit-appearance: none;
@@ -107,7 +107,7 @@ body input[type=radio][name=planet]::after {
   outline: none;
   cursor: pointer;
   z-index: 12;
-  left: 18px;
+  left: 20%;
   bottom: 282px;
 }
 
