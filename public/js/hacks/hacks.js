@@ -90,6 +90,7 @@ closePopupBtn.forEach((el) => {
 overlay.forEach((el) => {
     el.addEventListener('click', closePopup)
 })
+console.log(overlay)
 
 //gallery
 (function() {
@@ -160,3 +161,14 @@ overlay.forEach((el) => {
     });
   
   })()
+
+
+  // updating navbar ac scroll
+  // if (obj.scrollTop === obj.scrollHeight - obj.offsetHeight) {
+  // }
+window.addEventListener("scroll", function() {
+  var elementTarget = document.getElementById("events");
+  if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+      alert("You've scrolled past the second div");
+  }
+});
