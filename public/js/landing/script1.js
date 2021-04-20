@@ -367,4 +367,4 @@ function getRandomInt(min, max) {
 
 setTimeout(function(){
   init();
-}, 2000)
+}, 4500)

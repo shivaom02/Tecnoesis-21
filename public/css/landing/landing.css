@@ -33,7 +33,6 @@ section:not(.first) {
 }
 
 .section_header {
-
     font-family: 'Greenth', sans-serif;
     font-size: 6rem;
     margin-bottom: 45vh;
@@ -270,11 +269,39 @@ animation: spin1 20s infinite linear;
 100% { transform: rotate(360deg);}
 } 
 
+.vaccine{
+    -webkit-animation: move1 20s infinite linear;
+-moz-animation: move1 20s infinite linear;
+-o-animation: move1 20s infinite linear;
+-ms-animation: move1 20s infinite linear;
+animation: move1 20s infinite linear;
+    display: block;
+}
+@-webkit-keyframes move1 {
+    0% { -webkit-transform: translate(0px,0px);}
+    100% { -webkit-transform: translate(25px,10px);}
+    }
+    @-moz-keyframes move1 {
+        0% { -moz-transform: translate(0px,0px);}
+        100% { -moz-transform: translate(25px,10px);}
+    }
+    @-o-keyframes move1 {
+        0% { -o-transform: translate(0px,0px);}
+        100% { -o-transform: translate(25px,10px);}
+    }
+    @-ms-keyframes move1 {
+    0% { -ms-transform: translate(0px,0px);}
+    100% { -ms-transform: translate(25px,10px);}
+    }
+    @-keyframes move1 {
+    0% { transform: translate(0px,0px);}
+    100% { transform: translate(25px,10px);}
+    } 
+    
 #head{
   color: black;
   position: relative;
   margin: 0 auto;
-  margin-left: 15%;
   margin-right: 80%;
   font-family: 'Greenth', sans-serif;
   font-size: 6rem;
@@ -287,7 +314,21 @@ animation: spin1 20s infinite linear;
   -webkit-user-select: none;
   user-select: none;
   letter-spacing: 20px;
+  animation: fade 2s;
 }
+@keyframes fade {
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+#head span{
+  animation: flip 2s;
+  animation-delay: calc(.2s * var(--i));
+}
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
 
 .panel {
     width: 65%;
@@ -313,14 +354,6 @@ animation: spin1 20s infinite linear;
     z-index: 90;
 }
 
-.virus1 {
-    height: 100%;
-    width: auto;
-}
-.virus2 {
-    height: 100%;
-    width: auto;
-}
 /*# sourceMappingURL=landing.css.map */
 
 /* Bouncer */
@@ -447,7 +480,6 @@ animation: spin1 20s infinite linear;
 }
 
 
-
 .image-wrapper {
     position: absolute;
 }
@@ -498,3 +530,5 @@ animation: spin1 20s infinite linear;
         margin-left: 50%;
     }
 }
+
+
