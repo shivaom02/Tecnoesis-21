@@ -229,7 +229,7 @@ var initBouncer = function(){
     bouncerRadius, {
      render: {
       sprite: {
-        texture: "https://upload.wikimedia.org/wikipedia/commons/4/45/Stup_Virus.png",
+        texture: "../../public/images/landing/virus1.png",
         xScale: 0.5,
         yScale: 0.5
      }

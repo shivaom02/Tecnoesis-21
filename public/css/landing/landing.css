@@ -33,6 +33,7 @@ section:not(.first) {
 }
 
 .section_header {
+
     font-family: 'Greenth', sans-serif;
     font-size: 6rem;
     margin-bottom: 45vh;
@@ -50,6 +51,8 @@ section:not(.first) {
     margin-top: 4%;
     margin-right: auto;
 }
+
+
 
 .modules {
     width: 25%;
@@ -236,22 +239,54 @@ section:not(.first) {
     background-color: #28a92b;
 }
 
-#head {
-    color: black;
-    position: relative;
-    margin: 0 auto;
-    margin-right: 80%;
-    font-family: 'Greenth', sans-serif;
-    font-size: 8rem;
-    line-height: 2.4rem;
-    color: rgba(black, 1);
-    display: flex;
-    flex-direction: row;
-    z-index: 3;
-    pointer-events: none;
-    -webkit-user-select: none;
-    user-select: none;
-    letter-spacing: 20px;
+.virus
+{
+-webkit-animation: spin1 20s infinite linear;
+-moz-animation: spin1 20s infinite linear;
+-o-animation: spin1 20s infinite linear;
+-ms-animation: spin1 20s infinite linear;
+animation: spin1 20s infinite linear;
+    display: block;
+}
+ 
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin1 {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin1 {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin1 {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}
+@-keyframes spin1 {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+} 
+
+#head{
+  color: black;
+  position: relative;
+  margin: 0 auto;
+  margin-left: 15%;
+  margin-right: 80%;
+  font-family: 'Greenth', sans-serif;
+  font-size: 6rem;
+  line-height: 2.4rem;
+  color: rgba(black, 1);
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  letter-spacing: 20px;
 }
 
 .panel {
@@ -411,11 +446,7 @@ section:not(.first) {
     }
 }
 
-.images {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+
 
 .image-wrapper {
     position: absolute;
