@@ -41,10 +41,18 @@ section:not(.first) {
   font-family: 'Roboto', sans-serif;
       color: black;
 
-    margin-left: -63%;
+    margin-left: -71%;
     word-break: break-word;
     margin-top: 14%;
 }
+
+.modules {
+  width: 25%;
+  text-align: left;
+  margin-top: 12%;
+  margin-left: -10%;
+}
+
 /* buttons */
 .btnfos {
   color: black;
@@ -112,6 +120,16 @@ section:not(.first) {
   stroke-dashoffset: 48;
   -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
           transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#module-btn{
+  margin-right: 8%;
+  margin-bottom: -31%;
+}
+
+#hacks{
+  margin-right: 9%;
+  margin-bottom: -30%;
 }
 
 
@@ -192,7 +210,7 @@ section:not(.first) {
   margin: 0 auto;
   margin-right: 80%;
   font-family: 'Greenth', sans-serif;
-  font-size: 5rem;
+  font-size: 8rem;
   line-height: 2.4rem;
   color: rgba(black, 1);
   display: flex;
@@ -230,44 +248,13 @@ section:not(.first) {
   z-index: 90;
 }
 
-.virus
-{
--webkit-animation: spin1 20s infinite linear;
--moz-animation: spin1 20s infinite linear;
--o-animation: spin1 20s infinite linear;
--ms-animation: spin1 20s infinite linear;
-animation: spin1 20s infinite linear;
-    display: block;
-}
- 
-@-webkit-keyframes spin1 {
-0% { -webkit-transform: rotate(0deg);}
-100% { -webkit-transform: rotate(360deg);}
-}
-@-moz-keyframes spin1 {
-0% { -moz-transform: rotate(0deg);}
-100% { -moz-transform: rotate(360deg);}
-}
-@-o-keyframes spin1 {
-0% { -o-transform: rotate(0deg);}
-100% { -o-transform: rotate(360deg);}
-}
-@-ms-keyframes spin1 {
-0% { -ms-transform: rotate(0deg);}
-100% { -ms-transform: rotate(360deg);}
-}
-@-keyframes spin1 {
-0% { transform: rotate(0deg);}
-100% { transform: rotate(360deg);}
-} 
-#bodymovin {
-  width: 100%;
+.virus1{
   height: 100%;
-  display: block;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  text-align: center;
-  opacity: 1;
+  width: auto;
+}
+.virus2{
+  height: 100%;
+  width: auto;
 }
 /*# sourceMappingURL=landing.css.map */
 
@@ -402,4 +389,29 @@ animation: spin1 20s infinite linear;
 
 .image-wrapper{
   position: absolute;
+}
+
+@media only screen and (max-width: 430px) {
+  html, body{
+    overflow-x: hidden;
+  }
+  .panel .gif img{
+    width: 300px;
+    display: block;
+  }
+  .panel .gif {
+    border:2px black solid;
+    border-radius: 100%;
+    position: fixed;
+    right: 50%;
+    transform: translate(50%, 0%);
+    bottom: -10vh;
+    z-index: 100;
+  }
+  .panel{
+    width: 100%;
+  }
+  button{
+    background-color: #1c1c1e !important;
+  }
 }
