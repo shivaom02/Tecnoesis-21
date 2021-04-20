@@ -228,7 +228,7 @@ body {
 .events {
   min-height: 135vh;
   padding: 10vh 0;
-  background: rgba($white, 0.8);
+  background: rgba($black, 0.1);
 
   .heading-c {
     text-align: center;
@@ -615,11 +615,11 @@ body {
           margin-top: -30vh;
 
           h2 {
-            padding-top: 15rem;
+            padding-top: 5rem;
           }
 
           h2 {
-            transform: translateY(8rem);
+            transform: translateY(5rem);
           }
       }
 

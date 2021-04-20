@@ -220,7 +220,7 @@ body {
 .events {
   min-height: 135vh;
   padding: 10vh 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .events .heading-c {
@@ -660,12 +660,12 @@ body {
 }
 
 .team .team_gallery-2 h2 {
-  padding-top: 15rem;
+  padding-top: 5rem;
 }
 
 .team .team_gallery-2 h2 {
-  -webkit-transform: translateY(8rem);
-          transform: translateY(8rem);
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
 }
 
 .team .team_gallery-3 {
