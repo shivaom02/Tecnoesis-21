@@ -35,6 +35,7 @@ section:not(.first) {
 .section_header {
   font-family: 'Greenth', sans-serif;
   font-size: 6rem;
+  margin-left: -71%; 
 }
 
 .section_desc{
@@ -43,8 +44,10 @@ section:not(.first) {
 
     margin-left: -71%;
     word-break: break-word;
-    margin-top: 14%;
+    margin-top: 20%;
 }
+
+
 
 .modules {
   width: 25%;
@@ -204,13 +207,45 @@ section:not(.first) {
   background-color: #28a92b;
 }
 
+.virus
+{
+-webkit-animation: spin1 20s infinite linear;
+-moz-animation: spin1 20s infinite linear;
+-o-animation: spin1 20s infinite linear;
+-ms-animation: spin1 20s infinite linear;
+animation: spin1 20s infinite linear;
+    display: block;
+}
+ 
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin1 {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin1 {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin1 {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}
+@-keyframes spin1 {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+} 
+
 #head{
   color: black;
   position: relative;
   margin: 0 auto;
+  margin-left: 15%;
   margin-right: 80%;
   font-family: 'Greenth', sans-serif;
-  font-size: 8rem;
+  font-size: 6rem;
   line-height: 2.4rem;
   color: rgba(black, 1);
   display: flex;
@@ -378,6 +413,35 @@ section:not(.first) {
 @keyframes explodeB {
   100% {
     transform: scale(2.5);
+  }
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
   }
 }
 

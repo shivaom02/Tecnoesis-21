@@ -66,3 +66,14 @@ gsap.to("#second", {
       scrub: true
     }, 
   });
+
+  gsap.to(".background", {
+    yPercent: -60,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#virusHolder",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true
+    }, 
+  });
