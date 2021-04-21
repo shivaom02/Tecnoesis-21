@@ -65,7 +65,7 @@ section:not(.first) {
     padding: 10px;
 }
 
-#head {
+/* #head {
     color: black;
     position: relative;
     margin: 0 auto;
@@ -94,7 +94,7 @@ section:not(.first) {
     display: block;
     width: 1.8rem;
     height: 2rem;
-}
+} */
 
 * {
     padding: 0;
@@ -131,12 +131,13 @@ section:not(.first) {
 
 .section_header {
     font-family: 'Greenth', sans-serif;
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 45vh;
     margin-top: auto;
-    margin-left: 50%;
+    margin-left: 40%;
     -webkit-animation: fades 2s;
     animation: fades 2s;
+    letter-spacing: 0.25rem;
 }
 
 .section_desc {
@@ -369,26 +370,60 @@ section:not(.first) {
 }
 
 #hacks-header {
-    margin-left: 22rem;
+    margin-left: 19rem;
     font-size: 5rem;
 }
 
 .logoviral
 {
+    font-family: 'Greenth', sans-serif;
+    font-size: 3rem;
     position: absolute;
-    margin-top: -48vh;
-    margin-left: 5vw;
+    margin-top: -65vh;
+    margin-left: -5vw;
     height: 20vh;
-    animation: fade 2s;
+    animation: spacing 3s;
+    letter-spacing:4rem;
+    color: #1e95df;
+    
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    color: #1e95df;
+}
+
+@keyframes spacing {
+    0%{  letter-spacing: 2rem;}
+    50%{ letter-spacing: 4rem;}
+    100%{ letter-spacing: 6rem;}
+    
 }
 
 .logoviral2
 {
+    font-family: 'Greenth', sans-serif;
+    font-size: 3rem;
     position: absolute;
-    margin-top: -45vh;
-    margin-left: -6vw;
-    height: 14vh;
-    animation: fade 2s;
+    margin-top: -65vh;
+    margin-left: -10vw;
+    height: 20vh;
+    animation: despacing 3s;
+    letter-spacing:1rem;
+    color: #1e95df;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    color: #1e95df;
+}
+
+@keyframes despacing {
+    0%{  letter-spacing: 6rem; }
+    50%{ letter-spacing: 3rem; }
+    100%{ letter-spacing: 1rem;}
 }
 
 .logoviral3
@@ -997,7 +1032,8 @@ textarea + .parsley-errors-list {
     display: block;
     width: 10rem;
     margin-top: -3.5rem;
-    margin-left: 8.5rem;
+    margin-left: 6.5rem;
+    font-size: 5rem;
   }
   #modules-desc {
     display: block;
