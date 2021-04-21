@@ -1,15 +1,12 @@
 const express = require('express')
+const router = express.Router()
+const path = require('path')
+const userRoutes = require('./user')
 
-const router = express.Router();
-const path = require('path');
-
-
-// router.get('/', (req, res) => {
-//     res.send('Tecnoesis-21');
-// });
-
-router.get('/', (req, res) =>{
-    res.sendFile(path.join(__dirname,'../../views/hacks.html'));
+router.get('/', (req, res) => {
+    res.render('welcome')
 })
 
-module.exports = router;
+router.use('/user', userRoutes)
+
+module.exports = router
