@@ -1,0 +1,27 @@
+<form action="/user/login" method="POST">
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Enter Email"
+        value="<%= typeof email != 'undefined' ? email : '' %>"
+      />
+
+    <input
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+        value="<%= typeof password != 'undefined' ? password : '' %>"
+      />
+    
+    </div>
+    <button type="submit">
+      Login
+    </button>
+  </form>
+
+<div>
+    New User ? <a href='/user/register'>Register</a>
+</div>
+
+<%- include("./partials/messages") %>
