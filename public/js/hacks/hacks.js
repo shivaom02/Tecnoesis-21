@@ -1,4 +1,5 @@
 const navLinks = document.querySelectorAll('.nav-links')
+const sections = document.querySelectorAll('.section');
 
 // scroll
 const hacksScroll = (sectionID) => {
@@ -24,23 +25,101 @@ for (let index = 0; index < navLinks.length; index++) {
             for (let i = 0; i < index; i++) {
                 document
                     .getElementById(`dot--${i}`)
-                    .classList.remove('active', 'go-down');
-                document.getElementById(`dot--${i}`).classList.add('go-up');
+                    .classList.remove('active', 'go-down', 'active-white', 'dot-white');
+                document.getElementById(`dot--${i}`).classList.add('go-up', 'dot');
             }
 
             document
                 .getElementById(`dot--${index}`)
-                .classList.remove('go-down', 'go-up');
-            document.getElementById(`dot--${index}`).classList.add('active');
+                .classList.remove(
+                    'go-down',
+                    'go-up',
+                    'active-white',
+                    'dot-white'
+                )
+            document.getElementById(`dot--${index}`).classList.add('active', 'dot');
 
             for (let i = navLinks.length - 1; i > index; i--) {
                 document
                     .getElementById(`dot--${i}`)
-                    .classList.remove('active', 'go-up');
-                document.getElementById(`dot--${i}`).classList.add('go-down');
+                    .classList.remove('active', 'go-up', 'dot-white', 'active-white');
+                document.getElementById(`dot--${i}`).classList.add('go-down', 'dot');
             }
+
+                if (index === 0) {
+                    for (let i = 1; i < 5; i++) {
+                        document
+                            .getElementById(`dot--${i}`)
+                            .classList.remove('active', 'go-up', 'dot')
+                        document
+                            .getElementById(`dot--${i}`)
+                            .classList.add('go-down', 'dot-white')
+                    }
+                    document
+                        .getElementById(`dot--${index}`)
+                        .classList.remove('go-down', 'go-up', 'active', 'dot')
+                    document
+                        .getElementById(`dot--${index}`)
+                        .classList.add('active-white', 'dot-white')
+                }
     });
 }
+
+// update nav on scroll 
+window.addEventListener('scroll', () => {
+    let current ='', index;
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if(pageYOffset >= sectionTop- 250 ) {
+            current = section.getAttribute('id');
+        };
+    })
+    if(current === '' ) index=0;
+    else if(current === 'about') index=1;
+    else if (current === 'events') index =2;
+    else if (current === 'team') index =3;
+    else if(current === 'contact') index =4;
+
+       for (let i = 0; i < index; i++) {
+           document
+               .getElementById(`dot--${i}`)
+               .classList.remove(
+                   'active',
+                   'go-down',
+                   'active-white',
+                   'dot-white'
+               )
+           document.getElementById(`dot--${i}`).classList.add('go-up', 'dot')
+       }
+    document
+        .getElementById(`dot--${index}`)
+        .classList.remove('go-down', 'go-up', 'active-white', 'dot-white')
+    document.getElementById(`dot--${index}`).classList.add('active', 'dot');
+
+    for (let i = navLinks.length - 1; i > index; i--) {
+        document.getElementById(`dot--${i}`).classList.remove('active', 'go-up', 'active-white', 'dot-white')
+        document.getElementById(`dot--${i}`).classList.add('go-down', 'dot');
+    }
+
+     if (index === 0) {
+         for (let i = 1; i < 5; i++) {
+             document
+                 .getElementById(`dot--${i}`)
+                 .classList.remove('active', 'go-up', 'dot')
+             document
+                 .getElementById(`dot--${i}`)
+                 .classList.add('go-down', 'dot-white')
+         }
+         document
+             .getElementById(`dot--${index}`)
+             .classList.remove('go-down', 'go-up', 'active', 'dot')
+         document
+             .getElementById(`dot--${index}`)
+             .classList.add('active-white', 'dot-white')
+     }
+
+})
 
 // events
 const dayOneEvent = document.getElementById('day-one');

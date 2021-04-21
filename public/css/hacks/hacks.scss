@@ -77,6 +77,15 @@ body {
                 font-size: 0;
             }
 
+            .dot-white {
+              display: block;
+                width: 15px;
+                height: 25px;
+                margin: 0 auto;
+                background: $white;
+                font-size: 0;
+            }
+
             .go-down {
                 clip-path: polygon(50% 25%, 100% 0, 50% 100%, 0 0);
             }
@@ -93,6 +102,17 @@ body {
                 background: transparent;
                 font-size: 1rem;
                 color: $primary-blue;
+                border-radius: 50%;
+                line-height: 55px;
+            }
+            .active-white {
+              display: block;
+                width: auto;
+                height: auto;
+                margin: 0 auto;
+                background: transparent;
+                font-size: 1rem;
+                color: $white;
                 border-radius: 50%;
                 line-height: 55px;
             }
@@ -717,6 +737,8 @@ body {
         flex-direction:column;
         padding-left:2rem;
         padding-right:2rem;
+        overflow-y: auto;
+        overflow-x: hidden;
   
         .close_c {
           font-size: 1.8rem;
@@ -725,17 +747,18 @@ body {
           top: 1.7vw;
           font-weight: 600;
           cursor: pointer;
-          background-color: black;
-          color:white;
+          background-color: transparent;
+          color:$black;
           height:40px;
           width:40px;
+          border: none;
           transition:0.5s;
 
   
           &:hover {
-              background-color:white;
+              background-color:transparent;
               color:black;
-              border:2px solid black
+              border:2px solid blac
           }
         }
   
@@ -1602,71 +1625,7 @@ body {
 
 
 
-.footer {
-    min-height: 40vh;
-    background-color: $secondary-blue;
 
-
-    .footer-c {
-      max-width: 80vw;
-      width: 80vw;
-      margin: 0 auto;
-      padding: 3vw 0;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    
-      .the-event {
-        display: none;
-      }
-      .useful-links {
-        display: none;
-      }
-      .connect-links {
-        margin-top: 1rem;
-        flex: 1;
-        padding: 0 3rem;
-        color: $white;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        p {
-          font-family: 'Raleway', sans-serif;
-          font-size: 1.2rem;
-          font-weight: 600;
-          text-align: center;
-        }
-
-        ul {
-          margin: 0 auto;
-
-          li {
-            list-style: none;
-            display: inline-block;
-            margin: 1rem .5rem;
-  
-            .fa {
-              text-decoration: none;
-              color: $white;
-              font-size: 1.4rem;
-              width: 2rem;
-              height: 2rem;
-  
-              &:hover {
-                color: $primary-blue;
-              }
-            }
-          }
-        }
-
-      }
-    
-    }
-
-  }
   .event{
 
     height:340vh;
