@@ -225,7 +225,7 @@ var initBouncer = function(){
 
   bouncerClone = Bodies.circle(
     bouncer.offsetLeft + bouncerRadius,
-    bouncer.offsetTop + bouncerRadius,
+    bouncer.offsetTop + bouncerRadius+150,
     bouncerRadius, {
      render: {
       sprite: {
@@ -246,7 +246,7 @@ var initBouncer = function(){
 
   World.add(engine.world, bouncerClone );
   Matter.Events.on(engine.world, "afterAdd", fixBouncer);
-  Body.setVelocity( bouncerClone, {x: Math.floor(Math.random()*10)-20, y: Math.floor(Math.random()*10)-15});
+  Body.setVelocity( bouncerClone, {x: Math.floor(Math.random()*20)-25, y: Math.floor(Math.random()*12)-20});
 }
 
 
