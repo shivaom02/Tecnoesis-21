@@ -43,11 +43,12 @@
             src="../../public/js/landing/scroll.js"
             defer
         ></script>
-        <!-- <script
+        <script
             type="text/javascript"
-            src="../../public/js/landing/script.js"
+            src="../../public/js/landing/form.js"
             defer
-        ></script>  -->
+        ></script>
+
         <script
             type="text/javascript"
             src="../../public/js/landing/script1.js"
@@ -89,7 +90,6 @@
             <h1 class="count" id="three">03</h1>
             <h1 class="count" id="four">04</h1>
             <h1 class="count" id="five">05</h1> -->
-            
         </div>
         <div class="loader" id="loader"></div>
         <nav class="navbar">
@@ -167,7 +167,7 @@
                 <h1 class="section_header" id="about-header" style="z-index: 3; white-space: nowrap;">
                     About Us
                 </h1>
-                <p class="section_desc" style="z-index: 3">
+                <p class="section_desc" id="about-desc" style="z-index: 3">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Beatae, laborum!
                 </p>
@@ -306,7 +306,7 @@
             <div style="z-index: 1;"><img class="logoviral2" src="../../public/images/landing/v3-01.png" /></div>
                 <h1 class="section_header" id="hacks-header" style="white-space: nowrap;">NITS::Hacks 4.0</h1>
                 <div class="description" id="hacks-description">
-                    <p class="section_desc">
+                    <p class="section_desc" id="hacks_desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sequi, blanditiis a ad quis dignissimos quod.
                         Necessitatibus odio voluptatibus quod ullam.
@@ -346,6 +346,45 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Beatae, laborum!
                 </p>
+                <form id="form" data-parsley-validate>
+                    <div class="success">
+                        <p>Good news <span class="name">Charlie</span>,</p>
+                        <p>your message was successfully sent!</p>
+                    </div>
+                    <fieldset>
+                        <input
+                            class="floatlabel"
+                            id="name"
+                            type="text"
+                            placeholder="Name"
+                            required
+                            data-parsley-no-focus
+                            data-parsley-error-message="Please enter your name."
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <input
+                            class="floatlabel"
+                            type="email"
+                            placeholder="Email"
+                            required
+                            data-parsley-no-focus
+                            data-parsley-error-message="Please enter a valid email address."
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <textarea
+                            class="floatlabel"
+                            placeholder="Message"
+                            required
+                            data-parsley-no-focus
+                            data-parsley-error-message="Please enter a message."
+                        ></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Submit" />
+                    </fieldset>
+                </form>
                 <div class="gif">
                     <img
                         src="../../public/images/landing/globeOne.gif"
