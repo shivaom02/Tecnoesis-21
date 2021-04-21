@@ -115,6 +115,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="section events" id="events">
                 <div class="heading-c" data-aos="zoom-in-up">
                     <p>SCHEDULE</p>
@@ -464,8 +465,9 @@
                     </div>
                     
                 </div>
-                </div>
-                <div class="event-row-2">
+            </div>
+            
+            <div class="event-row-2">
                     <div class=event-4>
                         <div class="card3">
                             <img src="./images/hacks/coding.png" />
@@ -487,8 +489,9 @@
                         </div> -->
                         
                     </div>
-                </div>
             </div>
+            
+        </div>
 
             <section class="section team" id="team">
                 <div class="team_heading">
@@ -1391,17 +1394,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact_form" data-aos="zoom-in-up">
-                    <form>
-                        <div class="same_row">
-                            <input type="text" placeholder="Your Name" />
 
-                            <input type="email" placeholder="Your Email" />
+                <p>
+                    <%- include("./partials/messages") %>
+                </p>
+
+                <div class="contact_form" data-aos="zoom-in-up">
+
+                    <form action="/hacks/contactForm" method="POST">
+
+                        <div class="same_row">
+                            <input type="text" 
+                                   placeholder="Your Name"
+                                   value="<%= typeof name != 'undefined' ? name : '' %>"
+                                   name="name" 
+                            />
+
+                            <input type="email" 
+                                   placeholder="Your Email"
+                                   value="<%= typeof email != 'undefined' ? email : '' %>"
+                                   name="email" 
+                             />
                         </div>
 
-                        <input type="text" placeholder="Your Subject" />
+                        <input type="text" 
+                               placeholder="Your Subject"
+                               value="<%= typeof subject != 'undefined' ? subject : '' %>"
+                               name="subject"
+                        />
 
-                        <textarea type="text" placeholder="Message"></textarea>
+                        <textarea type="text" 
+                                  placeholder="Message"
+                                  value="<%= typeof message != 'undefined' ? message : '' %>"
+                                  name="message"
+                        ></textarea>
 
                         <button type="submit">Submit</button>
                     </form>

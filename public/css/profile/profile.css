@@ -1,0 +1,347 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.profileContainer {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  background-color: #00c3ff;
+}
+
+.profileContainer .profile {
+  height: 90vh;
+  width: 90vw;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  background-color: #fdfeff;
+  -webkit-box-shadow: 5px 10px 20px #b5d1d8;
+          box-shadow: 5px 10px 20px #b5d1d8;
+}
+
+.profileContainer .profile .heading {
+  height: 12vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #003392;
+}
+
+.profileContainer .profile .heading .head_left, .profileContainer .profile .heading .head_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18%;
+}
+
+.profileContainer .profile .heading .head_left .img1, .profileContainer .profile .heading .head_right .img1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profileContainer .profile .heading .head_left .img1 img, .profileContainer .profile .heading .head_right .img1 img {
+  height: 100%;
+  width: 100%;
+}
+
+.profileContainer .profile .heading .head_left h2, .profileContainer .profile .heading .head_right h2 {
+  padding: 1rem;
+}
+
+.profileContainer .profile .main {
+  width: 100%;
+  height: 78vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileContainer .profile .main .main_left {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileContainer .profile .main .main_left .img2 {
+  height: 350px;
+  width: 350px;
+}
+
+.profileContainer .profile .main .main_left .img2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.profileContainer .profile .main .main_left .buttons {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.profileContainer .profile .main .main_right {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileContainer .profile .main .main_right .main_right_top {
+  width: 100%;
+  min-height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileContainer .profile .main .main_right .main_right_top h2 {
+  height: 10%;
+  margin-left: 2rem;
+  margin-top: -1rem;
+}
+
+.profileContainer .profile .main .main_right .main_right_top .eventsRegistered {
+  margin-top: 5%;
+  height: 85%;
+  width: 100%;
+}
+
+.profileContainer .profile .main .main_right .main_right_top .eventsRegistered .eventR {
+  height: 10px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileContainer .profile .main .main_right .main_right_top .eventsRegistered .eventR span {
+  padding: 0.5rem;
+  padding-left: 0.8rem;
+  background-color: rgba(219, 214, 214, 0.438);
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+  color: #013579;
+}
+
+.profileContainer .profile .main .main_right .main_right_bottom {
+  height: 30%;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.profileContainer .profile .main .main_right .main_right_bottom h2 {
+  padding-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+.profileContainer .profile .main .main_right .main_right_bottom p {
+  height: 10px;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileContainer .profile .main .main_right .main_right_bottom p span {
+  padding: 0.5rem;
+  padding-left: 0.8rem;
+  background-color: rgba(219, 214, 214, 0.438);
+  width: 100%;
+  margin-left: 10%;
+  text-align: left;
+  color: #013579;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 700px) {
+  .profileContainer {
+    min-height: 200vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #00c3ff;
+  }
+  .profileContainer .profile {
+    min-height: 200vh;
+    width: 100vw;
+    margin-left: -5vw;
+    margin-top: -5vh;
+  }
+  .profileContainer .profile .heading {
+    border: none;
+  }
+  .profileContainer .profile .heading .head_left {
+    display: none;
+  }
+  .profileContainer .profile .heading .head_right {
+    margin-left: 50vw;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .profileContainer .profile .heading .head_right h2 {
+    white-space: nowrap;
+  }
+  .profileContainer .profile .heading .head_right .img1 {
+    display: none;
+  }
+  .profileContainer .profile .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileContainer .profile .main .main_right, .profileContainer .profile .main .main_left {
+    width: 100vw;
+  }
+  .profileContainer .profile .main .main_left {
+    margin-top: 90vh;
+    text-align: center;
+  }
+  .profileContainer .profile .main .main_left .img1, .profileContainer .profile .main .main_left h2, .profileContainer .profile .main .main_left .errorMsg, .profileContainer .profile .main .main_left .buttons {
+    width: 100vw;
+    margin-top: 3vh;
+  }
+  .profileContainer .profile .main .main_left .buttons {
+    margin-left: -10vw;
+  }
+  .profileContainer .profile .main .main_left .buttons a {
+    margin-left: 10vw;
+  }
+  .profileContainer .profile .main .main_right {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10vh;
+  }
+  .profileContainer .profile .main .main_right .main_right_top {
+    width: 100vw;
+    min-height: 50vh;
+  }
+  .profileContainer .profile .main .main_right .main_right_top h2 {
+    height: 10%;
+    margin-top: 1rem;
+  }
+  .profileContainer .profile .main .main_right .main_right_top .eventsRegistered {
+    margin-top: 5%;
+    height: 85%;
+    width: 100vw;
+  }
+  .profileContainer .profile .main .main_right .main_right_top .eventsRegistered .eventR {
+    height: 10px;
+    width: 100vw;
+    margin-top: 10vh;
+    margin-left: -5vw;
+  }
+  .profileContainer .profile .main .main_right .main_right_top .eventsRegistered .eventR span {
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    background-color: rgba(219, 214, 214, 0.438);
+    text-align: left;
+    color: #013579;
+    white-space: nowrap;
+  }
+  .profileContainer .profile .main .main_right .main_right_bottom {
+    height: 30vh;
+    width: 100vw;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .profileContainer .profile .main .main_right .main_right_bottom h2 {
+    padding-bottom: 2rem;
+    margin-top: -1rem;
+  }
+  .profileContainer .profile .main .main_right .main_right_bottom p {
+    height: 10px;
+    width: 100vw;
+    margin-top: 10vh;
+    margin-left: -5vw;
+  }
+  .profileContainer .profile .main .main_right .main_right_bottom p span {
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    background-color: rgba(219, 214, 214, 0.438);
+    text-align: left;
+    color: #013579;
+    white-space: nowrap;
+    width: 45vw;
+  }
+}
+/*# sourceMappingURL=profile.css.map */
