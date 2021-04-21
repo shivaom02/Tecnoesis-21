@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
+const crypto = require('crypto')
 
 const userSchema = new Schema(
     {
@@ -18,7 +19,11 @@ const userSchema = new Schema(
             type: String,
         },
         registeredEvents: {
-            type: Array
+            type: Array,
+        },
+        passwordResetToken: String,
+        resetTokenExpire: {
+            type: Date,
         },
     },
     {
@@ -39,20 +44,19 @@ userSchema.methods.generateAuthToken = async function (email) {
 }
 
 userSchema.statics.findByCredentials = async (email, password) => {
-    
-    const user = await User.findOne({ email });
-   
+    const user = await User.findOne({ email })
+
     if (!user) {
-       return null;
+        return null
     }
-    
-    const isMatch = await bcrypt.compare(password,user.password);
-    
+
+    const isMatch = await bcrypt.compare(password, user.password)
+
     if (!isMatch) {
-       return null;
+        return null
     }
-    
-    return user;
+
+    return user
 }
 
 //To hash the password before saving
@@ -65,5 +69,16 @@ userSchema.pre('save', async function (next) {
 
     next()
 })
+
+userSchema.methods.createPasswordResetToken = async function () {
+    const resetToken = crypto.randomBytes(32).toString('hex')
+
+    this.passwordResetToken = await crypto
+        .createHash('sha256')
+        .update(resetToken)
+        .digest('hex')
+    this.resetTokenExpire = Date.now() + 10 * 60 * 60 * 1000
+    return resetToken
+}
 
 module.exports = User = mongoose.model('User', userSchema)
