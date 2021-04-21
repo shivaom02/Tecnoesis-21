@@ -1,4 +1,5 @@
-const navLinks = document.querySelectorAll('.nav-links')
+const navLinks = document.querySelectorAll('.nav-links');
+const sections = document.querySelectorAll('section');
 
 // scroll
 const hacksScroll = (sectionID) => {
@@ -41,6 +42,15 @@ for (let index = 0; index < navLinks.length; index++) {
             }
     });
 }
+
+// nav update on scroll
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        console.log(offSetTop);
+    })
+})
 
 // events
 const dayOneEvent = document.getElementById('day-one');

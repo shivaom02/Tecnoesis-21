@@ -10,8 +10,6 @@ const close_Popup = () => {
     }
 }
 
-console.log("clicked");
-
 for (let i = 0; i < event_MoreDetails.length; i++) {
     event_MoreDetails[i].addEventListener('click', () => {
 
