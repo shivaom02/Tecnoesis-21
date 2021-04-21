@@ -37,6 +37,11 @@
             src="../../public/js/landing/landing.js"
             defer
         ></script>
+        <script
+            type="text/javascript"
+            src="../../public/js/landing/scroll.js"
+            defer
+        ></script>
         <!-- <script
             type="text/javascript"
             src="../../public/js/landing/script.js"
@@ -69,6 +74,22 @@
     </head>
 
     <body>
+        <div class="count-container">
+            <ul id="top-menu">
+                <li><a href="#" class="active">01</a></li>
+                <li><a href="#section2">02</a></li>
+                <li><a href="#section3">03</a></li>
+                <li><a href="#section4">04</a></li>
+                <li><a href="#section5">05</a></li>
+                
+            </ul>
+            <!-- <h1 class="count active" id="one">01</h1>
+            <h1 class="count" id="two">02</h1>
+            <h1 class="count" id="three">03</h1>
+            <h1 class="count" id="four">04</h1>
+            <h1 class="count" id="five">05</h1> -->
+            
+        </div>
         <div class="loader" id="loader"></div>
         <nav class="navbar">
             <div class="content">
@@ -131,14 +152,16 @@
             </section>
             <section
                 class="panel not-first white"
-                id="virusHolder"
+                id="virusHolder section2"
                 style="
                     background-image: url('../../public/images/landing/17931370.png');
                     background-size: cover;
                     background-repeat: no-repeat;
                 "
             >
-                <h1 class="section_header" id="about-header" style="z-index: 3">About Us</h1>
+                <h1 class="section_header" id="about-header" style="z-index: 3">
+                    About Us
+                </h1>
                 <p class="section_desc" style="z-index: 3">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Beatae, laborum!
@@ -157,7 +180,11 @@
                     <div
                         class="image-wrapper"
                         id="second"
-                        style="margin-top: -25vh; margin-left: -40vw; z-index: 1"
+                        style="
+                            margin-top: -25vh;
+                            margin-left: -40vw;
+                            z-index: 1;
+                        "
                     >
                         <img
                             class="virus"
@@ -172,7 +199,7 @@
                         <img
                             class="virus"
                             src="../../public/images/landing/virus1.png"
-                            style="height: 20vh;"
+                            style="height: 20vh"
                         />
                     </div>
                 </div>
@@ -185,21 +212,29 @@
             </section>
             <section
                 class="panel not-first white"
+                id="section3"
                 style="
                     background-image: url('../../public/images/landing/bg2.png');
                     background-repeat: no-repeat;
                     background-size: cover;
                 "
             >
-                <h1 class="section_header" id="module-header" style="z-index: 3;">Modules</h1>
-                <div class="modules" style="z-index: 3;">
+                
+                <h1
+                    class="section_header"
+                    id="module-header"
+                    style="z-index: 3"
+                >
+                    Modules
+                </h1>
+                <div class="modules" style="z-index: 3">
                     <p class="section_desc" id="modules-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sequi, blanditiis a ad quis dignissimos quod.
                         Necessitatibus odio voluptatibus quod ullam.
                     </p>
                 </div>
-                <a class="btnfos btnfos-1" id="module-btn" style="z-index: 3;">
+                <a class="btnfos btnfos-1" id="module-btn" style="z-index: 3">
                     <svg>
                         <rect
                             x="0"
@@ -220,18 +255,22 @@
                         <img
                             class="vaccine"
                             src="../../public/images/landing/vaccine.png"
-                            style="height: 50vh;"
+                            style="height: 50vh"
                         />
                     </div>
                     <div
                         class="image-wrapper"
                         id="second"
-                        style="margin-top: -25vh; margin-left: -40vw; z-index: 1"
+                        style="
+                            margin-top: -25vh;
+                            margin-left: -40vw;
+                            z-index: 1;
+                        "
                     >
                         <img
                             class="vaccine"
                             src="../../public/images/landing/vaccine.png"
-                            style="height: 60vh;"
+                            style="height: 60vh"
                         />
                     </div>
                     <div
@@ -242,7 +281,7 @@
                         <img
                             class="vaccine"
                             src="../../public/images/landing/vaccine.png"
-                            style="height: 30vh;"
+                            style="height: 30vh"
                         />
                     </div>
                 </div>
@@ -255,6 +294,7 @@
             </section>
             <section
                 class="panel not-first white"
+                id="section4"
                 style="
                     background-image: url(../../public/images/landing/bg5.png);
                     background-repeat: no-repeat;
@@ -290,6 +330,7 @@
             </section>
             <section
                 class="panel not-first white"
+                id="section5"
                 style="
                     background-image: url(../../public/images/landing/bg4.png);
                     background-repeat: no-repeat;

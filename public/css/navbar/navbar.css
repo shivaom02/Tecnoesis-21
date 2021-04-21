@@ -90,9 +90,7 @@
           transform: translateX(calc(100% - 35%));
   width: 100vw;
   height: 100vh;
-  background-image: url('../../images/navbar/abstract-digital-grid-black-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #1c1c1e;
   z-index: 2;
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
