@@ -780,4 +780,21 @@ animation: move1 20s infinite linear;
         width: 70vw;
         margin-bottom: 1rem;
     }
+    @-webkit-keyframes bez {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    @keyframes bez {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
 }
