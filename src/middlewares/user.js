@@ -15,6 +15,11 @@ const auth = async (req, res, next) => {
         req.user = user
         next()
     } catch (error) {
+        
+        req.flash(
+            'error_msg',
+            'Invalid token! Authenticate to proceed furthur'
+        );
         res.redirect('/user/login')
     }
 }

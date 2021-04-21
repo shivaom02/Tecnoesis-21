@@ -1,27 +1,60 @@
-<form action="/user/login" method="POST">
+<div class="row" style="margin-top:20vh;">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      
+      <h1 class="text-center mb-3" style="color:purple">
+          <svg class="mb-2"
+            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="purple" class="bi bi-calendar-plus-fill" viewBox="0 0 16 16">
+          <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM8.5 8.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5a.5.5 0 0 1 1 0z"/>
+         </svg>
+        Login
+      </h1>
+     
+      <%- include("./partials/messages") %>
+     
+      <form action="/user/login" method="POST">
+        
+        <div class="form-group">
+     
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? eamil : '' %>"
+          />
+     
+        </div>
+     
+        <div class="form-group">
+     
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+     
+        </div>
+        <button type="submit" 
+                class="btn btn-primary btn-block" 
+                style="background-color: rgb(0, 108, 196);"
+        >Login</button>
+     
+      </form>
 
-    <input
-        type="email"
-        name="email"
-        placeholder="Enter Email"
-        value="<%= typeof email != 'undefined' ? email : '' %>"
-      />
-
-    <input
-        type="password"
-        name="password"
-        placeholder="Enter Password"
-        value="<%= typeof password != 'undefined' ? password : '' %>"
-      />
-    
+      <p style="margin-left:50%;margin-top:5%;transform: translateX(-30%);">
+           <a href="/user/forgotpassword">Fogot Password</a>
+      </p>
+     
+      <p style="margin-left:50%;margin-top:0%;transform: translateX(-30%);">
+        New User? <a href="/user/register">Register</a>
+      </p>
     </div>
-    <button type="submit">
-      Login
-    </button>
-  </form>
-
-<div>
-    New User ? <a href='/user/register'>Register</a>
+  </div>
 </div>
-
-<%- include("./partials/messages") %>

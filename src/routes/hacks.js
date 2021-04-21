@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', async (req, res) => {
-    // res.render('hacks')
+router.get('/',(req,res)=>{
+    res.render('hacks');
 })
 
 module.exports = router
