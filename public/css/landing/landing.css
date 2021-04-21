@@ -861,6 +861,25 @@ textarea + .parsley-errors-list {
     position: absolute;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .panel h1 {
+    margin-bottom: 45vh;
+    margin-top: auto;
+    margin-left: 50%;
+  }
+  .section_desc {
+    width: auto;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+  .section_header {
+    margin-bottom: 45vh;
+    margin-top: auto;
+    margin-left: 50%;
+  }
+}
+
 @media only screen and (max-width: 430px) {
     html,
     body {
@@ -884,56 +903,106 @@ textarea + .parsley-errors-list {
         width: 100%;
         -ms-flex-line-pack: center;
         align-content: center;
-    }
-    .line {
-        stroke: black;
-    }
-    #head {
-        font-size: 2.5rem;
-        line-height: 2.4rem;
-        color: black;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        pointer-events: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        letter-spacing: 5px;
-        -webkit-animation: fade 2s;
-        animation: fade 2s;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translate(-50%);
-        transform: translate(-50%);
-    }
-    .section_header {
-        font-size: 3rem !important;
-        position: absolute;
-        left: 50%;
-        top: -10vh;
-        -webkit-transform: translate(50%);
-        transform: translate(50%);
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    .panel h1 {
-        margin-bottom: 45vh;
-        margin-top: auto;
-        margin-left: 50%;
-    }
-    .section_desc {
-        width: auto;
-        position: absolute;
-        margin-top: 20%;
-        margin-left: 5%;
-    }
-    .section_header {
-        margin-bottom: 45vh;
-        margin-top: auto;
-        margin-left: 50%;
-    }
+  }
+  .line {
+    stroke: black;
+  }
+  #head {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    letter-spacing: 5px;
+    -webkit-animation: fade 2s;
+            animation: fade 2s;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .section_header {
+    font-size: 3rem !important;
+    position: absolute;
+    left: 50%;
+    top: -10vh;
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+  }
+  #about-header {
+    position: relative;
+    display: block;
+    width: 10rem;
+    margin-top: -3rem;
+    margin-left: 9rem;
+  }
+  #about-desc {
+    display: block;
+    position: absolute;
+    margin-left: -1.5rem;
+    margin-top: -13rem;
+  }
+  #module-header {
+    position: relative;
+    display: block;
+    width: 10rem;
+    margin-top: -3.5rem;
+    margin-left: 8.5rem;
+  }
+  #modules-desc {
+    display: block;
+    position: absolute;
+    margin-left: -2rem;
+    margin-top: -13rem;
+    width: 70vw;
+    margin-bottom: 1rem;
+  }
+  #module-btn {
+    margin-left: -3.6rem;
+  }
+  #hacks-header {
+    position: relative;
+    display: block;
+    width: 10rem;
+    margin-top: -1rem;
+    letter-spacing: 5px;
+    margin-left: 10rem;
+  }
+  #hacks_desc {
+    display: block;
+    position: absolute;
+    margin-left: -2rem;
+    margin-top: -9rem;
+    width: 70vw;
+    margin-bottom: 1rem;
+  }
+  #hacks-btn {
+    margin-left: -4.5rem;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  #contact-header {
+    position: relative;
+    display: block;
+    width: 18rem;
+    margin-top: 7rem;
+    letter-spacing: 5px;
+    margin-left: 5rem;
+    text-align: center;
+  }
+  #contact-desc {
+    display: block;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -4rem;
+    width: 70vw;
+    margin-bottom: 1rem;
+  }
 }
 /*# sourceMappingURL=landing.css.map */
