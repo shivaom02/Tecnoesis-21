@@ -5,7 +5,12 @@ const nodemailer = require('nodemailer')
  * @param  {String} receiverEmail Email of the receiver
  * @param  {String} mailBody Content of the mail to be sent
  * @param  {String} emailSubject Subject of the email to be sent
+ * 
+ *
  */
+
+//EMAIL , RESETURL, EMAIL SUBJECT 
+
 const sendEmail = (receiverEmail, mailBody, emailSubject) => {
     const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
@@ -34,5 +39,5 @@ const sendEmail = (receiverEmail, mailBody, emailSubject) => {
 }
 
 module.exports = {
-    sendEmail,
+    sendEmail
 }

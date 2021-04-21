@@ -1394,17 +1394,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact_form" data-aos="zoom-in-up">
-                    <form>
-                        <div class="same_row">
-                            <input type="text" placeholder="Your Name" />
 
-                            <input type="email" placeholder="Your Email" />
+                <p>
+                    <%- include("./partials/messages") %>
+                </p>
+
+                <div class="contact_form" data-aos="zoom-in-up">
+
+                    <form action="/hacks/contactForm" method="POST">
+
+                        <div class="same_row">
+                            <input type="text" 
+                                   placeholder="Your Name"
+                                   value="<%= typeof name != 'undefined' ? name : '' %>"
+                                   name="name" 
+                            />
+
+                            <input type="email" 
+                                   placeholder="Your Email"
+                                   value="<%= typeof email != 'undefined' ? email : '' %>"
+                                   name="email" 
+                             />
                         </div>
 
-                        <input type="text" placeholder="Your Subject" />
+                        <input type="text" 
+                               placeholder="Your Subject"
+                               value="<%= typeof subject != 'undefined' ? subject : '' %>"
+                               name="subject"
+                        />
 
-                        <textarea type="text" placeholder="Message"></textarea>
+                        <textarea type="text" 
+                                  placeholder="Message"
+                                  value="<%= typeof message != 'undefined' ? message : '' %>"
+                                  name="message"
+                        ></textarea>
 
                         <button type="submit">Submit</button>
                     </form>

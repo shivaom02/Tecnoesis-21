@@ -153,16 +153,18 @@ router.post('/forgotpassword', async (req, res) => {
     }
     let resetToken = await user.createPasswordResetToken()
 
-    await user.save()
+    await user.save();
+
     const resetURL = `${req.protocol}://${req.get(
         'host'
     )}/user/resetpassword/${resetToken}`
 
     utils.sendEmail(email, resetURL, 'Reset Password')
+
     res.send('Password reset link sent successfully')
 })
 
-router.get('resetpassword/:resetToken', async (req, res) => {
+router.get('/resetpassword/:resetToken', async (req, res) => {
     let resetToken = req.params.resetToken
     let hashedToken = await crypto
         .createHash('sha256')
@@ -178,7 +180,7 @@ router.get('resetpassword/:resetToken', async (req, res) => {
     user.passwordResetToken = undefined
     user.resetTokenExpire = undefined
     await user.save()
-    res.render(`resetpassword/${user._id}`)
+    res.render(`resetpassword`)
 })
 
 router.post('resetpassword/:userId', async (req, res) => {
