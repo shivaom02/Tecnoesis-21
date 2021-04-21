@@ -14,9 +14,10 @@ require("dotenv").config();
 
 require('./db/db');
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000
 
 const publicDirectory = path.join(__dirname, '../public')
+
 app.use(express.static(publicDirectory))
 
 app.use(cookieParser('secret'))
