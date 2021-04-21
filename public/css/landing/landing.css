@@ -542,11 +542,25 @@ animation: move1 20s infinite linear;
     }
     .panel {
         width: 100%;
+        align-content: center;
     }
     .line{
       stroke: black;
     }
-
+    #head{
+        font-size: 2.5rem;
+        line-height: 2.4rem;
+        color: rgba(black, 1);
+        display: flex;
+        pointer-events: none;
+        -webkit-user-select: none;
+        user-select: none;
+        letter-spacing: 5px;
+        animation: fade 2s;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 @media screen and (max-width: 768px) {
 }
