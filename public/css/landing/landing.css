@@ -317,7 +317,7 @@ animation: move1 20s infinite linear;
     0% { -ms-transform: translate(0px,0px);}
     100% { -ms-transform: translate(25px,10px);}
     }
-    @-keyframes move1 {
+    @keyframes move1 {
     0% { transform: translate(0px,0px);}
     100% { transform: translate(25px,10px);}
     } 
@@ -518,7 +518,6 @@ animation: move1 20s infinite linear;
     }
 }
 
-
 .image-wrapper {
     position: absolute;
 }
@@ -547,6 +546,7 @@ animation: move1 20s infinite linear;
     .line{
       stroke: black;
     }
+
 }
 @media screen and (max-width: 768px) {
 }
