@@ -38,6 +38,7 @@ section:not(.first) {
     margin-bottom: 45vh;
     margin-top: auto;
     margin-left: 50%;
+    animation: fades 2s;
 }
 
 .section_desc {
@@ -49,9 +50,14 @@ section:not(.first) {
     left: 12vw;
     margin-top: 4%;
     margin-right: auto;
+    animation: fades 2.5s;
 }
 
-
+@keyframes fades {
+    0% {opacity: 0%;}
+    90% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
 
 .modules {
     width: 25%;
@@ -75,6 +81,8 @@ section:not(.first) {
     text-transform: uppercase;
     vertical-align: middle;
     width: 100%;
+    animation: fades 3s;
+    margin-top: 6rem;
 }
 @media (min-width: 400px) {
     .btnfos {
@@ -215,7 +223,7 @@ section:not(.first) {
 }
 
 .panel .gif {
-    border: 2px rgba(0, 0, 0, 0.5) solid;
+    border: 1px rgba(0, 0, 0, 0.5) solid;
     border-radius: 100%;
     position: fixed;
     right: -35%;
@@ -346,8 +354,9 @@ animation: move1 20s infinite linear;
     }
   }
 
+
+  
 .panel {
-    width: 65%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,7 +376,21 @@ animation: move1 20s infinite linear;
     box-sizing: border-box;
     padding: 10px;
     position: fixed;
-    z-index: 90;
+    z-index: 3;
+
+}
+
+.not-first{
+    animation: bez 2s;
+}
+
+@keyframes bez {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 65%;
+    }
 }
 
 /*# sourceMappingURL=landing.css.map */
