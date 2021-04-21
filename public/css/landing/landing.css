@@ -109,6 +109,7 @@ body {
     overflow-y: scroll;
     height: 100%;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -196,7 +197,6 @@ section:not(.first) {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     text-transform: uppercase;
-    vertical-align: middle;
     width: 100%;
     -webkit-animation: fades 3s;
     animation: fades 3s;
@@ -315,10 +315,14 @@ section:not(.first) {
     /* top: 40vw; */
     left: 85vw;
     z-index: 3;
+    margin-top: 20vh;
 }
 
-#top-menu {
-    margin-left: 33%;
+#top-menu{
+    margin-left: 10%;
+    margin-top: 50%;
+    list-style-type: none;
+    text-align: center;
 }
 
 #top-menu li.active a {
@@ -326,16 +330,25 @@ section:not(.first) {
     color: #333;
 }
 
-#top-menu a {
+.li-item{
+    padding-bottom: 3vh;
+    display: block;
+}
+
+#top-menu a{
     color: white;
     text-align: end;
-    font-size: 10rem;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    font-size: 1.5rem;
+    font-family: 'Source Sans Pro',sans-serif;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-weight: 900;
 }
 
 #top-menu a:hover {
-    color: blue;
+    color: rgba(51, 228, 235, 0.767);
+    stroke: white;
+    font-size: 1.6rem;
 }
 
 .description {
@@ -356,8 +369,37 @@ section:not(.first) {
 }
 
 #hacks-header {
-    margin-left: 22%;
+    margin-left: 22rem;
+    font-size: 5rem;
 }
+
+.logoviral
+{
+    position: absolute;
+    margin-top: -48vh;
+    margin-left: 5vw;
+    height: 20vh;
+    animation: fade 2s;
+}
+
+.logoviral2
+{
+    position: absolute;
+    margin-top: -45vh;
+    margin-left: -6vw;
+    height: 14vh;
+    animation: fade 2s;
+}
+
+.logoviral3
+{
+    position: absolute;
+    margin-top: -46vh;
+    margin-left: 1vw;
+    height: 17vh;
+    animation: fade 2s;
+}
+
 
 .panel h1 {
     font-size: 4.5em;
@@ -371,16 +413,17 @@ section:not(.first) {
 }
 
 .panel .gif img {
-    width: 510px;
+    width: 540px;
     display: block;
 }
 
 .panel .gif {
-    border: 1px rgba(0, 0, 0, 0.5) solid;
+    border: 1px rgba(0, 0, 0, 0.3) solid;
     border-radius: 100%;
     position: fixed;
     right: -35%;
     z-index: 100;
+    animation: fade 1.5s;
 }
 
 .panel.description {
@@ -861,6 +904,7 @@ textarea + .parsley-errors-list {
     position: absolute;
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .panel h1 {
     margin-bottom: 45vh;
@@ -1005,4 +1049,17 @@ textarea + .parsley-errors-list {
     margin-bottom: 1rem;
   }
 }
-/*# sourceMappingURL=landing.css.map */
+
+::-webkit-scrollbar {
+	width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #aaa;
+	border-radius: 99vmax;
+	border: 4px solid #111;
+}
+
+::-webkit-scrollbar-track {
+	background: #111;
+}
