@@ -1,25 +1,11 @@
 // Change colors in colors.scss
 // file in the same directory
-@import 'colors';
-
-$dashboardSplit: 35%;
-$fontSizeHeading: 48px;
-$fontSizeSecondary: 24px;
+@import '../globals/vairables';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-.black-main {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: $dashboardSplit;
-    height: 100vh;
-    background-color: $offBlack;
-    z-index: 2;
 }
 html,
 body {
@@ -41,6 +27,10 @@ main {
     left: 0;
 }
 
+.first{
+    transform: translate(0px, 0px);
+}
+
 section:not(.first) {
     opacity: 0;
     visibility: hidden;
@@ -55,9 +45,24 @@ section:not(.first) {
     color: white;
     font-weight: 600;
     margin: 0 auto;
+    position: relative;
+    left: -200px;
 }
 .panel.description {
     padding-bottom: 60px;
+}
+
+.panel .gif img{
+    width: 400px;
+    display: block;
+}
+  
+.panel .gif {
+    border:2px black solid;
+    border-radius: 100%;
+    position: fixed;
+    right: -22%;
+    z-index: 100;
 }
 
 // Sections
@@ -85,7 +90,7 @@ section:not(.first) {
 }
 
 .panel {
-    width: 100%;
+    width: 65%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -98,3 +103,27 @@ section:not(.first) {
     box-sizing: border-box;
     padding: 10px;
 }
+
+#head{
+    color: black;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Guardians';
+    font-size: 5rem;
+    line-height: 2.4rem;
+    color: rgba(white, 1);
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+    letter-spacing: 20px;
+  
+    span {
+      position: relative;
+      display: block;
+      width: 1.8rem;
+      height: 2rem;
+    }
+  }

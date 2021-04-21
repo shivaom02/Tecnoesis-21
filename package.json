@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon src/app.js",
-    "start" :"node src/app.js"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "scss": "node-sass --watch scss -o css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/knight-18/Tecnoesis-21#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "loader": "^2.1.1",
+    "node-sass": "^5.0.0"
   }
 }

@@ -33,3 +33,47 @@ function setSection(newSection) {
 //     onLeaveBack: (self) => self.scroll(ScrollTrigger.maxScroll(window) - 2),
 //     onLeave: (self) => self.scroll(2),
 // }).scroll(2)
+
+gsap.to("#third", {
+    yPercent: -125,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#virusHolder",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true
+    }, 
+  });
+
+gsap.to("#first", {
+    yPercent: -165,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#virusHolder",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true
+    }, 
+  });
+
+gsap.to("#second", {
+    yPercent: -80,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#virusHolder",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true
+    }, 
+  });
+
+  gsap.to(".background", {
+    yPercent: -60,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#virusHolder",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true
+    }, 
+  });
