@@ -153,7 +153,7 @@ router.post('/forgotpassword', async (req, res) => {
     }
     let resetToken = await user.createPasswordResetToken()
 
-    await user.save();
+    await user.save()
 
     const resetURL = `${req.protocol}://${req.get(
         'host'
@@ -180,11 +180,11 @@ router.get('/resetpassword/:resetToken', async (req, res) => {
     user.passwordResetToken = undefined
     user.resetTokenExpire = undefined
     await user.save()
-    res.render(`resetpassword`)
+    res.redirect(`/updatepassword/${user._id}`)
 })
 
-router.post('resetpassword/:userId', async (req, res) => {
-    let { password, confirmPassword } = req.body
+router.post('updatepassword/:userId', async (req, res) => {
+    let { password } = req.body
     let userId = req.params.userId
     let user = await User.findById(userId)
     if (!user) {
