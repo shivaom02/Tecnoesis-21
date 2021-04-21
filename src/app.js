@@ -1,33 +1,50 @@
 const express = require('express')
 const path = require('path')
-const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
+const expressLayouts = require('express-ejs-layouts');
+const flash = require('connect-flash');
+const methodOverride = require('method-override')
+
 const app = express()
-const mongoose = require('mongoose')
+
 app.use(express.json())
 
 require("dotenv").config();
 
-const PORT = process.env.PORT || 3000
+require('./db/db');
+
+const PORT = process.env.PORT
 
 const publicDirectory = path.join(__dirname, '../public')
 app.use(express.static(publicDirectory))
 
 app.use(cookieParser('secret'))
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
+app.use(methodOverride('_method'))
 
-app.set("view engine", "ejs");
+// EJS
+app.use(expressLayouts);
+app.set('view engine', 'ejs');
 
-mongoose
-    .connect(process.env.MONGODB_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: false,
-        useCreateIndex: true,
+// Express session
+app.use(
+    session({
+      secret: 'secret',
+      resave: true,
+      saveUninitialized: true
     })
-    .then(() => console.log('Connected to Database'))
-    .catch((err) => console.error(err))
+);
+
+// Connect flash
+app.use(flash());
+
+// Global variables
+app.use(function(req, res, next) {
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  next();
+});
 
 const routes = require('./routes')
 
