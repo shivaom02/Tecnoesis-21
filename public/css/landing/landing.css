@@ -320,7 +320,7 @@ animation: move1 20s infinite linear;
     @keyframes move1 {
     0% { transform: translate(0px,0px);}
     100% { transform: translate(25px,10px);}
-    } 
+    }
     
 #head{
   color: black;
@@ -560,6 +560,13 @@ animation: move1 20s infinite linear;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+    }
+    .section_header{
+        font-size: 3rem !important;
+        position: absolute;
+        left: 50%;
+        top: -10vh;
+        transform: translate(50%);
     }
 }
 @media screen and (max-width: 768px) {
