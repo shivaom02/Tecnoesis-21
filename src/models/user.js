@@ -11,14 +11,14 @@ const userSchema = new Schema(
         email: {
             type: String,
         },
-        phone: {
+        phoneNo: {
             type: String,
         },
         password: {
             type: String,
         },
         registeredEvents: {
-            type: Array,
+            type: Array
         },
     },
     {
@@ -39,19 +39,20 @@ userSchema.methods.generateAuthToken = async function (email) {
 }
 
 userSchema.statics.findByCredentials = async (email, password) => {
-    let user = await User.findOne({ email })
-
+    
+    const user = await User.findOne({ email });
+   
     if (!user) {
-        return null
+       return null;
     }
-
-    let isMatch = await bcrypt.compare(password, user.password)
-
+    
+    const isMatch = await bcrypt.compare(password,user.password);
+    
     if (!isMatch) {
-        return null
+       return null;
     }
-
-    return user
+    
+    return user;
 }
 
 //To hash the password before saving

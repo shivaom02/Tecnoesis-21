@@ -15,8 +15,7 @@ const auth = async (req, res, next) => {
         req.user = user
         next()
     } catch (error) {
-        console.log(error)
-        res.redirect('/')
+        res.redirect('/user/login')
     }
 }
 

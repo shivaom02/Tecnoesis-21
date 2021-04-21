@@ -1,0 +1,29 @@
+<form action="/user/edit/?_method=PUT" method="POST">
+
+    <input
+        type="name"
+        name="name"
+        placeholder="Enter Name"
+        value="<%= user.name %>"
+      />
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Enter Email"
+        value="<%= user.email %>"
+      />
+    
+    <input
+        type="number"
+        name="phoneNo"
+        placeholder="Enter phoneNumber"
+        value="<%= user.phoneNo  %>"
+      />
+    </div>
+    <button type="submit">
+      Edit
+    </button>
+  </form>
+
+<%- include("./partials/messages") %>
