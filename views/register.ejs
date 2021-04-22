@@ -1,40 +1,81 @@
-<form action="/user/register" method="POST">
-
-    <input
-        type="name"
-        name="name"
-        placeholder="Enter Name"
-        value="<%= typeof name != 'undefined' ? name : '' %>"
-      />
-
-    <input
-        type="email"
-        name="email"
-        placeholder="Enter Email"
-        value="<%= typeof email != 'undefined' ? email : '' %>"
-      />
-
-    <input
-        type="password"
-        name="password"
-        placeholder="Create Password"
-        value="<%= typeof password != 'undefined' ? password : '' %>"
-      />
+<div class="row" style="margin-top:10vh;">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
     
-    <input
-        type="number"
-        name="phoneNo"
-        placeholder="Enter phoneNumber"
-        value="<%= typeof phoneNo != 'undefined' ? phoneNo : '' %>"
-      />
-    </div>
-    <button type="submit">
+      <h1 class="text-center mb-3" style="color:purple">
+
+        <svg 
+           class="mb-2"
+           xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="purple" class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+          <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+          <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+        </svg>
       Register
-    </button>
-  </form>
-
-<div>
-  Already Registered ? <a href='/user/login'>Login</a>
+      </h1>
+    
+      <%- include("./partials/messages") %>
+    
+      <form action="/user/register" method="POST">
+    
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="name"
+            name="name"
+            placeholder="Enter Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+            id="name"
+            class="form-control"
+          />
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+    
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+    
+        <div class="form-group">
+          <label for="phoneNo">Phone Number</label>
+          <input
+            type="Number"
+            id="phoneNo"
+            name="phoneNo"
+            class="form-control"
+            placeholder="Enter Phone Number"
+            value="<%= typeof phoneNo != 'undefined' ? phoneNo : '' %>"
+          />
+        </div>
+    
+        <button type="submit" 
+          class="btn btn-primary btn-block" 
+          style="background-color: rgb(0, 108, 196);">
+         Register</button>
+    
+      </form>
+    
+      <p style="margin-left:50%;margin-top:10%;transform: translateX(-40%);font-size: large;">
+        Have An Account? <a href="/user/login">Login</a></p>
+    
+    </div>
+  </div>
 </div>
-
-<%- include("./partials/messages") %>
