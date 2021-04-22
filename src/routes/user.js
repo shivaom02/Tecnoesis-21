@@ -16,7 +16,7 @@ router.post('/register', async (req, res) => {
         if (alreadyExistingUser) {
             req.flash('error_msg', 'User already exists')
 
-            return res.redirect('/user/register')
+            return res.redirect('/user/login')
         }
 
         let newUser = new User({
@@ -35,7 +35,7 @@ router.post('/register', async (req, res) => {
 
         await newUser.save()
 
-        console.log('new User', newUser)
+        // console.log('new User', newUser)
 
         res.redirect('/user/profile')
     } catch (error) {
@@ -88,11 +88,15 @@ router.get('/profile', userAuth, async (req, res) => {
 })
 
 router.get('/login', async (req, res) => {
-    res.render('login')
+    res.render('login', {
+        type: 1,
+    })
 })
 
 router.get('/register', async (req, res) => {
-    res.render('register')
+    res.render(`login`, {
+        type: 2,
+    })
 })
 
 router.get('/edit', userAuth, async (req, res) => {
@@ -153,13 +157,14 @@ router.post('/forgotpassword', async (req, res) => {
     }
     let resetToken = await user.createPasswordResetToken()
 
-    await user.save();
+    await user.save()
 
-    const resetURL = `${req.protocol}://${req.get(
-        'host'
-    )}/user/resetpassword/${resetToken}`
-
-    utils.sendEmail(email, resetURL, 'Reset Password')
+    // const resetURL = `${req.protocol}://${req.get(
+    //     'host'
+    // )}/user/resetpassword/${resetToken}`
+    let mailBody = `To reset yout password <a href="${resetToken}">click here</a>.`
+    let mailSubject = `Tecnoesis - Reset Password`
+    utils.sendEmail(email, mailBody, mailSubject)
 
     res.send('Password reset link sent successfully')
 })
@@ -180,13 +185,14 @@ router.get('/resetpassword/:resetToken', async (req, res) => {
     user.passwordResetToken = undefined
     user.resetTokenExpire = undefined
     await user.save()
-    res.render(`resetpassword`)
+    // res.redirect(`/updatepassword/${user._id}`)
+    res.render('resetpassword', { userEmail: user.email })
 })
 
-router.post('resetpassword/:userId', async (req, res) => {
-    let { password, confirmPassword } = req.body
-    let userId = req.params.userId
-    let user = await User.findById(userId)
+router.post('/updatepassword/:userEmail', async (req, res) => {
+    let { password } = req.body
+    let email = req.params.userEmail
+    let user = await User.findOne({ email })
     if (!user) {
         return res.send('Invalid User')
     }
