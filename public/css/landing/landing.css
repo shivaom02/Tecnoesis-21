@@ -348,7 +348,7 @@ section:not(.first) {
 
 #module-btn {
     margin-right: 4vw;
-    bottom: 60vh;
+    bottom: 58vh;
 }
 
 #modules-desc {
@@ -357,12 +357,12 @@ section:not(.first) {
 }
 
 #about-desc {
-    margin-top: 12%;
+    margin-top: 17%;
 }
 
 #hacks-btn {
         margin-right: 5vw;
-    bottom: 62vh;
+    bottom: 59vh;
 }
 
 #contact-header {
@@ -506,6 +506,9 @@ section:not(.first) {
     animation: fade 2s;
 }
 
+#form{
+    margin-right: -10vw;
+}
 
 .panel h1 {
     font-size: 5rem;
@@ -1023,12 +1026,13 @@ textarea + .parsley-errors-list {
 
 /* Contact Cards */
 #contact-card{
-    position: absolute; margin-top: 32%; margin-right: 30vw;
+    position: absolute; margin-top: 31%; margin-right: 30vw;
 }
 
-#mail-card{
+/* #mail-card{
+    position: absolute;
       
-}
+} */
 
 
 
@@ -1315,13 +1319,16 @@ textarea + .parsley-errors-list {
   }
 
   #contact-card{
+      
     margin-top: -12vh;
     margin-right: 4vw;
   }
 
-  #mail-card{
-      margin-top: 7vh;
-    margin-left: 9vw;
+  #form{
+      position: absolute;
+    margin-top: 6vh;
+    margin-right: 3vw;
+    right: auto;
   }
   #contact-gif{
       display: none;
