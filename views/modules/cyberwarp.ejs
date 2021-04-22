@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cyberwarp | Tecnoesis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="/css/modules/cyberwarp/style.css">
+    <link rel="stylesheet" href="/css/modules/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/modules/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/modules/fontAwesome.css">
+    <link rel="stylesheet" href="/css/modules/light-box.css">
+    <link rel="stylesheet" href="/css/modules/templatemo-main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style type="text/css">
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.9);
+            width: 99.99vw;
+            height: 99.99vh;
+            overflow: hidden;
+        }
+
+        #loaderCircle {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            border: 10px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 10px solid rgb(254, 0, 0);
+            border-left: 10px solid rgb(254, 0, 0);
+            ;
+            animation: spin 4s linear infinite;
+            animation-fill-mode: forwards;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .spinner {
+            width: 80px;
+            height: 80px;
+
+            border: 2px solid #38dbff;
+            border-top: 3px solid #014b5c;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            animation: spin 1s infinite linear;
+        }
+
+        .img-inside {
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        .main-btn1 a {
+            display: inline-block;
+            border: 2px solid #fff;
+            padding: 8px 15px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+
+        .main-btn1 a:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .prize-info {
+            color: #00d2ff;
+            text-align: center;
+            font-size: 3vh;
+            width: 90%;
+            font-weight: 700;
+        }
+
+        .module-name {
+            display: inline-block;
+            position: fixed;
+            margin: 0;
+            color: #fff;
+            z-index: 100;
+            left: 20vh;
+            top: 3vh;
+        }
+
+        .module-name h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            margin-top: 0px;
+        }
+
+        @media (orientation:landscape) {
+            .img-responsive {
+                width: 75% !important;
+                height: 15vh;
+                padding-bottom: 3%;
+            }
+
+            .img-gap {
+                margin-right: -10%;
+                padding-right: 0%;
+            }
+
+            .main-btn1 {
+                margin: 9% 0 0 25%;
+            }
+
+            .mobile-break {
+                display: none;
+            }
+        }
+
+        @media (orientation: portrait) {
+            .img-gap {
+                margin-right: -3%;
+                margin-bottom: 4%;
+                padding-right: 0%;
+            }
+
+            .module-name {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body onload="stopLoader()">
+    <div id="loader">
+        <img src="../../optimized/logo white-small.png" style="height: 60px;" class="img-inside">
+        <div class="spinner">
+
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <img src="img/logo white.png" alt="" style="margin-top:-6%;">
+
+        </div>
+        <div class="mini-logo">
+            <img src="img/mini_logo.png" alt="" style="margin-top:-44%;height: 80px;">
+        </div>
+        <ul>
+            <li><a href="#1"><i class="fa fa-css3"></i> <em>Data Strata</em></a></li>
+            <li><a href="#2"><i class="fa fa-code"></i> <em>Cyberbot</em></a></li>
+            <li><a href="#3"><i class="fa fa-code-fork"></i> <em>Nibble Code 3.0</em></a></li>
+            <li><a href="#4"><i class="fa fa-database"></i> <em>Cyber Hunt</em></a></li>
+            <li><a href="#5"><i class="fa fa-puzzle-piece"></i> <em>Konami Code</em></a></li>
+            <!-- <li><a href="#6"><i class="fa fa-image"></i> <em>Roboart</em></a></li> -->
+        </ul>
+    </nav>
+    <div class="module-name">
+        <h2>CYBERWARP</h2>
+    </div>
+    <div class="main-btn1" style="position: fixed;margin: 0;color: #fff;z-index: 100;right: 4vh;top: 3vh;">
+        <a target="_blank" href="/form/event">Register</a>
+    </div>
+
+    <div class="slides">
+        <div class="slide" id="1">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>DATA STRATA</h2>
+                                                <p
+                                                    style="font-size:1.2rem;text-align:justify;font-family: Electrolize;">
+                                                    Data Science is the hottest and one of the highest paying fields of
+                                                    the 21st century. It is
+                                                    extensively used in every domain, whether it be technology,
+                                                    medicine, business, applied science etc.
+                                                    Data Strata is an exclusive event for all the budding data
+                                                    scientists organised under the
+                                                    banner of Tecnoesis 2020. The participants have to go through an
+                                                    online quiz as stated in the rules and then, they will do hands-on
+                                                    data analysis on a given real world dataset
+                                                </p>
+                                                <!--  <div class="main-btn"><a href="#4">Continue Reading</a></div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                    Kavii Suri <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                        class="fa fa-long-arrow-right"
+                                                        aria-hidden="true"></i>+91-9479877490)<br>
+                                                    Yash Tripathi
+                                                    <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                        class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                    +91-9336107600)<br>
+                                                <div class="main-btn1"><a href="./Data Strata.pdf"
+                                                        target="_blank">Download Details</a></div>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 20K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+
+                                            <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                                                <!-- Widget Title -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="2">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Cyberbot</h2>
+                                                <p style="font-size:1.1rem;text-align:justify;font-family:Electrolize">
+                                                    Cyberbot gives you the perfect opportunity to start and finish the
+                                                    first step in your web development journey in 2 days, and test out
+                                                    your knowledge for a cash prize immediately after</p>  
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="padding-left: 1.5vh;">
+                                            <h2>Organisers</h2>
+                                            <p style="font-size:1.1rem;">
+                                                Aditya Kotari
+                                                <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i>80088 02774
+                                                )<br>
+                                                Soumya Ranjan Mohapatro<br class="mobile-break">( <i
+                                                    class="fa fa-phone"></i> <i class="fa fa-long-arrow-right"
+                                                    aria-hidden="true"></i>
+                                                94396 53530)<br>
+                                                Bhargab Nath<br class="mobile-break">( <i class="fa fa-phone"></i>
+                                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                93656 98129)<br>
+
+                                            <div class="main-btn1"><a href="./cyberbot.pdf" target="_blank">Download
+                                                    Details</a></div>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 9K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Footer Gallery -->
+                                            <div class="footer-gallery">
+                                                <div class="row">
+
+                                                    <div class="col-6 img-gap">
+                                                        <a href="img/cyberbot/cyberbot2.jpg"
+                                                            class="single-gallery-item"><img class="img-responsive"
+                                                                src="img/cyberbot/cyberbot2.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6 img-gap">
+                                                        <a href="img/cyberbot/cyberbot3.jpg"
+                                                            class="single-gallery-item"><img class="img-responsive"
+                                                                src="img/cyberbot/cyberbot3.jpg" alt=""></a>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="3">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Nibble Code 3.0</h2>
+                                                <p style="font-size:1.1rem;text-align:justify;font-family:Electrolize">
+                                                    Introducing you to the realm of competitive coding, we present
+                                                    Nibble Code 3.0! Exclusively for freshmen, the contest will be much
+                                                    of a fun game which will have you scratch your heads over simple but
+                                                    tricky problem statements for 3 short hours of the day.<br>
+                                                    To familiarize the enthusiasts with the competing environment, a one
+                                                    day workshop will be organized prior to the contest which will
+                                                    provide them with ample knowledge such that they can play well and
+                                                    battle amongst themselves for a better leaderboard position</p>
+                                                <!-- <div class="main-btn1"><a href="#4">Continue Reading</a></div>
+ -->
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                    Deepjoy Dey<br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                        class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                    9127450559)<br>
+                                                    Saurabh Mallik <br class="mobile-break">( <i
+                                                        class="fa fa-phone"></i> <i class="fa fa-long-arrow-right"
+                                                        aria-hidden="true"></i> 6264590377)<br>
+                                                <div class="main-btn1"><a href="./Nibble Code.pdf"
+                                                        target="_blank">Download Details</a></div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 9K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+
+                                            <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+
+
+                                                <!-- Footer Gallery -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="4">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>CYBER HUNT</h2>
+                                                <p
+                                                    style="font-size:1.2rem;text-align:justify;font-family: Electrolize;">
+                                                    A real-time exciting and mindboggling online competition based on
+                                                    the Application of the web browsing skills along with the IQ levels
+                                                    of the player. Your luck matters the most.
+                                                    Come forward to test your knowledge and skills on a level never
+                                                    tested before, for Tecnoesis 2020 presents before you<span
+                                                        style="font-family: Electrolize;color:#00d2ff"> Cyber
+                                                        Hunt.</span></p>
+                                                <!--  <div class="main-btn"><a href="#4">Continue Reading</a></div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                    Prasant Jha <br class="mobile-break">( <i class="fa fa-phone"></i>
+                                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                    7987381031)<br>
+                                                    Rahul Kr. Gupta <br class="mobile-break">( <i
+                                                        class="fa fa-phone"></i> <i class="fa fa-long-arrow-right"
+                                                        aria-hidden="true"></i> 9954653027)<br>
+                                                    Abhishek Kr. Jha <br class="mobile-break">( <i
+                                                        class="fa fa-phone"></i> <i class="fa fa-long-arrow-right"
+                                                        aria-hidden="true"></i> 8721085748)<br>
+                                                    Pritam Das <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                        class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                    9101810767)<br>
+
+
+                                                <div class="main-btn1"><a href="./CYBER HUNT.pdf"
+                                                        target="_blank">Download Details</a></div>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 4K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+
+                                            <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                                                <!-- Widget Title -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="5">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Konami Code</h2>
+                                                <p style="font-size:1.1rem;text-align:justify;font-family:Electrolize">
+                                                    UP, UP, DOWN, DOWN, B, A; This is the Konami Code. <br><br>
+
+                                                    This event will be a roller coaster for the elites in the gaming
+                                                    community, as you’ll not only be tested on your talent for gaming,
+                                                    but more importantly on how much you truly follow and love the world
+                                                    of gaming. This event will test your skills both on and off the
+                                                    console. To get your hands on a keyboard and mouse duo, you must
+                                                    first prove your worth in the prelims. In the mains, you’ll have to
+                                                    showcase your talents in minigames and quizzes, to be finally
+                                                    crowned a true gamer.
+                                                    </span></p>  
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="padding-left: 1.5vh;">
+                                            <h2>Organisers</h2>
+                                            <p style="font-size:1.1rem;">
+                                                Swagat S. Bhuyan
+                                                <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right"
+                                                    aria-hidden="true"></i>8473924443)<br>
+                                                Mayur Raj Bharati<br class="mobile-break">( <i class="fa fa-phone"></i>
+                                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                8399917789)<br>
+                                                Kunal Rabha<br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                8761810374)<br>
+                                                Anamitra Saikia<br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                9577425342)<br>
+                                            <div class="main-btn1"><a href="./KONAMI CODE 1.0.pdf"
+                                                    target="_blank">Download
+                                                    Details</a></div>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 3K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <!-- <div class="left-image">
+                                                <img src="img/second_service.jpg" alt="second service" style="width:130%;">
+                                            </div> -->
+                                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Widget Title -->
+                                            <!--   <h5 class="widget-title">Gallery</h5> -->
+
+                                            <!-- Footer Gallery -->
+                                            <!--       <div class="footer-gallery">
+                                <div class="row">
+                                    <div class="col-6 img-gap">
+                                        <a href="img/cyberbot/cyberbot1.jpg" class="single-gallery-item"><img class="img-responsive" src="img/cyberbot/cyberbot1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/cyberbot/cyberbot2.jpg" class="single-gallery-item"><img class="img-responsive" src="img/cyberbot/cyberbot2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/cyberbot/cyberbot3.jpg" class="single-gallery-item"><img class="img-responsive" src="img/cyberbot/cyberbot3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robowars/robowar4.jpg" class="single-gallery-item"><img class="img-responsive" src="img/robowars/robowar4.jpg" alt=""></a>
+                                    </div>
+                                  
+                                </div>
+                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="/js/modules/cyberwarp/vendor/bootstrap.min.js"></script>
+    <script src="/js/modules/cyberwarp/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="/js/modules/cyberwarp/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/js/modules/cyberwarp/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="/js/modules/cyberwarp/confer.bundle.js"></script>
+    <!-- Active -->
+    <script src="/js/modules/cyberwarp/default-assets/active.js"></script>
+    <script src="/js/modules/cyberwarp/datepicker.js"></script>
+    <script src="/js/modules/cyberwarp/plugins.js"></script>
+    <script src="/js/modules/cyberwarp/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+            // navigation click actions 
+            $('.scroll-link').on('click', function (event) {
+                event.preventDefault();
+                var sectionID = $(this).attr("data-id");
+                scrollToID('#' + sectionID, 750);
+            });
+            // scroll to top action
+            $('.scroll-top').on('click', function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+            });
+            // mobile nav toggle
+            $('#nav-toggle').on('click', function (event) {
+                event.preventDefault();
+                $('#main-nav').toggleClass("open");
+            });
+        });
+        // scroll function
+        function scrollToID(id, speed) {
+            var offSet = 0;
+            var targetOffset = $(id).offset().top - offSet;
+            var mainNav = $('#main-nav');
+            $('html,body').animate({ scrollTop: targetOffset }, speed);
+            if (mainNav.hasClass("open")) {
+                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                mainNav.removeClass("open");
+            }
+        }
+        if (typeof console === "undefined") {
+            console = {
+                log: function () { }
+            };
+        }
+
+        //preloader
+
+        function stopLoader() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("loaderCircle").style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
