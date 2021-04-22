@@ -50,6 +50,10 @@ app.use(function(req, res, next) {
 const routes = require('./routes')
 app.use('/', routes)
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/views/error404.html'))
+})
+
 app.listen(PORT, () => {
     console.log('Server listening on port', PORT)
 })
