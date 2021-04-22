@@ -356,17 +356,6 @@ section:not(.first) {
     margin-top: -3%;
 }
 
-/* #about-header{
-  color: black;
-  transition: all 1s;
-  opacity: 1;
-
-}
-
-#about-header:hover{
-  transform: translate(600px,450px);
-  opacity: 0;
-} */
 #about-desc {
     margin-top: 12%;
 }
@@ -1032,6 +1021,17 @@ textarea + .parsley-errors-list {
 }
 
 
+/* Contact Cards */
+#contact-card{
+    position: absolute; margin-top: 32%; margin-right: 30vw;
+}
+
+#mail-card{
+      
+}
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   #physics_div{
       background-image: url('../../images/landing/bg1mob.png');
@@ -1312,6 +1312,19 @@ textarea + .parsley-errors-list {
       margin-bottom: 0px;
       margin-top: 0px;
       margin-left: 3px;
+  }
+
+  #contact-card{
+    margin-top: -12vh;
+    margin-right: 4vw;
+  }
+
+  #mail-card{
+      margin-top: 7vh;
+    margin-left: 9vw;
+  }
+  #contact-gif{
+      display: none;
   }
 
 }
