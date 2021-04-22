@@ -88,14 +88,14 @@ router.get('/profile', userAuth, async (req, res) => {
 })
 
 router.get('/login', async (req, res) => {
-    res.render('login',{
-        type : 1
+    res.render('login', {
+        type: 1,
     })
 })
 
 router.get('/register', async (req, res) => {
-    res.render(`login`,{
-        type : 2
+    res.render(`login`, {
+        type: 2,
     })
 })
 
@@ -159,11 +159,12 @@ router.post('/forgotpassword', async (req, res) => {
 
     await user.save()
 
-    const resetURL = `${req.protocol}://${req.get(
-        'host'
-    )}/user/resetpassword/${resetToken}`
-
-    utils.sendEmail(email, resetURL, 'Reset Password')
+    // const resetURL = `${req.protocol}://${req.get(
+    //     'host'
+    // )}/user/resetpassword/${resetToken}`
+    let mailBody = `To reset yout password <a href="${resetToken}">click here</a>.`
+    let mailSubject = `Tecnoesis - Reset Password`
+    utils.sendEmail(email, mailBody, mailSubject)
 
     res.send('Password reset link sent successfully')
 })
@@ -184,13 +185,14 @@ router.get('/resetpassword/:resetToken', async (req, res) => {
     user.passwordResetToken = undefined
     user.resetTokenExpire = undefined
     await user.save()
-    res.redirect(`/updatepassword/${user._id}`)
+    // res.redirect(`/updatepassword/${user._id}`)
+    res.render('resetpassword', { userEmail: user.email })
 })
 
-router.post('updatepassword/:userId', async (req, res) => {
+router.post('/updatepassword/:userEmail', async (req, res) => {
     let { password } = req.body
-    let userId = req.params.userId
-    let user = await User.findById(userId)
+    let email = req.params.userEmail
+    let user = await User.findOne({ email })
     if (!user) {
         return res.send('Invalid User')
     }
