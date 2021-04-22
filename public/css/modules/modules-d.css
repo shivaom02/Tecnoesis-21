@@ -139,7 +139,7 @@ body label {
   cursor: pointer;
 }
 body label.mercury > .preview {
-  background: url("../images/modules/sae.png") !important;
+  background: url("/images/modules/sae.png") !important;
 }
 body label.venus > .preview {
   background: url("https://nasa3d.arc.nasa.gov/shared_assets/images/modules/ven0aaa2/ven0aaa2-copy-428-321.jpg") !important;
@@ -1772,18 +1772,18 @@ body .solar_systm .planet .trajectory {
   opacity: 0;
 }
 body .solar_systm .planet.mercury {
-  background: url("../images/modules/robotron.png");
+  background: url("/images/modules/robotron.png");
   background-repeat: no-repeat;
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px rgba(188, 143, 127, 0.6); */
 }
 body .solar_systm .planet.venus {
-  background: url("../images/modules/smartcity.png");
+  background: url("/images/modules/smartcity.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px #ffcb9c inset, 0 0px 23px 4px #ffcb9c inset, 0 -10px 130px #b85a07; */
 }
 body .solar_systm .planet.earth {
-  background: url("../images/modules/cyberwarp.png");
+  background: url("/images/modules/cyberwarp.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px #8cbaff inset, 0 0px 23px 4px #8cbaff inset, 0 -10px 130px #7894a9; */
@@ -1806,7 +1806,7 @@ body .solar_systm .planet.earth .moon h3 {
   color: #26daaa;
 }
 body .solar_systm .planet.mars {
-  background: url("../images/modules/empresaario.png");
+  background: url("/images/modules/empresaario.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px #e86363 inset, 0 0px 23px 4px #e86363 inset, 0 -10px 130px #6b261a; */
@@ -1818,7 +1818,7 @@ body .solar_systm .planet.mars .deimos {
   left: 900px;
   top: -100px;
   transform: scale(0.45);
-  background: url("../images/modules/panorama.png");
+  background: url("/images/modules/panorama.png");
   z-index: -1;
   box-shadow: 0px -30px 30px 10px black inset;
 }
@@ -1838,12 +1838,12 @@ body .solar_systm .planet.mars .phoebos {
   left: 100px;
   top: -160px;
   transform: scale(0.5);
-  background: url("../images/modules/robotron.png");
+  background: url("/images/modules/robotron.png");
   z-index: -1;
   box-shadow: 0px -30px 30px 10px black inset;
 }
 body .solar_systm .planet.jupiter {
-  background: url("../images/modules/vwarz.png");
+  background: url("/images/modules/vwarz.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px rgba(188, 143, 127, 0.6); */
@@ -1894,7 +1894,7 @@ body .solar_systm .planet.jupiter .ganymede {
   box-shadow: 0px -30px 30px 10px black inset;
 }
 body .solar_systm .planet.saturn {
-  background: url("../images/modules/asme.png");
+  background: url("/images/modules/asme.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px rgba(188, 143, 127, 0.6); */
@@ -1945,7 +1945,7 @@ body .solar_systm .planet.saturn .enceladus {
   box-shadow: 0px -30px 30px 10px black inset;
 }
 body .solar_systm .planet.uranus {
-  background: url("../images/modules/myndsnare.png");
+  background: url("/images/modules/myndsnare.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px rgba(127, 188, 171, 0.6); */
@@ -1996,7 +1996,7 @@ body .solar_systm .planet.uranus .umbriel {
   box-shadow: 0px -30px 30px 10px black inset;
 }
 body .solar_systm .planet.neptune {
-  background: url("../images/modules/vwarz.png");
+  background: url("/images/modules/vwarz.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px #2d4153; */
@@ -2047,7 +2047,7 @@ body .solar_systm .planet.neptune .nereid {
   box-shadow: 0px -30px 30px 10px black inset;
 }
 body .solar_systm .planet.pluto {
-  background: url("../images/modules/myndsnare.png");
+  background: url("/images/modules/myndsnare.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px #2d4153; */
