@@ -1031,8 +1031,12 @@ textarea + .parsley-errors-list {
     height: 60px;
     width: auto;
 }
+.not-first {
+    -webkit-animation: bezphone 2s;
+    animation: bezphone 2s;
+}
 
-@-webkit-keyframes bez {
+@-webkit-keyframes bezphone {
     from {
         width: 0%;
     }
@@ -1041,7 +1045,7 @@ textarea + .parsley-errors-list {
     }
 }
 
-@keyframes bez {
+@keyframes bezphone {
     from {
         width: 0%;
     }
@@ -1075,8 +1079,12 @@ textarea + .parsley-errors-list {
         height: 60px;
         width: auto;
     }
+    .not-first {
+        -webkit-animation: bezphone 2s;
+        animation: bezphone 2s;
+    }    
     
-    @-webkit-keyframes bez {
+    @-webkit-keyframes bezphone {
         from {
             width: 0%;
         }
@@ -1085,7 +1093,7 @@ textarea + .parsley-errors-list {
         }
     }
     
-    @keyframes bez {
+    @keyframes bezphone {
         from {
             width: 0%;
         }
