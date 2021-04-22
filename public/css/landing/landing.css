@@ -824,7 +824,16 @@ textarea + .parsley-errors-list {
         width: 65%;
     }
 }
-
+#loader{
+    height: 100%;
+    width: 100%;
+    animation: disappear 2s;
+    opacity: 0%;
+}
+@keyframes disappear {
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
 @keyframes bez {
     from {
         width: 0%;
@@ -1006,7 +1015,7 @@ textarea + .parsley-errors-list {
     margin-top: auto;
     margin-left: 50%;
   }
-}
+
 .logoviral{
     opacity: 0;
 }
@@ -1052,6 +1061,7 @@ textarea + .parsley-errors-list {
     to {
         width: 100%;
     }
+}
 }
 @media only screen and (max-width: 430px) {
     .logoviral{
