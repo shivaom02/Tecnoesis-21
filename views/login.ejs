@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecnoesis | Register</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <link rel="stylesheet" href="/css/login/login.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <% if(type == 2) { %>
+    <div class="container right-panel-active" id="container">
+  <% } else { %>
+    <div class="container" id="container">
+  <% } %>
+    <div class="form-container sign-up-container">
+      <form action="/user/register" method="POST">
+        <h1>Create Account</h1>
+        <p>Don't have an account?</p>
+
+        <label for="name">Full name:</label>
+        <input type="text" id="name" name="name">
+        <!-- <label for="pin">PIN:</label><br>
+			<input type="text" id="pin" name="pin" maxlength="4" size="4"><br> -->
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="phone">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8">
+        <label for="password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password"
+          minlength="8">
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <a href="#" id="signIn">Already have an account? Sign In</a>
+
+    </div>
+    <% if(type == 2) { %>
+      <div class="form-container sign-in-container left-panel-active">
+    <% } else { %>
+      <div class="form-container sign-in-container">
+    <% } %>
+      <form action="/user/login" method="POST">
+        <h1>Sign in</h1>
+        <p>Welcome, We missed you!</p>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8">
+        <button type="submit">Sign In</button>
+      </form>
+
+      <a href="#" id="signUp">Don't have an account? Sign Up</a>
+      <a href="/user/forgotpassword" id="signIn">Fogot password</a>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <div class="video">
+            <img src="/images/login/globeTwo.gif">
+          </div>
+          <!-- <h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button> -->
+        </div>
+        <div class="overlay-panel overlay-right">
+          <div class="video">
+            <!-- <img src="./corona.png" alt=""> -->
+            <img src="/images/login/globeOne.gif">
+          </div>
+          <!-- <h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src="/js/login/login.js"></script>
+
+</body>
+
+</html>

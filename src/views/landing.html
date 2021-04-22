@@ -71,7 +71,7 @@
     </head>
 
     <body>
-        <div class="loader" id="loader" style="height: 100%; width: 100%; z-index: 1000;"><lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_kajde8li.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
+        <div class="loader" id="loader" ><lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_kajde8li.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
         <nav class="navbar">
             <div class="content">
                 <ul class="nav-items">
@@ -103,13 +103,8 @@
         </button>
         <main class="main">
             <section
-                class="first panel white"
+                class="first panel"
                 id="physics_div"
-                style="
-                    background-image: url('../../public/images/landing/bg1.png');
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                "
             >
                 <div class="stage" data-el="stage"></div>
                 <h1 id="head" data-el="head">
@@ -128,7 +123,7 @@
 
                 <div class="gif">
                     <img
-                        src="../../public/images/landing/globeOne.gif"
+                        src="../../public/images/landing/globeTwo.gif"
                         alt="globe"
                     />
                 </div>
@@ -336,35 +331,36 @@
             >
             <div style="z-index: 1;"><img class="logoviral3" src="../../public/images/landing/v4-01.png"/></div>
                 <h1 class="section_header" id="contact-header" style="white-space: nowrap;">Contact Us</h1>
-                <form id="form" data-parsley-validate>
+                    <div class="card" style="position: absolute; margin-top: 369px; margin-right: 30vw;">
+                        <div class="icon"><i class="material-icons md-36">Tecnoesis</i></div>
+                        <p class="title">Contact Us</p>
+                        <p class="text">Email:</p>
+                        <p class="text">abc@xyz.in</p>
+                        <p class="text">Phone:</p>
+                        <p class="text">2009006001</p>
+                    </div>
+                
+                <form id="form" data-parsley-validate style="position: absolute; margin-right: -10vw;">
                     <div class="success">
                         <p>Good news <span class="name">Fellow Human</span>,</p>
                         <p>your message was successfully sent!</p>
                     </div>
-                    <fieldset>
-                        <input
-                            class="floatlabel"
-                            type="email"
-                            placeholder="Email"
-                            required
-                            data-parsley-no-focus
-                            data-parsley-error-message="Please enter a valid email address."
-                            style="padding: 10px; background-color: white; font-family: Source Sans Pro; border-radius: 5px; border-width: 1px;"
-                        />
-                    </fieldset>
-                    <fieldset>
-                        <textarea
-                            class="floatlabel"
-                            placeholder="Message"
-                            required
-                            data-parsley-no-focus
-                            data-parsley-error-message="Please enter a message."
-                            style="padding: 10px; background-color: white; font-family: Source Sans Pro; border-radius: 5px; border-width: 1px;"
-                        ></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <button class="submit button" >Submit</button>
-                    </fieldset>
+                    <div class="card">
+                        <div class="icon"><i class="material-icons md-36">Tecnoesis</i></div>
+                        <p class="title">Mail Us Instead</p>
+                        <input data-parsley-no-focus data-parsley-error-message="Please enter a valid email address."
+                         required placeholder="Email" type="email" class="text" style="padding: 10px; background-color: white; font-family: Open Sans; border-radius: 5px; border-width: 1px;">
+                         <input
+                         class="text"
+                         placeholder="Message"
+                         required
+                         data-parsley-no-focus
+                         data-parsley-error-message="Please enter a message."
+                         style="padding: 10px; background-color: white; font-family: Source Sans Pro; border-radius: 5px; border-width: 1px; height: 70px;"
+                     >
+                     <p class='text'><button class="submit button" >Submit</button></p>
+                    </div>
+                    
                 </form>
                 <div class="gif">
                     <img

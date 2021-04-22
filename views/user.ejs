@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="/css/profile/profile.css">
+   
+    <title>Profile</title>
+</head>
+<body>
+    <div class="profileContainer">
+        <div class="profile">
+
+            <div class="heading">
+                <div class="head_left">
+                    <div class='img1'>
+                        <img src='/images/gallery/1.jpg' />
+                    </div>
+                    <h2>Tecnoesis</h2>
+                </div>
+                <div class="head_right">
+                    <h2>My Profile</h2>
+                    <div class='img1'>
+                        <img src='/images/gallery/1.jpg' />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="main_left">
+                    <div class="img2">
+                        <img src='/images/gallery/4.jpg' />
+                    </div>
+                    <h2 style="color:rgb(35, 58, 102)"><%= user.name %></h2>
+ 
+                    <div class='errorMsg'>
+                        <%- include("./partials/messages") %>
+                    </div>
+
+                    <div class='buttons'>
+
+                        <a href="/user/edit" class="btn btn-secondary" >Edit</a>
+
+                        <a href="/user/logout" class="btn btn-secondary" >Logout</a>
+                    </div>
+                </div>
+                
+                <div class="main_right">
+                     
+                     <div class="main_right_top">
+                        <h2 style="color:rgb(14, 59, 143);white-space: nowrap;">Registered Events</h2>
+                        <div class='eventsRegistered'>
+
+                            <!-- <% user.registeredEvents.forEach(event => { %>
+                            
+                                <div class='eventR'>
+                            
+                                    <span><%= event.eventName %></span>
+                            
+                                    <span><%= event.eventTiming %></span>
+                            
+                                </div>
+                            <% }) %> -->
+                          
+                           <div class='eventR'>
+                               <span style="font-weight: 600;">Event 1</span>
+                               <span>9:30pm 26th April, 2021</span>
+                           </div>
+                          
+                           <div class='eventR'>
+                               <span style="font-weight: 600;">Event 1</span>
+                               <span>9:30pm 26th April, 2021</span>
+                           </div>
+                           
+                        </div>
+                     </div>
+
+                     <div class="main_right_bottom">
+                        <h2 style="margin-left:1rem;color:rgb(14, 59, 143);white-space: nowrap;">Contact Information</h2>
+                         <p>
+                            <span  style="font-weight: 600;">Phone Number : </span>
+                            <span><%= user.phoneNo %></span> 
+                         </p>
+                         <p style="margin-top:50px;">
+                            <span  style="font-weight: 600;">Email Address :</span> 
+                            <span><%= user.email %></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
