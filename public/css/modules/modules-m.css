@@ -1,0 +1,226 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes rotate_scale {
+  0% {
+    transform: scale(0) rotate(0) translate(25%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(6) rotate(250deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+body {
+  position: relative;
+  scroll-behavior: smooth;
+}
+body .icon {
+  position: fixed;
+  z-index: 20;
+  top: 3%;
+  right: 5%;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  line-height: 200%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 1s ease-in;
+  background-color: rgba(149, 153, 226, 0.3);
+}
+body .icon.change-backGround {
+  background-color: #fff;
+}
+body .icon i {
+  color: #fff;
+  font-size: 2em;
+  line-height: 55px;
+  transition: all 1s ease-in;
+}
+body .icon i::before {
+  transition: all 1s ease-in;
+}
+body .icon i.clicked::before {
+  content: "";
+  color: #9599e2;
+  transition: 0.3s ease-in;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  /* background: url("https://cdn.pixabay.com/photo/2020/02/24/06/33/crescent-4875339_960_720.jpg") no-repeat center/cover fixed;
+  overflow: hidden; */
+}
+#main .box {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  z-index: 5;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #e63946;
+  transform: scale(0) rotate(0) translate(-50%, -50%);
+  animation: rotate_scale 11s ease-in-out forwards infinite;
+  -webkit-animation: rotate_scale 10s ease-in-out forwards infinite;
+}
+#main .box:nth-child(2) {
+  border-color: #f1faee;
+  animation-delay: 2s;
+  left: 50%;
+  bottom: 30%;
+}
+#main .box:nth-child(3) {
+  border-color: #1d3557;
+  animation-delay: 4s;
+  left: 50%;
+  top: 5%;
+}
+#main .box:nth-child(4) {
+  border-color: #457b9d;
+  animation-delay: 6s;
+  right: 10%;
+  top: 20%;
+}
+#main .box:nth-child(5) {
+  border-color: #a8dadc;
+  animation-delay: 8s;
+  top: 50%;
+  left: 85%;
+}
+#main .box:nth-child(6) {
+  animation-delay: 9s;
+  top: 50%;
+  left: 50%;
+}
+
+#navbar {
+  position: fixed;
+  z-index: 2;
+  margin-top: -100px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  display: flex;
+  transform: translateY(-100%);
+  transition: 1s ease;
+}
+#navbar ul#links {
+  list-style: none;
+  font-family: sans-serif;
+}
+#navbar ul#links li {
+  padding: 5px;
+  margin: 15px 0 0;
+  text-align: center;
+  position: relative;
+}
+#navbar ul#links li::before {
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  left: -5%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #fff;
+  border-top: none;
+  border-right: none;
+  transition: all 0.4s ease-in;
+}
+#navbar ul#links li:hover::before {
+  width: 100%;
+  height: 0;
+  left: 0;
+}
+#navbar ul#links li::after {
+  content: "";
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #fff;
+  border-bottom: none;
+  border-left: none;
+  transition: all 0.4s ease-in;
+}
+#navbar ul#links li:hover::after {
+  width: 100%;
+  height: 0;
+  right: 0;
+}
+#navbar ul#links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    /* background-color: #2b2b52; */
+    background-image: url("../../images/modules/bg4.png");
+    background-size: contain;
+  }
+  
+  
+  .section {
+    padding: 60px 0;
+    margin: 60px 0;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  
+  .section__title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+  }
+  
+  .section-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  
+  
+  .section__info {
+    font-size: 17px;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .read-more-btn {
+    color: white;
+    font-size: 20px;
+    background-color: #31317c;
+    text-decoration: none;
+    padding: 7px 15px;
+    box-shadow: 10px 10px 10px #2b2b52;
+  }
+
+  
