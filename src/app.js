@@ -12,7 +12,7 @@ app.use(express.json())
 
 require('dotenv').config()
 
-require('./db/db')
+// require('./db/db')
 
 const PORT = process.env.PORT || 3000
 

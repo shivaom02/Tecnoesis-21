@@ -965,7 +965,7 @@ body {
   .team_gallery{
     
       width:80vw;
-      height:380vh;
+      height:700vh;
       display:flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -1005,11 +1005,19 @@ body {
           height:60vh;
           margin-top:-60vh;
       }
+      &-4{
+          height:60vh;
+          margin-top:-60vh;
+      }
+      &-5{
+          height:60vh;
+          margin-top:-60vh;
+      }
 
       &-1-1,&-2-2,&-3-3{
-         
+         position: relative;
           width:80vw;
-          height:90%;
+          height:auto;
           display:flex;
           flex-direction:row;
           justify-content: space-around;
