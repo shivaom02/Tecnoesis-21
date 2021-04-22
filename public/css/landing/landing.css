@@ -315,8 +315,8 @@ section:not(.first) {
 }
 
 #module-btn {
-    margin-right: 3%;
-    bottom: 50vh;
+    margin-right: 4vw;
+    bottom: 60vh;
 }
 
 #modules-desc {
@@ -340,8 +340,8 @@ section:not(.first) {
 }
 
 #hacks-btn {
-    margin-right: 3%;
-    bottom: 50vh;
+        margin-right: 5vw;
+    bottom: 62vh;
 }
 
 #contact-header {
@@ -1199,12 +1199,13 @@ textarea + .parsley-errors-list {
     width: 90%;
   }
   #module-btn {
-    /* position: relative; */
+    position: absolute;
     display: block;
     width: 10rem;
-    margin-top: -3rem;
+    top: 20rem;
+    margin-top: 0rem;
     margin-left: 0rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-decoration: underline;
   }
   #hacks-header {
@@ -1234,7 +1235,7 @@ textarea + .parsley-errors-list {
     width: 10rem;
     margin-top: 0rem !important;
     margin-left: 0rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-decoration: underline;
     position: relative;
     top: -1rem;
