@@ -92,7 +92,7 @@ router.get('/login', async (req, res) => {
 })
 
 router.get('/register', async (req, res) => {
-    res.render('register')
+    res.render(`login`)
 })
 
 router.get('/edit', userAuth, async (req, res) => {
