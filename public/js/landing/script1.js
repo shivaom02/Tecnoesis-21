@@ -230,14 +230,14 @@ var initBouncer = function(){
      render: {
       sprite: {
         texture: "../../public/images/landing/virus1.png",
-        xScale: 0.5,
-        yScale: 0.5
+        xScale: 0.8,
+        yScale: 0.8
      }
     },
     isSleeping: false,
-    density: 0.8,
-    restitution: 0.9,
-    frictionAir:0.008,
+    density: 0.5,
+    restitution: 1,
+    frictionAir:0.001,
     friction:0,
     collisionFilter: {
         category: categories.catMouse
