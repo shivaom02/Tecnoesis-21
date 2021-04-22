@@ -229,7 +229,7 @@ var initBouncer = function(){
     bouncerRadius, {
      render: {
       sprite: {
-        texture: "../../public/images/landing/virus1.png",
+        texture: "/images/landing/virus1.png",
         xScale: 0.8,
         yScale: 0.8
      }

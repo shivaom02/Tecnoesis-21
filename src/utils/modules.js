@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
     Modules:{
         'robotics': 'robotics',
         'v-warz' : 'v-warz',

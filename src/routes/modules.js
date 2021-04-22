@@ -11,7 +11,7 @@ router.get('/',(req,res)=>{
 // Get Specific Modules
 router.get('/:id',(req,res)=>{
     const module = req.params.id;
-    res.render(`modules/${Modules[module]}`);
+    res.render(`${Modules[module]}`);
 })
 
 module.exports = router;

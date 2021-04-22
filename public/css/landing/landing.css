@@ -3,7 +3,7 @@
 @import url('http://fonts.cdnfonts.com/css/greenth');
 main {
     height: 100%;
-    background-image: url('../../images/landing/bg1.png');
+    background-image: url('/images/landing/bg1.png');
 }
 
 .first {
@@ -44,7 +44,7 @@ section:not(.first) {
 }
 
 #physics_div{
-    background-image: url('../../images/landing/bg1.png');
+    background-image: url('/images/landing/bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1034,7 +1034,7 @@ textarea + .parsley-errors-list {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   #physics_div{
-      background-image: url('../../images/landing/bg1mob.png');
+      background-image: url('/images/landing/bg1mob.png');
   }
   
     .panel h1 {
@@ -1106,7 +1106,7 @@ textarea + .parsley-errors-list {
 }
 @media only screen and (max-width: 430px) {
     #physics_div{
-        background-image: url('../../images/landing/bg1mob.png');
+        background-image: url('/images/landing/bg1mob.png');
     }
     .logoviral{
         opacity: 0;
