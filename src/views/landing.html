@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tecnoesis 2021</title>
         <!-- Third Party -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <!-- GSAP ANIMATION -->
         <script
@@ -39,14 +40,10 @@
         ></script>
         <script
             type="text/javascript"
-            src="../../public/js/landing/scroll.js"
+            src="../../public/js/landing/form.js"
             defer
         ></script>
-        <!-- <script
-            type="text/javascript"
-            src="../../public/js/landing/script.js"
-            defer
-        ></script>  -->
+
         <script
             type="text/javascript"
             src="../../public/js/landing/script1.js"
@@ -74,28 +71,14 @@
     </head>
 
     <body>
-        <div class="count-container">
-            <ul id="top-menu">
-                <li><a href="#" class="active">01</a></li>
-                <li><a href="#section2">02</a></li>
-                <li><a href="#section3">03</a></li>
-                <li><a href="#section4">04</a></li>
-                <li><a href="#section5">05</a></li>
-                
-            </ul>
-            <!-- <h1 class="count active" id="one">01</h1>
-            <h1 class="count" id="two">02</h1>
-            <h1 class="count" id="three">03</h1>
-            <h1 class="count" id="four">04</h1>
-            <h1 class="count" id="five">05</h1> -->
-            
-        </div>
-        <div class="loader" id="loader"></div>
+        <div class="loader" id="loader" style="height: 100%; width: 100%; z-index: 1000;"><lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_kajde8li.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
         <nav class="navbar">
             <div class="content">
                 <ul class="nav-items">
                     <li class="nav-item"><a class="n1" href="">Home</a></li>
-                    <li class="nav-item"><a class="n2" href="">Events</a></li>
+                    <li class="nav-item"><a class="n2" href="">Modules</a></li>
+                    <li class="nav-item"><a class="n3" href="">Schedule</a></li>
+                    <li class="nav-item"><a class="n3" href="">NITS::Hacks 4.0</a></li>
                     <li class="nav-item"><a class="n3" href="">Team</a></li>
                 </ul>
             </div>
@@ -149,28 +132,33 @@
                         alt="globe"
                     />
                 </div>
+                <div class="cryptnums">
+                    <p id="locale">IXS</p>
+                    <p id="kryptix">01-01</p>
+                </div>
             </section>
             <section
                 class="panel not-first white"
-                id="virusHolder section2"
+                id="section2"
                 style="
                     background-image: url('../../public/images/landing/17931370.png');
                     background-size: cover;
                     background-repeat: no-repeat;
                 "
             >
-                <h1 class="section_header" id="about-header" style="z-index: 3">
+                <div class="logoviral" id="textviral" style="z-index: 1;">TECNOESIS</div>
+                <h1 class="section_header" id="about-header" style="z-index: 3; white-space: nowrap;">
                     About Us
                 </h1>
                 <p class="section_desc" id="about-desc" style="z-index: 3">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Beatae, laborum!
+                    Beatae, laborum! Lorem ipsum dolor sit amet.
                 </p>
                 <div class="images">
                     <div
                         class="image-wrapper"
                         id="first"
-                        style="margin-top: 2vh; margin-left: -60vw; z-index: 1"
+                        style="margin-top: 2vh; margin-left: -60vw; z-index: 1; height: 250px; width: auto;"
                     >
                         <img
                             class="virus"
@@ -180,11 +168,7 @@
                     <div
                         class="image-wrapper"
                         id="second"
-                        style="
-                            margin-top: -25vh;
-                            margin-left: -40vw;
-                            z-index: 1;
-                        "
+                        style="margin-top: 35vh; margin-left: -45vw; z-index: 1;height: 500px; width: auto;"
                     >
                         <img
                             class="virus"
@@ -194,7 +178,7 @@
                     <div
                         class="image-wrapper"
                         id="third"
-                        style="margin-top: 40vh; margin-left: -20vw; z-index: 1"
+                        style="margin-top: 40vh; margin-left: -20vw; z-index: 1;height: 200px; width: auto;"
                     >
                         <img
                             class="virus"
@@ -205,9 +189,13 @@
                 </div>
                 <div class="gif">
                     <img
-                        src="../../public/images/landing/logo.gif"
+                        src="../../public/images/landing/logomask.gif"
                         alt="globe"
                     />
+                </div>
+                <div class="cryptnums">
+                    <p id="locale">IXS</p>
+                    <p id="kryptix">01-02</p>
                 </div>
             </section>
             <section
@@ -217,9 +205,10 @@
                     background-image: url('../../public/images/landing/bg2.png');
                     background-repeat: no-repeat;
                     background-size: cover;
+                    align-items: center;
                 "
             >
-                
+            <div class="logoviral2" style="z-index: 1;">TECNOESIS</div>    
                 <h1
                     class="section_header"
                     id="module-header"
@@ -231,7 +220,6 @@
                     <p class="section_desc" id="modules-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sequi, blanditiis a ad quis dignissimos quod.
-                        Necessitatibus odio voluptatibus quod ullam.
                     </p>
                 </div>
                 <a class="btnfos btnfos-1" id="module-btn" style="z-index: 3">
@@ -250,7 +238,7 @@
                     <div
                         class="image-wrapper"
                         id="first"
-                        style="margin-top: 2vh; margin-left: -60vw; z-index: 1"
+                        style="margin-top: 15vh; margin-left: -60vw; z-index: 1"
                     >
                         <img
                             class="vaccine"
@@ -291,6 +279,10 @@
                         alt="globe"
                     />
                 </div>
+                <div class="cryptnums">
+                    <p id="locale">IXS</p>
+                    <p id="kryptix">01-03</p>
+                </div>
             </section>
             <section
                 class="panel not-first white"
@@ -301,7 +293,8 @@
                     background-size: cover;
                 "
             >
-                <h1 class="section_header" id="hacks-header">NITS Hacks</h1>
+            <div style="z-index: 1;"><img class="logoviral3" src="../../public/images/landing/v3-01.png" /></div>
+                <h1 class="section_header" id="hacks-header" style="white-space: nowrap;">NITS::Hacks 4.0</h1>
                 <div class="description" id="hacks-description">
                     <p class="section_desc" id="hacks_desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -327,6 +320,10 @@
                         alt="globe"
                     />
                 </div>
+                <div class="cryptnums">
+                    <p id="locale">IXS</p>
+                    <p id="kryptix">01-04</p>
+                </div>
             </section>
             <section
                 class="panel not-first white"
@@ -337,18 +334,54 @@
                     background-size: cover;
                 "
             >
-                <h1 class="section_header" id="contact-header">Contact Us</h1>
-                <p class="section_desc" id="contact-desc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Beatae, laborum!
-                </p>
+            <div style="z-index: 1;"><img class="logoviral3" src="../../public/images/landing/v4-01.png"/></div>
+                <h1 class="section_header" id="contact-header" style="white-space: nowrap;">Contact Us</h1>
+                <form id="form" data-parsley-validate>
+                    <div class="success">
+                        <p>Good news <span class="name">Fellow Human</span>,</p>
+                        <p>your message was successfully sent!</p>
+                    </div>
+                    <fieldset>
+                        <input
+                            class="floatlabel"
+                            type="email"
+                            placeholder="Email"
+                            required
+                            data-parsley-no-focus
+                            data-parsley-error-message="Please enter a valid email address."
+                            style="padding: 10px; background-color: white; font-family: Source Sans Pro; border-radius: 5px; border-width: 1px;"
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <textarea
+                            class="floatlabel"
+                            placeholder="Message"
+                            required
+                            data-parsley-no-focus
+                            data-parsley-error-message="Please enter a message."
+                            style="padding: 10px; background-color: white; font-family: Source Sans Pro; border-radius: 5px; border-width: 1px;"
+                        ></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button class="submit button" >Submit</button>
+                    </fieldset>
+                </form>
                 <div class="gif">
                     <img
                         src="../../public/images/landing/globeOne.gif"
                         alt="globe"
                     />
                 </div>
+                <div class="cryptnums">
+                    <p id="locale">IXS</p>
+                    <p id="kryptix">01-05</p>
+                </div>
             </section>
         </main>
     </body>
+    <script>
+        $(document).ready(function(){
+           $(window).scrollTop(0);
+       });
+       </script>
 </html>

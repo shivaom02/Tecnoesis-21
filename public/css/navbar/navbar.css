@@ -90,7 +90,9 @@
           transform: translateX(calc(100% - 35%));
   width: 100vw;
   height: 100vh;
-  background-color: #1c1c1e;
+  background-image: url('../../images/navbar/abstract-digital-grid-black-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 2;
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -186,3 +188,18 @@
           transform: translateY(200px);
 }
 /*# sourceMappingURL=navbar.css.map */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .navbar{
+    -webkit-transform: translateX(calc(100% - 0%));
+          transform: translateX(calc(100% - 0%));
+  
+  }
+}
+@media only screen and (max-width: 430px) {
+  .navbar{
+    -webkit-transform: translateX(calc(100% - 0%));
+          transform: translateX(calc(100% - 0%));
+  
+  }
+}
