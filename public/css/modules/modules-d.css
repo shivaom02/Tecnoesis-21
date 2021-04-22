@@ -1772,7 +1772,7 @@ body .solar_systm .planet .trajectory {
   opacity: 0;
 }
 body .solar_systm .planet.mercury {
-  background: url("/images/modules/robotron.png");
+  background: url("/images/modules/robotics.png");
   background-repeat: no-repeat;
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px rgba(188, 143, 127, 0.6); */
 }
@@ -1838,7 +1838,7 @@ body .solar_systm .planet.mars .phoebos {
   left: 100px;
   top: -160px;
   transform: scale(0.5);
-  background: url("/images/modules/robotron.png");
+  background: url("/images/modules/robotics.png");
   z-index: -1;
   box-shadow: 0px -30px 30px 10px black inset;
 }
@@ -2047,7 +2047,7 @@ body .solar_systm .planet.neptune .nereid {
   box-shadow: 0px -30px 30px 10px black inset;
 }
 body .solar_systm .planet.pluto {
-  background: url("/images/modules/myndsnare.png");
+  background: url("/images/modules/nits-hacks.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px #2d4153; */
