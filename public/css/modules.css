@@ -1654,8 +1654,8 @@ body .solar_systm:nth-of-type(2) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(2) .planet_description h1, body .solar_systm:nth-of-type(2) .planet_description h2 {
-  /* position: relative; */
-  /* top: -330px; */
+  position: relative;
+  top: -330px;
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(3) .planet {
@@ -1684,8 +1684,8 @@ body .solar_systm:nth-of-type(4) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(4) .planet_description h1, body .solar_systm:nth-of-type(4) .planet_description h2 {
-  /* position: relative;
-  top: -330px; */
+  position: relative;
+  top: -330px;
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(5) .planet {
@@ -1699,8 +1699,8 @@ body .solar_systm:nth-of-type(5) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(5) .planet_description h1, body .solar_systm:nth-of-type(5) .planet_description h2 {
-  /* position: relative;
-  top: -330px; */
+  position: relative;
+  top: -330px;
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(6) .planet {
@@ -1714,8 +1714,8 @@ body .solar_systm:nth-of-type(6) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(6) .planet_description h1, body .solar_systm:nth-of-type(6) .planet_description h2 {
-  /* position: relative;
-  top: -330px; */
+  position: relative;
+  top: -330px;
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(7) .planet {
@@ -1729,8 +1729,8 @@ body .solar_systm:nth-of-type(7) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(7) .planet_description h1, body .solar_systm:nth-of-type(7) .planet_description h2 {
-  /* position: relative;
-  top: -330px; */
+  position: relative;
+  top: -330px;
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(8) .planet {
@@ -1744,8 +1744,8 @@ body .solar_systm:nth-of-type(8) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(8) .planet_description h1, body .solar_systm:nth-of-type(8) .planet_description h2 {
-  /* position: relative;
-  top: -330px; */
+  position: relative;
+  top: -330px;
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(9) .planet {
@@ -1759,8 +1759,8 @@ body .solar_systm:nth-of-type(9) .planet_description p, body .solar_systm:nth-of
   opacity: 0;
 }
 body .solar_systm:nth-of-type(9) .planet_description h1, body .solar_systm:nth-of-type(9) .planet_description h2 {
-  /* position: relative;
-  top: -330px; */
+  position: relative;
+  top: -330px;
   transition: all 0.5s 0s;
 }
 body .solar_systm:nth-of-type(10) .planet {
@@ -1774,8 +1774,8 @@ body .solar_systm:nth-of-type(10) .planet_description p, body .solar_systm:nth-o
   opacity: 0;
 }
 body .solar_systm:nth-of-type(10) .planet_description h1, body .solar_systm:nth-of-type(10) .planet_description h2 {
-  /* position: relative;
-  top: -330px; */
+  position: relative;
+  top: -330px;
   transition: all 0.5s 0s;
 }
 body .solar_systm .planet .trajectory {
