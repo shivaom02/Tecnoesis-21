@@ -177,7 +177,7 @@ body .icon i.clicked::before {
   
   body {
     /* background-color: #2b2b52; */
-    background-image: url("../images/modules/bg4.png");
+    background-image: url("../../images/modules/bg4.png");
     background-size: contain;
   }
   
