@@ -15,7 +15,11 @@
 
 <body>
   <!-- partial:index.partial.html -->
-  <div class="container" id="container">
+  <% if(type == 2) { %>
+    <div class="container right-panel-active" id="container">
+  <% } else { %>
+    <div class="container" id="container">
+  <% } %>
     <div class="form-container sign-up-container">
       <form action="/user/register" method="POST">
         <h1>Create Account</h1>
@@ -40,7 +44,11 @@
       <a href="#" id="signIn">Already have an account? Sign In</a>
 
     </div>
-    <div class="form-container sign-in-container">
+    <% if(type == 2) { %>
+      <div class="form-container sign-in-container left-panel-active">
+    <% } else { %>
+      <div class="form-container sign-in-container">
+    <% } %>
       <form action="/user/login" method="POST">
         <h1>Sign in</h1>
         <p>Welcome, We missed you!</p>

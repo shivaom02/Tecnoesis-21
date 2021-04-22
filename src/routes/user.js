@@ -16,7 +16,7 @@ router.post('/register', async (req, res) => {
         if (alreadyExistingUser) {
             req.flash('error_msg', 'User already exists')
 
-            return res.redirect('/user/register')
+            return res.redirect('/user/login')
         }
 
         let newUser = new User({
@@ -35,7 +35,7 @@ router.post('/register', async (req, res) => {
 
         await newUser.save()
 
-        console.log('new User', newUser)
+        // console.log('new User', newUser)
 
         res.redirect('/user/profile')
     } catch (error) {
@@ -88,11 +88,15 @@ router.get('/profile', userAuth, async (req, res) => {
 })
 
 router.get('/login', async (req, res) => {
-    res.render('login')
+    res.render('login',{
+        type : 1
+    })
 })
 
 router.get('/register', async (req, res) => {
-    res.render(`login`)
+    res.render(`login`,{
+        type : 2
+    })
 })
 
 router.get('/edit', userAuth, async (req, res) => {
