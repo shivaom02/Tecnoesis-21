@@ -1217,6 +1217,16 @@ textarea + .parsley-errors-list {
     width: 70vw;
     margin-bottom: 1rem;
   }
+  .navbar .content .nav-items .nav-item a{
+      font-size: 2.4rem;
+      letter-spacing: 3px;
+  }
+  .navbar .content .nav-items .nav-item{
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 3px;
+  }
+
 }
 
 ::-webkit-scrollbar {
