@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    background: rgb(40, 40, 40);
+}
+
+.header {
+    height: 5rem;
+    background: #000;
+    display: block;
+    min-width: 100vw;
+    width: 10vw;
+
+    .logo {
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        margin-left: 2.5rem;
+
+        img {
+            margin-top: 10%;
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+
+.heading {
+    display: block;
+
+    h1 {
+        font-family: 'Bevan', cursive;
+        color: transparent;
+        font-size: 8rem;
+        background-clip: text;
+
+        margin-top: 10vh;
+        text-align: center;
+        letter-spacing: 5px;
+        background-color: #000;
+        color: transparent;
+        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+
+        span {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.typing {
+    &-1,
+    &-2,
+    &-3 {
+        height: 2rem;
+        width: 90vw;
+        margin: 1rem auto;
+    }
+}
+
+code {
+    color: #bdbdbd;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+
+    span {
+        color: #f0c674;
+    }
+
+    i {
+        color: #b5bd68;
+    }
+
+    em {
+        color: #b294bb;
+        font-style: unset;
+    }
+
+    b {
+        color: #81a2be;
+        font-weight: 500;
+    }
+}
+
+.btn-c {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+        background: #4169e1;
+        margin: 1rem 0;
+        padding: 0.5rem 2rem;
+        font-size: 1.1rem;
+        display: inline-block;
+        text-align: center;
+        transition: all 0.3s;
+        border-radius: 3px;
+        font-family: 'Poppins', sans-serif;
+
+        &:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            transform: translateY(-1px) scale(1.02);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .header {
+        height: 4rem;
+
+        .logo {
+            width: 4rem;
+            height: 4rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .heading {
+        h1 {
+            font-family: 'Bevan', cursive;
+            font-size: 11vw;
+            letter-spacing: 5px;
+
+            margin-top: 20vh;
+
+            span {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .typing {
+        &-1,
+        &-2,
+        &-3 {
+            height: 2rem;
+            width: 90vw;
+            margin: 0.5rem auto;
+        }
+    }
+
+    code {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .btn-c {
+        a {
+            margin: 3rem 0;
+            padding: 0.5rem 2rem;
+            font-size: 0.8rem;
+        }
+    }
+}
