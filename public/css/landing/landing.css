@@ -65,6 +65,55 @@ section:not(.first) {
     padding: 10px;
 }
 
+.cryptnums{
+    margin-top: 85vh;
+    margin-left: 125vw;
+    font-family: 'Greenth',sans-serif;
+    color: white;
+    opacity: 0.3;
+    white-space: nowrap;
+    text-align: right;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    z-index: 4;
+    animation: fade2furios 2s;
+}
+
+@keyframes fade2furios {
+    0%{opacity: 0;}
+    100%{opacity: 0.3;}
+}
+
+.submit{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro',sans-serif;
+    border-color: rgb(11, 106, 109);
+    color: rgb(11, 106, 109);
+    background-color: white;
+    stroke-width: 3px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.submit:hover{
+    background-color: rgb(11, 106, 109);
+    color: white;
+    border-color: white;
+}
+
+#krytpix{
+    
+    font-size: 1.5rem;
+}
+
+#locale{
+    font-size: 2.5rem;
+}
+
 /* #head {
     color: black;
     position: relative;
@@ -296,7 +345,7 @@ section:not(.first) {
 }
 
 #contact-header {
-    font-size: 4em;
+    font-size: 5rem;
     font-weight: 600;
     position: relative;
     left: -200px;
@@ -437,7 +486,7 @@ section:not(.first) {
 
 
 .panel h1 {
-    font-size: 4.5em;
+    font-size: 5rem;
     color: white;
     font-weight: 600;
     position: relative;
@@ -958,8 +1007,92 @@ textarea + .parsley-errors-list {
     margin-left: 50%;
   }
 }
+.logoviral{
+    opacity: 0;
+}
 
+.logoviral2{
+    opacity: 0;
+}
+
+.logoviral3{
+    opacity: 0;
+    animation: none;
+}
+
+#first{
+    height: 40px;
+    width: auto;
+}
+#second{
+    opacity: 0;
+}
+#third{
+    height: 60px;
+    width: auto;
+}
+
+@-webkit-keyframes bez {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes bez {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 430px) {
+    .logoviral{
+        opacity: 0;
+    }
+    
+    .logoviral2{
+        opacity: 0;
+    }
+    
+    .logoviral3{
+        opacity: 0;
+        animation: none;
+    }
+    
+    #first{
+        height: 40px;
+        width: auto;
+    }
+    #second{
+        opacity: 0;
+    }
+    #third{
+        height: 60px;
+        width: auto;
+    }
+    
+    @-webkit-keyframes bez {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    @keyframes bez {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
     html,
     body {
         overflow-x: hidden;

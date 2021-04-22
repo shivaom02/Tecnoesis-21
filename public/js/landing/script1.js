@@ -225,7 +225,7 @@ var initBouncer = function(){
 
   bouncerClone = Bodies.circle(
     bouncer.offsetLeft + bouncerRadius,
-    bouncer.offsetTop + bouncerRadius+150,
+    bouncer.offsetTop + bouncerRadius+250,
     bouncerRadius, {
      render: {
       sprite: {
@@ -236,8 +236,8 @@ var initBouncer = function(){
     },
     isSleeping: false,
     density: 0.8,
-    restitution: 1,
-    frictionAir:0.0008,
+    restitution: 0.9,
+    frictionAir:0.008,
     friction:0,
     collisionFilter: {
         category: categories.catMouse
@@ -246,7 +246,7 @@ var initBouncer = function(){
 
   World.add(engine.world, bouncerClone );
   Matter.Events.on(engine.world, "afterAdd", fixBouncer);
-  Body.setVelocity( bouncerClone, {x: Math.floor(Math.random()*20)-25, y: Math.floor(Math.random()*12)-20});
+  Body.setVelocity( bouncerClone, {x: Math.floor(Math.random()*10)-15, y: Math.floor(Math.random()*3)-20});
 }
 
 
@@ -272,7 +272,7 @@ var initLetterClones = function(){
           letters[i].clientHeight, {
             isSleeping: false,
             density: 0.8,
-            restitution: 0.8,
+            restitution: 0.9,
             frictionAir: 0.001,
             collisionFilter: {
               category: categories.catBody
@@ -367,4 +367,4 @@ function getRandomInt(min, max) {
 
 setTimeout(function(){
   init();
-}, 4500)
+}, 5500)
