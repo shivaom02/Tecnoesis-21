@@ -48,7 +48,6 @@ app.use(function(req, res, next) {
 });
 
 const routes = require('./routes')
-
 app.use('/', routes)
 
 app.listen(PORT, () => {
